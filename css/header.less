@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic');
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/bebas/TTF\'s/BebasNeue Regular.ttf') format("truetype");
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    // max-width: 1280px;
+    min-width: 1170px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 5px;
+    }
+}
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.top-block {
+    min-height: 50px;
+    padding-top: 3px;
+    height: 1px;
+    font-size: 10px;
+    color: #004391;
+    &__city {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 59.5%;
+        i {
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+    }
+    &__popups {
+        display: flex;
+        width: 24.5%;
+    }
+    &__phone {
+        padding-top: 3px;
+        font-family: 'Bebas Neue';
+        font-size: 18px;
+        color: #DF5E16;
+    }
+    &__item {
+        margin-left: 1px;
+        text-align: right;
+        i {
+            margin-left: 10px;
+        }
+        &_favorite {
+            flex: 1;
+            padding-right: 17px;
+        }
+    }
+}
+
+.menu-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    height: 1px;
+    background-color: #004391;
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+            margin: 0 0 8px 26px;
+            font-size: 1.1em;
+            color: #ffffff;
+        }
+    }
+}
+
+@media (min-width: 577px) {
+    .menu-block {
+        &___menu-pic {
+            display: none;
+        }
+       
+        &__menu {
+            width: 682px;
+            margin-right: 3px;
+        }
+    }
+    .main-menu {
+        &__items {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 7px;
+            list-style: none;
+        }
+        &__item {
+            position: relative;
+            a {
+                font-family: Bebas Neue;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 14px;
+                color: #FFFFFF;
+                &:hover~ul {
+                    display: block;
+                }
+            }
+        }
+        &__subitems {
+            position: absolute;
+            display: none;
+            top: 36px;
+            left: -17px;
+            padding: 12px 70px 30px 17px;
+            background: #FFFFFF;
+            border: 1px solid #004391;
+            box-sizing: border-box;
+            list-style: none;
+            &_visible {
+                display: block;
+            }
+            a {
+                font-family: 'Open Sans';
+                font-size: 10px;
+                text-transform: capitalize;
+                color: #000000;
+                white-space: nowrap;
+                &:hover {
+                    color: #DF5E16;
+                    text-decoration: underline;
+                }
+            }
+        }
+        &__subitem {
+            margin-top: 5px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .top-block,
+    .main-menu,
+    .main-menu__items {
+        display: none;
+    }
+    body {
+        width: 100%;
+        min-width: unset;
+        padding: 0;
+    }
+    .menu-block {
+        &__logo {
+            margin-left: 20px;
+        }
+        &__menu-pic {
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin-right: 20px;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: contain;
+            background-image: url(../img/menu-mobile.png);
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
