@@ -7,11 +7,7 @@
     }
 }
 
-.wrapper {
-    width: 1180px;
-    margin: 0 auto;
-    height: 100%;
-}
+
 
 .top-block {
     min-height: 50px;
@@ -23,7 +19,7 @@
         display: flex;
         align-items: center;
         height: 100%;
-        width: 59.2%;
+        min-width: 59.2%;
         i {
             margin-right: 10px;
             font-size: 1.5em;
@@ -31,8 +27,7 @@
     }
     &__popups {
         display: flex;
-        width: 25.2%;
-        // padding-right: 10px;
+        min-width: 25.2%; // padding-right: 10px;
     }
     &__phone {
         padding-top: 3px;
@@ -52,6 +47,10 @@
             padding-right: 17px;
         }
     }
+}
+
+.hidden-menu {
+    display: none;
 }
 
 .menu-block {
@@ -78,10 +77,38 @@
         &___menu-pic {
             display: none;
         }
-       
         &__menu {
             width: 682px;
             margin-right: 3px;
+        }
+    }
+    .hidden-menu {
+        padding: 10px 0;
+        background-color: #FFFFFF;
+        &_visible {
+            position: fixed;
+            top: 0;
+            display: block;
+            z-index: 100;
+            height: auto;
+            width: 1280px;
+        }
+        &__logo {
+            padding-top: 10px;
+        }
+        &__menu {
+            padding: 19px 60px 13px 18px;
+            font-family: Bebas Neue;
+            font-size: 18px;
+            letter-spacing: 4px;
+            color: #004391;
+            background-image: url(../img/hidden-menu__logo.svg);
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            border: 2px solid #004391;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
     .main-menu {
@@ -142,11 +169,6 @@
     .main-menu__items {
         display: none;
     }
-    body {
-        width: 100%;
-        min-width: unset;
-        padding: 0;
-    }
     .menu-block {
         &__logo {
             margin-left: 20px;
@@ -154,13 +176,13 @@
         &__menu-pic {
             display: block;
             width: 24px;
-            height: 24px;
+            height: 100%;
             margin-right: 20px;
             background-repeat: no-repeat;
-            background-position: 0 0;
+            background-position: 0 center;
             background-size: contain;
             background-image: url(../img/menu-block__menu-pic.png);
-            &:hover{
+            &:hover {
                 cursor: pointer;
             }
         }
