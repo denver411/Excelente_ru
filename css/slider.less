@@ -1,0 +1,65 @@
+.slider {
+    position: relative;
+    height: 540px;
+    &__items {
+        height: 100%;
+        margin: 0 auto;
+    }
+    &__item {
+        height: 100%;
+        &_1 {
+            background-image: url(../img/slider__item_1.png); // background-position: center;
+            // background-size: cover;
+        }
+    }
+}
+
+.slide {
+    &__description {
+        margin-top: 5px;
+        font-weight: bold;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+    &__button {
+        font-family: Bebas Neue;
+        font-size: 18px;
+        letter-spacing: 4px;
+        color: #FFFFFF;
+        background: #DF5E16;
+    }
+}
+
+@media(min-width: 577px) {
+    .site-path {
+        position: absolute;
+        top: 32px;
+        left: 50px;
+        &__items {
+            display: flex;
+        }
+        &__item {
+            list-style: none;
+            color: #FFFFFF;
+            a {
+                font-family: Open Sans;
+                font-size: 14px;
+                color: #FFFFFF;
+                text-decoration: none;
+                text-transform: lowercase;
+            }
+            &:not(:first-child)::before {
+                margin: 0 14px;
+                content: "\2000 \203a \2000";
+            }
+        }
+    }
+    .slide {
+        padding-top: 230px;
+        &__title {
+            font-family: Bebas Neue;
+            font-size: 64px;
+            color: #FFFFFF;
+        }
+    }
+}
