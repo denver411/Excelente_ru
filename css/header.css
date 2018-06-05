@@ -45,6 +45,8 @@
 }
 .hidden-menu {
   display: none;
+  opacity: 0;
+  transition: opacity 3s;
 }
 .menu-block {
   display: flex;
@@ -66,7 +68,7 @@
 }
 @media (min-width: 577px) {
   .menu-block___menu-pic {
-    display: none;
+    _display: none;
   }
   .menu-block__menu {
     width: 682px;
@@ -80,6 +82,7 @@
     position: fixed;
     top: 0;
     display: block;
+    opacity: 1;
     z-index: 100;
     height: auto;
     width: 1280px;

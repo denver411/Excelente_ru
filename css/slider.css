@@ -7,12 +7,26 @@
   margin: 0 auto;
 }
 .slider__item {
+  position: absolute;
+  left: 0;
+  right: 0;
   height: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 1s;
 }
 .slider__item_1 {
   background-image: url(../img/slider__item_1.png);
-  background-position: center;
-  background-size: cover;
+  z-index: 1;
+  opacity: 1;
+}
+.slider__item_2 {
+  background-image: url(../img/slider__item_2.png);
+}
+.slider__item_3 {
+  background-image: url(../img/slider__item_3.png);
 }
 .slide__title {
   font-family: Bebas Neue;
@@ -63,6 +77,7 @@
     position: absolute;
     bottom: 0;
     right: 50px;
+    z-index: 5;
   }
   .slide {
     padding-top: 230px;
@@ -134,6 +149,7 @@
     align-items: center;
     margin-left: 48px;
     min-width: 230px;
+    z-index: 5;
   }
   .slider-navigation__count {
     padding: 0 9px;
