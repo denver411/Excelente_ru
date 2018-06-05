@@ -14,17 +14,36 @@ header.header
           i.fa.fa-star(aria-hidden='true')
         .top-block__item.top-block__item_cart 2500 р
           i.fa.fa-shopping-cart(aria-hidden='true')
+  
   .header__hidden-menu.hidden-menu
     .wrapper.header__wrapper
       .hidden-menu__logo
         img(src="img/logo_blue-orange.png", alt="")
       .hidden-menu__menu Меню
+        .hidden-menu__close
+          i.fa.fa-times(aria-hidden='true')
+  
   .header__menu.menu-block
     .wrapper.header__wrapper
       .menu-block__logo
         img(src="img/logo_white.png", alt="")
         i.fa.fa-search(aria-hidden='true')
       .menu-block__menu-pic
+      .menu-block__contacts.contacts
+        .contacts__item
+          p.contacts__text Бесплатная линия
+          p.contacts__info 8 800 737-77-05
+        .contacts__item
+          p.contacts__text WhatsApp
+          p.contacts__info 8 800 737-77-05
+        .contacts__item
+          p.contacts__text skype 
+          p.contacts__info excelentephone
+        .contacts__item_fill
+        .contacts__item_social-media.social-media
+          .social-media__title подписаться
+          .social-media__pic
+
       .menu-block__menu.main-menu
         ul.main-menu__items
           li.main-menu__item
@@ -102,7 +121,7 @@ header.header
                 a(href="#") Англия
           li.main-menu__item 
             a(href="#") Блог
-            ul.main-menu__subitems.main-menu__subitems_visible
+            ul.main-menu__subitems
               li.main-menu__subitem
                 a(href="#") Акции
               li.main-menu__subitem
