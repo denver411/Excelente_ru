@@ -7,8 +7,6 @@
     }
 }
 
-
-
 .top-block {
     min-height: 50px;
     padding-top: 3px;
@@ -51,8 +49,6 @@
 
 .hidden-menu {
     display: none;
-    opacity: 0;
-    transition: opacity 3s;
 }
 
 .menu-block {
@@ -76,42 +72,15 @@
 
 @media (min-width: 577px) {
     .menu-block {
-        &___menu-pic {
-            _display: none;
+        &__menu-pic {
+            display: none;
+        }
+        &__contacts {
+            display: none;
         }
         &__menu {
             width: 682px;
             margin-right: 3px;
-        }
-    }
-    .hidden-menu {
-        padding: 10px 0;
-        background-color: #FFFFFF;
-        &_visible {
-            position: fixed;
-            top: 0;
-            display: block;
-            opacity: 1;
-            z-index: 100;
-            height: auto;
-            width: 1280px;
-        }
-        &__logo {
-            padding-top: 10px;
-        }
-        &__menu {
-            padding: 19px 60px 13px 18px;
-            font-family: Bebas Neue;
-            font-size: 18px;
-            letter-spacing: 4px;
-            color: #004391;
-            background-image: url(../img/hidden-menu__logo.svg);
-            background-repeat: no-repeat;
-            background-position: right 10px center;
-            border: 2px solid #004391;
-            &:hover {
-                cursor: pointer;
-            }
         }
     }
     .main-menu {
@@ -140,6 +109,7 @@
             display: none;
             top: 36px;
             left: -17px;
+            z-index: 2;
             padding: 12px 70px 30px 17px;
             background: #FFFFFF;
             border: 1px solid #004391;
@@ -151,8 +121,8 @@
             a {
                 font-family: 'Open Sans';
                 font-size: 10px;
-                text-transform: capitalize;
                 color: #000000;
+                text-transform: unset;
                 white-space: nowrap;
                 &:hover {
                     color: #DF5E16;
@@ -162,6 +132,159 @@
         }
         &__subitem {
             margin-top: 5px;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+    }
+    .social-media {
+        &__title {
+            font-family: Bebas Neue;
+            font-size: 18px;
+            color: #004391;
+        }
+    }
+}
+
+.hidden-menu {
+    padding: 10px 0;
+    background-color: #FFFFFF;
+    &_visible {
+        position: fixed;
+        top: 0;
+        display: block;
+        z-index: 10;
+        height: auto;
+        width: 1280px;
+    }
+    &__logo {
+        padding-top: 10px;
+    }
+    &__menu {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 19px 60px 13px 18px;
+        font-family: Bebas Neue;
+        font-size: 18px;
+        letter-spacing: 4px;
+        color: #004391;
+        background-image: url(../img/hidden-menu__logo.svg);
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        border: 2px solid #004391;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: #004391;
+        color: #ffffff;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &+.menu-block_from-hidden {
+        position: fixed;
+        top: 80px;
+        z-index: 100;
+        width: 1280px;
+        height: auto;
+        background-color: #ffffff;
+        .wrapper {
+            justify-content: flex-start;
+            align-items: stretch;
+            padding-top: 60px;
+        }
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            margin-right: 150px;
+            &__text {
+                font-size: 10px;
+                color: #004391;
+            }
+            &__info {
+                margin-bottom: 30px;
+                font-family: Bebas Neue;
+                font-size: 24px;
+                color: #F36C21;
+            }
+            &__item{
+                &_fill{
+                    flex: 1;
+                }
+            }
+        }
+        .menu-block {
+            &__logo {
+                display: none;
+            }
+            &__menu-pic {
+                display: none;
+            }
+            &__menu {
+                margin: 0;
+            }
+        }
+        .main-menu {
+            &__items {
+                display: flex;
+                max-width: 650px;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-start; // padding-bottom: 7px;
+                list-style: none;
+            }
+            &__item {
+                position: static;
+                flex-basis: 150px;
+                margin-bottom: 30px;
+                a {
+                    font-family: Bebas Neue;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: #004391;
+                    &:hover {
+                        color: #DF5E16;
+                        border-bottom: 2px solid #DF5E16;
+                    }
+                }
+            }
+            &__subitems {
+                position: static;
+                display: block; // top: 36px;
+                // left: -17px;
+                // z-index: 2;
+                padding: 0; // background: #FFFFFF;
+                border: none; // box-sizing: border-box;
+                list-style: none;
+                a {
+                    font-family: 'Open Sans';
+                    font-size: 10px;
+                    color: #000000;
+                    text-transform: unset;
+                    white-space: nowrap;
+                    &:hover {
+                        color: #DF5E16; // text-decoration: underline;
+                    }
+                }
+            }
+            &__subitem {
+                margin-top: 5px;
+                &::first-letter {
+                    text-transform: uppercase;
+                }
+            }
         }
     }
 }
