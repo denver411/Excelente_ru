@@ -278,6 +278,9 @@
   .menu-block__logo {
     margin-left: 20px;
   }
+  .menu-block__contacts {
+    display: none;
+  }
   .menu-block__menu-pic {
     display: block;
     width: 24px;
