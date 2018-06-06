@@ -17,6 +17,16 @@ header.header
     .wrapper.header__wrapper
       .hidden-menu__logo
         img(src="img/logo_blue-orange.png", alt="")
+      .hidden-menu__popups.top-block__popups
+        .hidden-menu__item.top-block__item 
+          input(type = 'text' placeholder="Поиск...")
+          i.fa.fa-search(aria-hidden='true')
+        .hidden-menu__item.top-block__item Вход/ Регистрация
+          i.fa.fa-user(aria-hidden='true')
+        .hidden-menu__item.top-block__item 10
+          i.fa.fa-star(aria-hidden='true')
+        .hidden-menu__item.top-block__item 2500 р
+          i.fa.fa-shopping-cart(aria-hidden='true')
       .hidden-menu__menu Меню
         .hidden-menu__close
           i.fa.fa-times(aria-hidden='true')
@@ -37,10 +47,16 @@ header.header
         .contacts__item
           p.contacts__text skype 
           p.contacts__info excelentephone
-        .contacts__item_fill
-        .contacts__item_social-media.social-media
-          .social-media__title подписаться
-          .social-media__pic
+        .contacts__item_social-media подписаться
+        .contacts__social-links
+          a(href="#")
+            .contacts__social-link.contacts__social-link_instagram
+          a(href="#")
+            .contacts__social-link.contacts__social-link_fb
+          a(href="#")
+            .contacts__social-link.contacts__social-link_youtube
+          a(href="#")
+            .contacts__social-link.contacts__social-link_vk
 
       .menu-block__menu.main-menu
         ul.main-menu__items
