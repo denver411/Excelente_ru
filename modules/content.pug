@@ -1,12 +1,12 @@
-section.content-top
-	h1.section-name школы
+.title
+	h2.section-name школы
 	form
 		select.school-selection 
 			option(value='') Показать по 9
 			option(value='' autofocus) 9
 			option(value='') 18
 			option(value='') 36
-section.content
+section.content.content_schools
 	aside.sidebar
 		section.sidebar__part
 			h3|Программа
@@ -21,95 +21,101 @@ section.content
 				li
 					label
 						input.country__checkbox(type='checkbox' name='США')
+						span.checkbox-custom
 						span.label США
 				li
 					label
 						input.country__checkbox(type='checkbox' name='Канада')
+						span.checkbox-custom
 						span.label Канада
 				li
 					label
 						input.country__checkbox(type='checkbox' name='Австралия')
+						span.checkbox-custom
 						span.label Австралия
 				li
 					label
 						input.country__checkbox(type='checkbox' name='Новая Зеландия')
+						span.checkbox-custom
 						span.label Новая Зеландия
 				li
 					label
 						input.country__checkbox(type='checkbox' name='Сингапур')
+						span.checkbox-custom
 						span.label Сингапур
 				li
 					label
 						input.country__checkbox(type='checkbox' name='Япония')
+						span.checkbox-custom
 						span.label Япония
 				li
 					label
 						input.country__checkbox(type='checkbox' name='Корея' checked='')
+						span.checkbox-custom
 						span.label Корея
 				li
 					label
 						input.country__checkbox(type='checkbox' name='Филиппины')
+						span.checkbox-custom
 						span.label Филиппины
-			a.show-all(href="#") Показать все
+			a.show-all(href="#") показать все
 			section.sidebar__part.filters
 				button.button__action.apply(type='button' value='') 
 					a(href="#") Применить
 				a.reset-filter(href='#') Сбросить фильтр
-	section.schools-list__wrapper
-		.school-card
-			a(href="#")
-				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
-				h2 St. John's University
-				span.country США
-				button.button__action.more(type='button' value='')
-					a(href='#') подробнее
-				img(src="img/", alt="")
-		.school-card
-				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
-				h2 St. John's University
-				span.country США
+	main.schools-list__wrapper
+		article.school-card
+				img.school-card__image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2.school-card__name St. John's University
+				span.school-card__country США
 				button.button__action.more(type='button' value='')
 					a(href='#') подробнее
 		.school-card
-				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
-				h2 St. John's University
-				span.country США
+				img.school-card__image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2.school-card__name St. John's University
+				span.school-card__country США
 				button.button__action.more(type='button' value='')
 					a(href='#') подробнее
 		.school-card
-				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
-				h2 St. John's University
-				span.country США
+				img.school-card__image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2.school-card__name St. John's University
+				span.school-card__country США
 				button.button__action.more(type='button' value='')
 					a(href='#') подробнее
 		.school-card
-				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
-				h2 St. John's University
-				span.country США
+				img.school-card__image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2.school-card__name St. John's University
+				span.school-card__country США
 				button.button__action.more(type='button' value='')
 					a(href='#') подробнее
 		.school-card
-				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
-				h2 St. John's University
-				span.country США
+				img.school-card__image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2.school-card__name St. John's University
+				span.school-card__country США
 				button.button__action.more(type='button' value='')
 					a(href='#') подробнее
 		.school-card
-				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
-				h2 St. John's University
-				span.country США
+				img.school-card__image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2.school-card__name St. John's University
+				span.school-card__country США
 				button.button__action.more(type='button' value='')
 					a(href='#') подробнее
 		.school-card
-				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
-				h2 St. John's University
-				span.country США
+				img.school-card__image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2.school-card__name St. John's University
+				span.school-card__country США
 				button.button__action.more(type='button' value='')
 					a(href='#') подробнее
 		.school-card
-				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
-				h2 St. John's University
-				span.country США
+				img.school-card__image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2.school-card__name St. John's University
+				span.school-card__country США
+				button.button__action.more(type='button' value='')
+					a(href='#') подробнее
+		.school-card
+				img.school-card__image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2.school-card__name St. John's University
+				span.school-card__country США
 				button.button__action.more(type='button' value='')
 					a(href='#') подробнее
 nav.schools-catalogue__pagination
