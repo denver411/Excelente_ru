@@ -3,13 +3,18 @@
   font-family: 'Bebas Neue';
   src: url('../fonts/bebas/TTF\'s/BebasNeue Regular.ttf') format("truetype");
 }
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/bebas/TTF\'s/BebasNeue Bold.ttf') format("truetype");
+  font-weight: bold;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
+  font-family: 'Open Sans', sans-serif;
   scroll-behavior: smooth;
 }
 @media (min-width: 577px) {
@@ -17,13 +22,12 @@ body {
     max-width: 1280px;
     min-width: 1180px;
     margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    background-color: #004391;
   }
 }
 @media (max-width: 576px) {
   body {
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
     min-width: unset;
     padding: 0;
   }
@@ -41,4 +45,7 @@ body {
     margin: 0 auto;
     height: 100%;
   }
+}
+.container {
+  background-color: #ffffff;
 }
