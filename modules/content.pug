@@ -1,0 +1,126 @@
+section.content-top
+	h1.section-name школы
+	form
+		select.school-selection 
+			option(value='') Показать по 9
+			option(value='' autofocus) 9
+			option(value='') 18
+			option(value='') 36
+section.content
+	aside.sidebar
+		section.sidebar__part
+			h3|Программа
+				.sidebar-arrow.arrow-down
+		section.sidebar__part
+			h3|Специальности
+				.sidebar-arrow.arrow-up
+		section.sidebar__part
+			h3|Страны
+				.sidebar-arrow.arrow-up
+			ul.choose-country__checkboxes
+				li
+					label
+						input.country__checkbox(type='checkbox' name='США')
+						span.label США
+				li
+					label
+						input.country__checkbox(type='checkbox' name='Канада')
+						span.label Канада
+				li
+					label
+						input.country__checkbox(type='checkbox' name='Австралия')
+						span.label Австралия
+				li
+					label
+						input.country__checkbox(type='checkbox' name='Новая Зеландия')
+						span.label Новая Зеландия
+				li
+					label
+						input.country__checkbox(type='checkbox' name='Сингапур')
+						span.label Сингапур
+				li
+					label
+						input.country__checkbox(type='checkbox' name='Япония')
+						span.label Япония
+				li
+					label
+						input.country__checkbox(type='checkbox' name='Корея' checked='')
+						span.label Корея
+				li
+					label
+						input.country__checkbox(type='checkbox' name='Филиппины')
+						span.label Филиппины
+			a.show-all(href="#") Показать все
+			section.sidebar__part.filters
+				button.button__action.apply(type='button' value='') 
+					a(href="#") Применить
+				a.reset-filter(href='#') Сбросить фильтр
+	section.schools-list__wrapper
+		.school-card
+			a(href="#")
+				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2 St. John's University
+				span.country США
+				button.button__action.more(type='button' value='')
+					a(href='#') подробнее
+				img(src="img/", alt="")
+		.school-card
+				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2 St. John's University
+				span.country США
+				button.button__action.more(type='button' value='')
+					a(href='#') подробнее
+		.school-card
+				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2 St. John's University
+				span.country США
+				button.button__action.more(type='button' value='')
+					a(href='#') подробнее
+		.school-card
+				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2 St. John's University
+				span.country США
+				button.button__action.more(type='button' value='')
+					a(href='#') подробнее
+		.school-card
+				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2 St. John's University
+				span.country США
+				button.button__action.more(type='button' value='')
+					a(href='#') подробнее
+		.school-card
+				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2 St. John's University
+				span.country США
+				button.button__action.more(type='button' value='')
+					a(href='#') подробнее
+		.school-card
+				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2 St. John's University
+				span.country США
+				button.button__action.more(type='button' value='')
+					a(href='#') подробнее
+		.school-card
+				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2 St. John's University
+				span.country США
+				button.button__action.more(type='button' value='')
+					a(href='#') подробнее
+		.school-card
+				img.school-image(src="img/content-img/St_Johns_St_Augustine_Hall.png", alt="St. John's University")
+				h2 St. John's University
+				span.country США
+				button.button__action.more(type='button' value='')
+					a(href='#') подробнее
+nav.schools-catalogue__pagination
+	.pagi-nav-wrapper
+		//- .arrow-back
+		//- 	a(href='#')
+		a.active(href='#') 1
+		a(href='#') 2
+		a(href='#') 3
+		a(href='#') 4
+		a(href='') ...
+		a(href='#') 125
+		a.pagi-arrow.pagi-arrow-forward(href='#')
+			

@@ -1,3 +1,4 @@
+
 // фиксированное меню
 
 let hiddenMenu = document.querySelector('.hidden-menu');
@@ -35,3 +36,4 @@ hiddenMenuButton.onclick = function () {
   }
 
 }
+
