@@ -54,6 +54,7 @@
     position: absolute;
     top: 32px;
     left: 50px;
+    z-index: 2;
   }
   .site-path__items {
     display: flex;
@@ -136,9 +137,7 @@
     padding-left: 44px;
   }
   .slide__title {
-
     width: 60vw;
-
     font-size: 60px;
   }
   .slide__button {
