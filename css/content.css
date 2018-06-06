@@ -33,18 +33,28 @@ select.school-selection {
 	width: 150px;
 	height: 28px;
 	margin: 45px 4px;
+	padding-left: 10px;
 	background: #FFFFFF;
 	border: 1px solid #004391;
 	font-family: Open Sans;
 	font-weight: 600;
 	font-size: 14px;
 	color: #000000;
+	background: url(../img/content-img/content_select_arrow-down.png) no-repeat;
+  background-position: 125px center;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px; 
+  text-overflow: '';
+  -ms-appearance: none;
+  appearance: none;
 }
-/*option:not(:checked) { 
-  background-color: #DF5E16; 
-}*/
-option:not(checked) { 
-  background-color: #FFFFFF; 
+option { 
+	font-family: Open Sans;
+	font-weight: 600;
+	font-size: 14px;
+	color: #000000;
 }
 section.content.content_schools {
 	width: 1220px;
@@ -178,20 +188,20 @@ main.schools-list__wrapper {
 	padding-left: 38px;
 }
 .school-card {
+	position: relative;
 	width: 300px;
 	height: 500px;
 	margin-bottom: 40px;
 	background: #F7F7F7;
 	box-shadow: 8px 8px 10px rgba(0, 67, 145, 0.3);
 }
-.school-card:hover {
-	background: url(../img/content-img/St_Johns_St_Augustine_Hall(1).png) no-repeat;
-}
-img.school-image {
+.school-card__image {
+	position: relative;
 	width: 300px;
 	height: 240px;
+	background: url(../img/content-img/St_Johns_St_Augustine_Hall.png) no-repeat
 }
-.school-card h2 {
+h2.school-card__name  {
 	margin-top: 39px;
 	margin-bottom: 10px;
 	font-family: Bebas Neue;
@@ -199,7 +209,7 @@ img.school-image {
 	color: #004391;
 	text-align: center;
 }
-span.country {
+span.school-card__country {
 	font-family: Open Sans;
 	font-size: 16px;
 	margin-left: 50px;
