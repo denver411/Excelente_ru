@@ -119,9 +119,9 @@ body {
     box-sizing: border-box;
     list-style: none;
   }
-  .main-menu__subitems_visible {
+ /* .main-menu__subitems_visible {
     display: block;
-  }
+  }*/
   .main-menu__subitems a {
     font-family: 'Open Sans';
     font-size: 10px;
