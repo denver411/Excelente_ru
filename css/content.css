@@ -30,7 +30,7 @@ select.school-selection {
 	font-weight: 600;
 	font-size: 14px;
 	color: #000000;
-	/* background: url(../img/content-img/content_select_arrow-down.png) no-repeat; */
+	background: url(../img/content-img/content_select_arrow-down.png) no-repeat;
   background-position: 125px center;
 
   -webkit-appearance: none;

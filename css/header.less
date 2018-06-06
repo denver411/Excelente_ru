@@ -154,7 +154,7 @@
         position: fixed;
         top: 0;
         display: block;
-        z-index: 100;
+        z-index: 110;
         height: auto;
         width: 1280px;
     }
@@ -163,6 +163,7 @@
     }
     &__menu {
         position: relative;
+        z-index: 100;
         display: flex;
         align-items: center;
         padding: 19px 60px 13px 18px;
@@ -195,19 +196,20 @@
     }
     &+.menu-block_from-hidden {
         position: fixed;
-        top: 80px;
+        top: 0;
         z-index: 100;
         width: 1280px;
-        height: auto;
+        height: 100vh;
         background-color: #ffffff;
         .wrapper {
             justify-content: flex-start;
             align-items: stretch;
-            padding-top: 60px;
+            padding-top: 140px;
         }
         .contacts {
             display: flex;
             flex-direction: column;
+            max-height: 450px;
             margin-right: 130px;
             &__text {
                 font-size: 10px;
@@ -234,6 +236,7 @@
             }
             &__menu {
                 margin: 0;
+                max-height: 450px;
                 width: unset;
             }
         }
