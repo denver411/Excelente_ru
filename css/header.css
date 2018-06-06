@@ -29,6 +29,7 @@
   padding-top: 3px;
   font-family: 'Bebas Neue';
   font-size: 18px;
+  font-weight: bold;
   color: #DF5E16;
 }
 .top-block__item {
@@ -90,6 +91,7 @@
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
+    font-weight: bold;
     color: #FFFFFF;
   }
   .main-menu__item a:hover ~ ul {
@@ -207,6 +209,7 @@
 .hidden-menu + .menu-block_from-hidden .contacts__info {
   margin-bottom: 30px;
   font-family: Bebas Neue;
+  font-weight: bold;
   font-size: 24px;
   color: #F36C21;
 }
@@ -243,6 +246,7 @@
   text-transform: uppercase;
   text-decoration: none;
   font-size: 18px;
+  font-weight: bold;
   color: #004391;
 }
 .hidden-menu + .menu-block_from-hidden .main-menu__item a:hover {
@@ -258,7 +262,7 @@
 }
 .hidden-menu + .menu-block_from-hidden .main-menu__subitems a {
   font-family: 'Open Sans';
-  font-size: 10px;
+  font-size: 12px;
   color: #000000;
   text-transform: unset;
   white-space: nowrap;
