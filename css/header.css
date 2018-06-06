@@ -12,6 +12,7 @@
   color: #004391;
 }
 .top-block__city {
+  position: relative;
   display: flex;
   align-items: center;
   height: 100%;
