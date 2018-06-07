@@ -64,10 +64,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-size: 18px;
         i {
             margin: 0 0 8px 26px;
             font-size: 1.1em;
             color: #ffffff;
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
 }
@@ -187,8 +191,14 @@
         display: block;
         z-index: 110;
         height: auto;
-        width: 1280px;
+        
         animation: fade-in 1s ease;
+        @media (min-width:1281px) {
+            min-width: 1280px;   
+        }
+        @media (max-width:1280px) {
+            width: 1280px;
+        }
     }
     &__logo {
         padding-top: 16px;
