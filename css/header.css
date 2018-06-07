@@ -121,6 +121,7 @@
     color: #000000;
     text-transform: unset;
     white-space: nowrap;
+    font-weight: normal;
   }
   .main-menu__subitems a:hover {
     color: #DF5E16;
@@ -332,6 +333,7 @@
   color: #000000;
   text-transform: unset;
   white-space: nowrap;
+  font-weight: normal;
 }
 .hidden-menu + .menu-block_from-hidden .main-menu__subitems a:hover {
   color: #DF5E16;
