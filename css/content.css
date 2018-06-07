@@ -227,7 +227,7 @@ main.schools-list__wrapper {
 }
 .school-card span.school-card__country {
 	position: relative;
-	top: 0;
+	top: 20px;
 	left: 6px;
 	font-family: Open Sans;
 	font-size: 16px;
