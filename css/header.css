@@ -116,13 +116,6 @@
   .hidden-menu__popups i {
     font-size: 9px;
   }
-<<<<<<< HEAD
-  .main-menu__item a:hover {
-    color: #DF5E16;
-  }
-  .main-menu__item a:hover ~ ul {
-    display: block;
-=======
 }
 @media (min-width: 577px) {
   .hidden-menu__popups input {
@@ -133,7 +126,6 @@
     border: none;
     border-bottom: solid 1px #004391;
     outline: none;
->>>>>>> mobile-menu
   }
 }
 .hidden-menu__popups input::placeholder {

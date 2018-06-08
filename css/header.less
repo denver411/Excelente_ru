@@ -13,39 +13,13 @@
   height: 1px;
   font-size: 10px;
   color: #004391;
-<<<<<<< HEAD
-=======
   @media (max-width: 576px) {
     display: none;
   }
->>>>>>> mobile-menu
   &__city {
     position: relative;
     display: flex;
     align-items: center;
-<<<<<<< HEAD
-    height: 100%;
-    min-width: 59.2%;
-    i {
-      margin-right: 10px;
-      font-size: 1.5em;
-    }
-  }
-  &__popups {
-    display: flex;
-    min-width: 25.2%; // padding-right: 10px;
-  }
-  &__phone {
-    padding-top: 3px;
-    font-family: 'Bebas Neue';
-    font-size: 18px;
-    font-weight: bold;
-    color: #DF5E16;
-  }
-  &__item {
-    margin-left: 1px;
-    text-align: right;
-=======
     height: 100%; // min-width: 59.2%;
     i {
       margin-right: 10px;
@@ -91,21 +65,10 @@
       margin-left: 5px;
       font-size: 1.5em;
     }
->>>>>>> mobile-menu
     &:hover {
       color: #DF5E16;
       cursor: pointer;
     }
-<<<<<<< HEAD
-    i {
-      margin-left: 5px;
-      font-size: 1.5em;
-    }
-    &_favorite {
-      flex: 1;
-      padding-right: 17px;
-    }
-=======
     &_favorite {
       flex: 1;
       padding-right: 7px;
@@ -251,7 +214,6 @@
     @media (max-width:1280px) {
       width: 1280px;
     }
->>>>>>> mobile-menu
   }
 }
 
@@ -262,8 +224,6 @@
   min-height: 50px;
   height: 1px;
   background-color: #004391;
-<<<<<<< HEAD
-=======
   @media (max-width: 576px) {
     position: fixed;
     top: 0;
@@ -271,7 +231,6 @@
     width: 100%;
     z-index: 10;
   }
->>>>>>> mobile-menu
   &__logo {
     display: flex;
     justify-content: space-between;
@@ -285,177 +244,6 @@
         cursor: pointer;
       }
     }
-<<<<<<< HEAD
-  }
-}
-
-@media (min-width: 577px) {
-  .menu-block {
-    &__menu-pic {
-      display: none;
-    }
-    &__contacts {
-      display: none;
-    }
-    &__menu {
-      width: 682px;
-      margin-right: 3px;
-    }
-  }
-  .main-menu {
-    &__items {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 7px;
-      list-style: none;
-    }
-    &__item {
-      position: relative;
-      a {
-        font-family: Bebas Neue;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: bold;
-        color: #FFFFFF;
-        &:hover {
-          color: #DF5E16;
-          &~ul {
-            display: block;
-          }
-        }
-      }
-    }
-    &__subitems {
-      position: absolute;
-      display: none;
-      top: 36px;
-      left: -17px;
-      z-index: 5;
-      padding: 12px 70px 30px 17px;
-      background: #FFFFFF;
-      border: 1px solid #004391;
-      box-sizing: border-box;
-      list-style: none;
-      &_visible {
-        display: block;
-      }
-      a {
-        font-family: 'Open Sans';
-        font-size: 12px;
-        font-weight: normal;
-        color: #000000;
-        text-transform: unset;
-        white-space: nowrap;
-        &:hover {
-          color: #DF5E16;
-          text-decoration: underline;
-        }
-      }
-    }
-    &__subitem {
-      margin-top: 5px;
-      &::first-letter {
-        text-transform: uppercase;
-      }
-    }
-  }
-}
-
-.hidden-menu {
-  display: none;
-  padding: 10px 0;
-  background-color: #FFFFFF;
-  &__popups {
-    display: none;
-    justify-content: flex-end;
-    flex: 1;
-    font-size: 10px;
-    color: #004391;
-    i {
-      font-size: 9px;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-    input {
-      width: 285px;
-      height: 15px;
-      font-size: 10px;
-      color: #004391;
-      border: none;
-      border-bottom: solid 1px #004391;
-      outline: none;
-      &::placeholder {
-        // font-weight: 300;
-        font-size: 10px;
-        color: #004391;
-        margin-left: 222px;
-      }
-    }
-  }
-  &__item {
-    margin-left: 20px;
-    &:first-child {
-      margin-right: 80px;
-    }
-  }
-  &_visible {
-    position: fixed;
-    top: 0;
-    display: block;
-    z-index: 110;
-    height: auto;
-    animation: fade-in 1s ease;
-    @media (min-width: 1281px) {
-      min-width: 1280px;
-    }
-    @media (max-width:1280px) {
-      width: 1280px;
-    }
-  }
-  &__logo {
-    padding-top: 16px;
-    img {
-      height: 49px;
-    }
-  }
-  &__menu {
-    position: relative;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    padding: 15px 60px 13px 18px;
-    font-family: Bebas Neue;
-    font-size: 18px;
-    letter-spacing: 4px;
-    color: #004391;
-    background-image: url(../img/hidden-menu__logo.svg);
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    border: 2px solid #004391;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-  &__close {
-    position: absolute;
-    top: -8px;
-    right: 0;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background-color: #004391;
-    color: #ffffff;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-  &+.menu-block_from-hidden {
-=======
     @media (max-width: 576px) {
       margin-left: 20px;
     }
@@ -496,7 +284,6 @@
     }
   } //Стили выпадающего меню
   &_from-hidden {
->>>>>>> mobile-menu
     position: fixed;
     top: 0;
     z-index: 100;
@@ -539,7 +326,6 @@
         background-image: url(../img/social-links__sprite_blue.png);
         &:hover {
           transform: scale(1.2);
-<<<<<<< HEAD
         }
         &_fb {
           background-position: -50px 0;
@@ -547,15 +333,6 @@
         &_youtube {
           background-position: -100px 0;
         }
-=======
-        }
-        &_fb {
-          background-position: -50px 0;
-        }
-        &_youtube {
-          background-position: -100px 0;
-        }
->>>>>>> mobile-menu
         &_vk {
           background-position: -150px 0;
         }
@@ -568,23 +345,6 @@
           color: #004391;
         }
       }
-<<<<<<< HEAD
-    }
-    .menu-block {
-      &__logo {
-        display: none;
-      }
-      &__menu-pic {
-        display: none;
-      }
-      &__menu {
-        margin: 0;
-        max-height: 450px;
-        width: unset;
-      }
-    }
-    .main-menu {
-=======
     }
     .main-menu {
       width: unset;
@@ -596,7 +356,6 @@
         height: 100vh;
         background-color: #ffffff;
       }
->>>>>>> mobile-menu
       &__items {
         display: flex;
         max-width: 800px;
@@ -607,14 +366,8 @@
       }
       &__item {
         position: static;
-<<<<<<< HEAD
-        flex-basis: 160px;
-        margin-bottom: 30px;
-        margin-right: 30px;
-=======
         flex-basis: 25%;
         margin-bottom: 30px; // margin-right: 30px;
->>>>>>> mobile-menu
         a {
           font-family: Bebas Neue;
           text-transform: uppercase;
@@ -624,36 +377,6 @@
           color: #004391;
           &:hover {
             color: #DF5E16;
-<<<<<<< HEAD
-            border-bottom: 2px solid #DF5E16;
-          }
-        }
-      }
-      &__subitems {
-        position: static;
-        display: block;
-        padding: 0;
-        border: none;
-        list-style: none;
-        a {
-          font-family: 'Open Sans';
-          font-size: 12px;
-          font-weight: normal;
-          color: #000000;
-          text-transform: unset;
-          white-space: nowrap;
-          &:hover {
-            color: #DF5E16; // text-decoration: underline;
-          }
-        }
-      }
-      &__subitem {
-        margin-top: 5px;
-        &::first-letter {
-          text-transform: uppercase;
-        }
-      }
-=======
           }
         }
       }
@@ -702,47 +425,10 @@
           }
         }
       }
->>>>>>> mobile-menu
     }
   }
 }
 
-<<<<<<< HEAD
-@media (max-width: 576px) {
-  .top-block,
-  .main-menu,
-  .main-menu__items {
-    display: none;
-  }
-  .menu-block {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    &__logo {
-      margin-left: 20px;
-    }
-    &__menu-pic {
-      display: block;
-      width: 24px;
-      height: 100%;
-      margin-right: 20px;
-      background-repeat: no-repeat;
-      background-position: 0 center;
-      background-size: contain;
-      background-image: url(../img/menu-block__menu-pic.png);
-      &:hover {
-        cursor: pointer;
-      }
-    }
-    &__contacts {
-      display: none;
-    }
-  }
-  .hidden-menu {
-    top: -100%;
-=======
 .main-menu {
   @media (max-width: 576px) {
     display: none;
@@ -817,7 +503,6 @@
     &::first-letter {
       text-transform: uppercase;
     }
->>>>>>> mobile-menu
   }
 }
 
