@@ -29,33 +29,58 @@ h2.section-name {
 	color: #DF5E16;
 	margin: 35px 25px 44px;
 }
-select.school-selection {
-	width: 150px;
-	height: 28px;
+.selectbox {
+	vertical-align: middle;
+	cursor: pointer;	
 	margin: 45px 0;
-	padding-left: 10px;
-	background: #FFFFFF;
-	border: 1px solid #004391;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-	font-size: 14px;
-	color: #000000;
 	background: url(../img/content-img/content_select_arrow-down.png) no-repeat;
-	background-position: 125px center;
-	outline: none;
-
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	text-indent: 0.01px; 
-	text-overflow: '';
-	-ms-appearance: none;
-	appearance: none;
+	background-position: 130px center;
 }
-option { 
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
+.selectbox .select {
+	width: 140px;
+	height: 29px;	
+	line-height: 27px;
+ padding-left: 10px;
 	font-size: 14px;
+ font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
 	color: #000000;
+ border: 1px solid #004391;
+}
+.selectbox .dropdown {
+	top: 27px;
+	width: 150px;
+	margin: 0;
+	padding: 4px 0;
+	background: #FFFFFF;
+ border: 1px solid #004391;
+ border-top: none;
+	font-size: 14px;
+ font-weight: 600;
+ font-family: 'Open Sans', sans-serif;
+	color: #000000;
+}
+.selectbox ul {
+ margin: 0;
+ padding: 0;
+}
+.selectbox li {
+	padding: 4px 0 4px 10px;
+	color: #000000;
+ list-style: none;
+}
+.selectbox li:hover {
+	background: #DF5E16;
+	color: #FFFFFF;
+}
+.selectbox li:first-child {
+	display: none;
+}
+.selectbox li.disabled {
+	color: #AAAAAA;
+}
+.selectbox li.disabled:hover {
+	background: none;
 }
 section.content.content__schools {
 	width: 1220px;
