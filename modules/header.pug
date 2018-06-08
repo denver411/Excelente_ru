@@ -4,6 +4,20 @@ header.header
       .top-block__city
         i.fa.fa-map-marker(aria-hidden='true')
         | Владивосток
+        .popup-city
+          .popup-city__title
+            span Ваш город
+            i.fa.fa-times(aria-hidden='true')
+          .popup-city__search
+            input(type = 'text' placeholder = 'Владивосток').popup-city__input
+            ul.popup-city__cities-list
+              li Владивосток
+              li Владикавказ
+              li Вологоград
+              li Волжское
+              li Волжское
+              li Волжское
+              li Волжское
       .top-block__phone 8 800 737-77-05
       .top-block__popups
         .top-block__item.top-block__item_login Вход/ Регистрация
@@ -12,19 +26,31 @@ header.header
           i.fa.fa-star(aria-hidden='true')
         .top-block__item.top-block__item_cart 2500 р
           i.fa.fa-shopping-cart(aria-hidden='true')
-  
+
   .header__hidden-menu.hidden-menu
     .wrapper.header__wrapper
       .hidden-menu__logo
-        img(src="img/logo_blue-orange.png", alt="")
+        a(href="index.html")
+           img(src="img/logo_blue-orange.png", alt="")
+      .hidden-menu__popups.top-block__popups
+        .hidden-menu__item.top-block__item 
+          input(type = 'text' placeholder="Поиск...")
+          i.fa.fa-search(aria-hidden='true')
+        .hidden-menu__item.top-block__item Вход/ Регистрация
+          i.fa.fa-user(aria-hidden='true')
+        .hidden-menu__item.top-block__item 10
+          i.fa.fa-star(aria-hidden='true')
+        .hidden-menu__item.top-block__item 2500 р
+          i.fa.fa-shopping-cart(aria-hidden='true')
       .hidden-menu__menu Меню
         .hidden-menu__close
           i.fa.fa-times(aria-hidden='true')
-  
+
   .header__menu.menu-block
     .wrapper.header__wrapper
-      .menu-block__logo
-        img(src="img/logo_white.png", alt="")
+      h1.menu-block__logo
+        a(href="index.html")
+          img(src="img/logo_white.png", alt="")
         i.fa.fa-search(aria-hidden='true')
       .menu-block__menu-pic
       .menu-block__contacts.contacts
@@ -37,10 +63,16 @@ header.header
         .contacts__item
           p.contacts__text skype 
           p.contacts__info excelentephone
-        .contacts__item_fill
-        .contacts__item_social-media.social-media
-          .social-media__title подписаться
-          .social-media__pic
+        .contacts__item_social-media подписаться
+        .contacts__social-links
+          a(href="#")
+            .contacts__social-link.contacts__social-link_instagram
+          a(href="#")
+            .contacts__social-link.contacts__social-link_fb
+          a(href="#")
+            .contacts__social-link.contacts__social-link_youtube
+          a(href="#")
+            .contacts__social-link.contacts__social-link_vk
 
       .menu-block__menu.main-menu
         ul.main-menu__items

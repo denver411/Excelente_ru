@@ -1,23 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic');
-@font-face {
-	font-family: 'Bebas Neue', sans-serif;
-	src: url('../fonts/bebas/TTF\'s/BebasNeue Regular.ttf') format("truetype");
-}
-html {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-body {
-	min-width: 1170px;
-	margin: 0 auto;
-	font-family: 'Open Sans', sans-serif;
-}
+
 a {
 	text-decoration: none;
 }
 .title {
-	width: 1220px;
+	max-width: 1180px;
 	display: flex;
 	justify-content: space-between;
 	margin-left: auto;
@@ -27,7 +13,7 @@ h2.section-name {
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 48px;
 	color: #DF5E16;
-	margin: 35px 25px 44px;
+	margin: 35px 25px 44px 0;;
 }
 .selectbox {
 	vertical-align: middle;
@@ -69,6 +55,7 @@ h2.section-name {
 	color: #000000;
  list-style: none;
 }
+
 .selectbox li:hover {
 	background: #DF5E16;
 	color: #FFFFFF;
@@ -82,8 +69,9 @@ h2.section-name {
 .selectbox li.disabled:hover {
 	background: none;
 }
-section.content.content__schools {
-	width: 1220px;
+section.content.content_schools {
+	max-width: 1180px;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -251,6 +239,7 @@ main.schools-list__wrapper {
 	width: 300px;
 	height: 500px;
 	background: url(../img/content-img/St_Johns_St_Augustine_Hall-big.png) no-repeat;
+cursor: pointer;
 }
 .school-1 .school-card__image:hover::after {
 	content: "";
@@ -282,7 +271,7 @@ main.schools-list__wrapper {
 }
 .school-card span.school-card__country {
 	position: relative;
-	top: 0;
+	top: 20px;
 	left: 6px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
