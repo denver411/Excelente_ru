@@ -69,9 +69,8 @@ h2.section-name {
 .selectbox li.disabled:hover {
 	background: none;
 }
-section.content.content_schools {
+.content__schools {
 	max-width: 1180px;
-
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
