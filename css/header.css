@@ -471,6 +471,9 @@
   font-weight: bold;
   color: #FFFFFF;
 }
+.main-menu__item a:hover {
+  color: #F36C21;
+}
 .main-menu__item a:hover ~ ul {
   display: block;
 }
