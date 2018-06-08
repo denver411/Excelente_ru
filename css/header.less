@@ -24,8 +24,8 @@
     i {
       margin-right: 10px;
       font-size: 1.5em;
-      @media (max-width: 576px){
-          color: #F36C21;
+      @media (max-width: 576px) {
+        color: #F36C21;
       }
     }
     @media (max-width: 576px) {
@@ -187,6 +187,16 @@
       height: 50px;
       background-color: #004391;
       color: #ffffff;
+    }
+  }
+  &__close-pic {
+    @media (min-width: 577px) {
+      justify-content: center;
+      align-items: center;
+      width: 23px;
+      height: 23px;
+      background-image: url(../img/hidden-menu__close.png);
+      background-size: cover;
     }
   }
   &_visible {

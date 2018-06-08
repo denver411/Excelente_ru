@@ -198,6 +198,16 @@
   }
 }
 @media (min-width: 577px) {
+  .hidden-menu__close-pic {
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    height: 23px;
+    background-image: url(../img/hidden-menu__close.png);
+    background-size: cover;
+  }
+}
+@media (min-width: 577px) {
   .hidden-menu_visible {
     position: fixed;
     top: 0;
