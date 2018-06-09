@@ -1,6 +1,8 @@
 .slider {
   position: relative;
   height: 540px;
+  margin: 0 auto;
+  max-width: 1280px;
 }
 .slider__items {
   height: 100%;

@@ -219,12 +219,7 @@
 }
 @media (min-width: 1281px) {
   .hidden-menu_visible {
-    min-width: 1280px;
-  }
-}
-@media (max-width: 1280px) {
-  .hidden-menu_visible {
-    width: 1280px;
+    width: 100%;
   }
 }
 .menu-block {
