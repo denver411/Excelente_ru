@@ -10,6 +10,7 @@
   height: 1px;
   font-size: 10px;
   color: #004391;
+  background-color: #ffffff;
 }
 @media (max-width: 576px) {
   .top-block {
