@@ -116,6 +116,8 @@ section.sidebar__part {
 }
 
 section.sidebar__part h3 {
+	display: block;
+	cursor: pointer;
 	width: 190px;
 	margin: 0;
 	padding: 26px 39px;
@@ -135,24 +137,14 @@ section.sidebar__part .sidebar-arrow {
 	background-position: -12px 0;
 	background: url(../img/content-img/content_arrows_sidebar.png) no-repeat;
 	transition: 0.5s;
+
 }
 
-section.sidebar__part .sidebar-arrow:active {
-	transform: rotate(180deg);
-	transition: 0.5s;
-}
-
-section.sidebar__part .arrow-down {
-	background-position: 0 0;
-}
-
-section.sidebar__part .arrow-up {
-	background-position: -12px 0;
-}
 
 ul.choose-program__checkboxes,
 ul.choose-specialty__checkboxes,
 ul.choose-country__checkboxes {
+	display: none;
 	position: relative;
 	top: -28px;
 	left: 23px;
