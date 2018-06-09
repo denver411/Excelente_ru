@@ -3,7 +3,7 @@ header.header
     .wrapper.header__wrapper
       .top-block__city
         i.fa.fa-map-marker(aria-hidden='true')
-        | Владивосток
+        span Владивосток
         .popup-city
           .popup-city__title
             span Ваш город
@@ -34,14 +34,14 @@ header.header
         a(href="index.html")
            img(src="img/logo_blue-orange.png", alt="")
       .hidden-menu__popups.top-block__popups
-        .hidden-menu__item.top-block__item 
+        .hidden-menu__item.hidden-menu__item_input.top-block__item 
           input(type = 'text' placeholder="Поиск...")
           i.fa.fa-search(aria-hidden='true')
-        .hidden-menu__item.top-block__item Вход/ Регистрация
+        .hidden-menu__item.hidden-menu__item_login.top-block__item Вход/ Регистрация
           i.fa.fa-user(aria-hidden='true')
-        .hidden-menu__item.top-block__item 10
+        .hidden-menu__item.hidden-menu__item_favorite.top-block__item 10
           i.fa.fa-star(aria-hidden='true')
-        .hidden-menu__item.top-block__item 2500 р
+        .hidden-menu__item.hidden-menu__item_cart.top-block__item 2500 р
           i.fa.fa-shopping-cart(aria-hidden='true')
       .hidden-menu__menu Меню
         .hidden-menu__close

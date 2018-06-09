@@ -3,16 +3,6 @@
 	font-family: 'Bebas Neue';
 	src: url('../fonts/bebas/TTF\'s/BebasNeue Regular.ttf') format("truetype");
 }
-html {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-body {
-	min-width: 1170px;
-	margin: 0 auto;
-	font-family: 'Open Sans', sans-serif;
-}
 a {
 	text-decoration: none;
 }
