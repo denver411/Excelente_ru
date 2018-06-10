@@ -4,25 +4,13 @@ header.header
       .top-block__city
         i.fa.fa-map-marker(aria-hidden='true')
         span Владивосток
-        .popup-city
-          .popup-city__title
-            span Ваш город
-            i.fa.fa-times(aria-hidden='true')
-          .popup-city__search
-            input(type = 'text' placeholder = 'Владивосток').popup-city__input
-            ul.popup-city__cities-list
-              li Владивосток
-              li Владикавказ
-              li Вологоград
-              li Волжское
-              li Волжское
-              li Волжское
-              li Волжское
+        include popup-city
       .top-block__fill
       .top-block__phone 8 800 737-77-05
       .top-block__popups
         .top-block__item.top-block__item_login Вход/ Регистрация
           i.fa.fa-user(aria-hidden='true')
+          include popup-favorite
         .top-block__item.top-block__item_favorite 10
           i.fa.fa-star(aria-hidden='true')
         .top-block__item.top-block__item_cart 2500 р
