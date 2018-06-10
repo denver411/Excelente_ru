@@ -19,6 +19,12 @@
   height: 1px;
   font-size: 10px;
   color: #004391;
+  background-color: #ffffff;
+}
+@media (max-width: 576px) {
+  .top-block {
+    display: none;
+  }
 }
 @media (max-width: 576px) {
   .top-block {
@@ -228,6 +234,7 @@
     margin-top: 57px;
     margin-right: 0;
     flex-basis: 100%;
+
   }
 }
 .hidden-menu__item_favorite i {
@@ -389,7 +396,7 @@
   position: fixed;
   top: 0;
   z-index: 100;
-  width: 1280px;
+  width: 100%;
   height: 100vh;
   background-color: #ffffff;
 }
@@ -398,6 +405,7 @@
   align-items: stretch;
   padding-top: 140px;
 }
+
 @media (max-width: 576px) {
   .menu-block_from-hidden .wrapper {
     align-items: flex-start;
