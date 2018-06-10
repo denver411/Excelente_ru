@@ -96,6 +96,7 @@
   }
   @media (max-width: 576px) {
     display: none;
+    min-height: 1055px;
   }
   &__logo {
     img {
@@ -291,16 +292,15 @@
       top: 0;
       display: block;
       z-index: 110;
-      // width: 100%;
+      width: 100%;
       height: auto;
       animation: fade-in 1s ease;
-    }
-    @media (min-width: 1281px) {
-      min-width: 1280px;
-    }
-    @media (max-width:1280px) {
-      width: 1280px;
-    }
+    } // @media (min-width: 1281px) {
+    //   min-width: 1280px;
+    // }
+    // @media (max-width:1280px) {
+    //   width: 1280px;
+    // }
   }
 }
 
@@ -363,8 +363,8 @@
     @media (max-width: 576px) {
       display: none;
       position: absolute;
-      left: 35px;
-      top: 400px;
+      left: 30px;
+      top: 676px;
     }
   }
   &__menu {
@@ -398,6 +398,10 @@
       &__text {
         font-size: 10px;
         color: #004391;
+        @media (max-width: 576px) {
+          font-weight: bold;
+          font-size: 14px;
+        }
       }
       &__info {
         margin-bottom: 30px;
@@ -405,6 +409,11 @@
         font-weight: bold;
         font-size: 24px;
         color: #F36C21;
+        @media (max-width: 576px) {
+          margin-top: 10px;
+          margin-bottom: 17px;
+          font-size: 34px;
+        }
       }
       &__social-links {
         display: flex;
@@ -422,6 +431,10 @@
         &:hover {
           transform: scale(1.2);
         }
+        @media (max-width: 576px) {
+          width: 40px;
+          height: 40px;
+        }
         &_fb {
           background-position: -50px 0;
         }
@@ -438,6 +451,13 @@
           font-family: Bebas Neue;
           font-size: 18px;
           color: #004391;
+          @media (max-width: 576px) {
+            margin-top: 63px;
+            font-family: Open Sans;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: capitalize;
+          }
         }
       }
     }
