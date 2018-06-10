@@ -2,7 +2,11 @@
   position: relative;
   height: 540px;
   margin: 0 auto;
-  max-width: 1280px;
+}
+@media (min-width: 577px) {
+  .slider {
+    max-width: 1280px;
+  }
 }
 @media (max-width: 576px) {
   .slider {
@@ -101,6 +105,9 @@
   color: #FFFFFF;
   background: #DF5E16;
 }
+.slide__button:hover {
+  background-color: #F58A4E;
+}
 @media (min-width: 577px) {
   .slide__button {
     margin-top: 95px;
@@ -115,7 +122,7 @@
   position: absolute;
   top: 32px;
   left: 50px;
-  z-index: 2;
+  z-index: 3;
 }
 @media (max-width: 576px) {
   .site-path {
@@ -135,6 +142,9 @@
   color: #FFFFFF;
   text-decoration: none;
   text-transform: lowercase;
+}
+.site-path__item a:hover {
+  text-decoration: underline;
 }
 .site-path__item:not(:first-child)::before {
   margin: 0 14px;
