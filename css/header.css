@@ -215,12 +215,8 @@
     display: block;
     z-index: 110;
     height: auto;
-    animation: fade-in 1s ease;
-  }
-}
-@media (min-width: 1281px) {
-  .hidden-menu_visible {
     width: 100%;
+    animation: fade-in 1s ease;
   }
 }
 .menu-block {
