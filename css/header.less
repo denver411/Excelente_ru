@@ -420,29 +420,37 @@
         margin-top: 8px;
         &>a:not(:first-child) {
           margin-left: 23px;
+          @media (max-width: 576px) {
+            margin-left: 27px;
+          }
+        }
+        @media (max-width: 576px) {
+          margin-top: 20px;
         }
       }
       &__social-link {
-        width: 26px;
+        width: 25px;
         height: 25px;
         background-repeat: no-repeat;
         background-position: 0 0;
-        background-image: url(../img/social-links__sprite_blue.png);
-        &:hover {
-          transform: scale(1.2);
-        }
+        background-size: contain; // &:hover {
+        //   transform: scale(1.2);
+        // }
         @media (max-width: 576px) {
           width: 40px;
           height: 40px;
         }
         &_fb {
-          background-position: -50px 0;
+          background-image: url(../img/svg-content/fb_blue.svg);
         }
         &_youtube {
-          background-position: -100px 0;
+          background-image: url(../img/svg-content/youtube_blue.svg);
         }
         &_vk {
-          background-position: -150px 0;
+          background-image: url(../img/svg-content/vk_blue.svg);
+        }
+        &_instagram {
+          background-image: url(../img/svg-content/instagram_blue.svg);
         }
       }
       &__item {
