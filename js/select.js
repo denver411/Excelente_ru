@@ -1,7 +1,7 @@
 /* jQuery SelectBox Styler v1.0.1 | (c) Dimox | http://dimox.name/styling-select-boxes-using-jquery-css/ */
-(function($) {
-    $.fn.selectbox = function() {
-        $(this).each(function() {
+(function ($) {
+    $.fn.selectbox = function () {
+        $(this).each(function () {
             var select = $(this);
             if (select.prev('span.selectbox').length < 1) {
                 function doSelect() {
@@ -36,7 +36,7 @@
                     var liHeight = li.outerHeight();
                     var position = dropdown.css('top');
                     dropdown.hide();
-                    divSelect.click(function() {
+                    divSelect.click(function () {
                         var topOffset = selectbox.offset().top;
                         var bottomOffset = $(window).height() - selectHeight - (topOffset - $(window).scrollTop());
                         if (bottomOffset < 0 || bottomOffset < liHeight * 6) {
@@ -70,11 +70,11 @@
                         }
                         return false;
                     });
-                    li.hover(function() {
+                    li.hover(function () {
                         $(this).siblings().removeClass('selected');
                     });
                     var selectedText = li.filter('.selected').text();
-                    li.filter(':not(.disabled)').click(function() {
+                    li.filter(':not(.disabled)').click(function () {
                         var liText = $(this).text();
                         if (selectedText != liText) {
                             $(this).addClass('selected sel').siblings().removeClass('selected sel');
@@ -85,17 +85,17 @@
                         }
                         dropdown.hide();
                     });
-                    dropdown.mouseout(function() {
+                    dropdown.mouseout(function () {
                         dropdown.find('li.sel').addClass('selected');
                     });
-                    select.focus(function() {
+                    select.focus(function () {
                         $('span.selectbox').removeClass('focused');
                         selectbox.addClass('focused');
-                    }).keyup(function() {
+                    }).keyup(function () {
                         divText.text(option.filter(':selected').text());
                         li.removeClass('selected sel').eq(option.filter(':selected').index()).addClass('selected sel');
                     });
-                    $(document).on('click', function(e) {
+                    $(document).on('click', function (e) {
                         if (!$(e.target).parents().hasClass('selectbox')) {
                             dropdown.hide().find('li.sel').addClass('selected');
                             selectbox.removeClass('focused');
@@ -103,7 +103,7 @@
                     });
                 }
                 doSelect();
-                select.on('refresh', function() {
+                select.on('refresh', function () {
                     select.prev().remove();
                     doSelect();
                 })
@@ -112,6 +112,6 @@
     }
 })(jQuery)
 
-jQuery(function() {
+jQuery(function () {
     jQuery('select').selectbox();
 });

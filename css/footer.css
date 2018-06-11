@@ -188,7 +188,8 @@ span.comp-name {
 	margin: 0;
 }
 .footer__made-by {
-	padding: 18px;
+	margin-right: -50px;
+	padding:  13px 61px 25px 27px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	color: #FFFFFF;

@@ -25,6 +25,7 @@ h2.section-name {
 }
 
 .selectbox {
+	z-index: 1;
 	vertical-align: middle;
 	cursor: pointer;
 	margin: 45px 0;

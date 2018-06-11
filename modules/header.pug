@@ -3,26 +3,14 @@ header.header
     .wrapper.header__wrapper
       .top-block__city
         i.fa.fa-map-marker(aria-hidden='true')
-        | Владивосток
-        .popup-city
-          .popup-city__title
-            span Ваш город
-            i.fa.fa-times(aria-hidden='true')
-          .popup-city__search
-            input(type = 'text' placeholder = 'Владивосток').popup-city__input
-            ul.popup-city__cities-list
-              li Владивосток
-              li Владикавказ
-              li Вологоград
-              li Волжское
-              li Волжское
-              li Волжское
-              li Волжское
+        span Владивосток
+        include popup-city
       .top-block__fill
       .top-block__phone 8 800 737-77-05
       .top-block__popups
         .top-block__item.top-block__item_login Вход/ Регистрация
           i.fa.fa-user(aria-hidden='true')
+          include popup-favorite
         .top-block__item.top-block__item_favorite 10
           i.fa.fa-star(aria-hidden='true')
         .top-block__item.top-block__item_cart 2500 р
@@ -32,16 +20,16 @@ header.header
     .wrapper.header__wrapper
       .hidden-menu__logo
         a(href="index.html")
-           img(src="img/logo_blue-orange.png", alt="")
+           img(src="img/logo_blue-orange.svg", alt="logo")
       .hidden-menu__popups.top-block__popups
-        .hidden-menu__item.top-block__item 
+        .hidden-menu__item.hidden-menu__item_input.top-block__item 
           input(type = 'text' placeholder="Поиск...")
           i.fa.fa-search(aria-hidden='true')
-        .hidden-menu__item.top-block__item Вход/ Регистрация
+        .hidden-menu__item.hidden-menu__item_login.top-block__item Вход/ Регистрация
           i.fa.fa-user(aria-hidden='true')
-        .hidden-menu__item.top-block__item 10
+        .hidden-menu__item.hidden-menu__item_favorite.top-block__item 10
           i.fa.fa-star(aria-hidden='true')
-        .hidden-menu__item.top-block__item 2500 р
+        .hidden-menu__item.hidden-menu__item_cart.top-block__item 2500 р
           i.fa.fa-shopping-cart(aria-hidden='true')
       .hidden-menu__menu Меню
         .hidden-menu__close
@@ -51,7 +39,7 @@ header.header
     .wrapper.header__wrapper
       h1.menu-block__logo
         a(href="index.html")
-          img(src="img/logo_white.png", alt="")
+          img(src="img/logo_white.svg", alt="logo")
         i.fa.fa-search(aria-hidden='true')
       .menu-block__menu-pic
         .menu-block__menu-pic_close
@@ -79,7 +67,7 @@ header.header
 
       .menu-block__menu.main-menu
         ul.main-menu__items
-          li.main-menu__item
+          li.main-menu__item.main-menu__item_about
             a(href="#") О компании
             ul.main-menu__subitems
               li.main-menu__subitem
@@ -94,7 +82,7 @@ header.header
                 a(href="#") Политика конфиденциальности
               li.main-menu__subitem
                 a(href="#") Наши партнеры
-          li.main-menu__item
+          li.main-menu__item.main-menu__item_programs
             a(href="#") Программы
             ul.main-menu__subitems
               li.main-menu__subitem
@@ -111,7 +99,7 @@ header.header
                 a(href="#") Среднее образование
               li.main-menu__subitem
                 a(href="#") Стипендии и гранты
-          li.main-menu__item 
+          li.main-menu__item.main-menu__item_service 
             a(href="#") Услуги
             ul.main-menu__subitems
               li.main-menu__subitem
@@ -122,7 +110,7 @@ header.header
                 a(href="#") Поиск и бронирование жилья
               li.main-menu__subitem
                 a(href="#") Волонтерство
-          li.main-menu__item 
+          li.main-menu__item.main-menu__item_schools 
             a(href="#") школы
             ul.main-menu__subitems
               li.main-menu__subitem
@@ -137,7 +125,7 @@ header.header
                 a(href="#") University of Sheffield
               li.main-menu__subitem
                 a(href="#") University of Tokyo
-          li.main-menu__item 
+          li.main-menu__item.main-menu__item_countries
             a(href="#") Страны
             ul.main-menu__subitems
               li.main-menu__subitem
@@ -152,7 +140,7 @@ header.header
                 a(href="#") Германия
               li.main-menu__subitem
                 a(href="#") Англия
-          li.main-menu__item 
+          li.main-menu__item.main-menu__item_blog 
             a(href="#") Блог
             ul.main-menu__subitems
               li.main-menu__subitem
@@ -163,5 +151,5 @@ header.header
                 a(href="#") Новости
               li.main-menu__subitem
                 a(href="#") Мероприятия
-          li.main-menu__item 
+          li.main-menu__item.main-menu__item_contacts 
             a(href="#") Контакты

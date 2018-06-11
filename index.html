@@ -19,7 +19,7 @@
       <header class="header">
         <div class="header__top-block top-block">
           <div class="wrapper header__wrapper">
-            <div class="top-block__city"><i class="fa fa-map-marker" aria-hidden="true"></i>Владивосток
+            <div class="top-block__city"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Владивосток</span>
               <div class="popup-city">
                 <div class="popup-city__title"><span>Ваш город</span><i class="fa fa-times" aria-hidden="true"></i></div>
                 <div class="popup-city__search">
@@ -39,7 +39,22 @@
             <div class="top-block__fill"></div>
             <div class="top-block__phone">8 800 737-77-05</div>
             <div class="top-block__popups">
-              <div class="top-block__item top-block__item_login">Вход/ Регистрация<i class="fa fa-user" aria-hidden="true"></i></div>
+              <div class="top-block__item top-block__item_login">Вход/ Регистрация<i class="fa fa-user" aria-hidden="true"></i>
+                <section class="chosen">
+                  <div class="row row1">
+                    <h2 class="chosen-content__title">Вы не зарегистрированы</h2><a class="chosen-content__close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="row row2">
+                    <p class="chosen-content__desc">Зарегистрируйтесь или войдите в личный кабинет, чтобы иметь возможность пользоваться всеми функциями сайта.</p>
+                  </div>
+                  <div class="row row3">
+                    <ul class="chosen-content-ulist">
+                      <li class="chosen-content-ulist-list"><a class="chosen-content-ulist-list__sign" href="#">зарегистрироваться</a></li>
+                      <li class="chosen-content-ulist-list"><a class="chosen-content-ulist-list__login" href="#">войти в аккаунт</a></li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
               <div class="top-block__item top-block__item_favorite">10<i class="fa fa-star" aria-hidden="true"></i></div>
               <div class="top-block__item top-block__item_cart">2500 р<i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
             </div>
@@ -47,14 +62,14 @@
         </div>
         <div class="header__hidden-menu hidden-menu">
           <div class="wrapper header__wrapper">
-            <div class="hidden-menu__logo"><a href="index.html"><img src="img/logo_blue-orange.png" alt=""/></a></div>
+            <div class="hidden-menu__logo"><a href="index.html"><img src="img/logo_blue-orange.svg" alt="logo"/></a></div>
             <div class="hidden-menu__popups top-block__popups">
-              <div class="hidden-menu__item top-block__item"> 
+              <div class="hidden-menu__item hidden-menu__item_input top-block__item"> 
                 <input type="text" placeholder="Поиск..."/><i class="fa fa-search" aria-hidden="true"></i>
               </div>
-              <div class="hidden-menu__item top-block__item">Вход/ Регистрация<i class="fa fa-user" aria-hidden="true"></i></div>
-              <div class="hidden-menu__item top-block__item">10<i class="fa fa-star" aria-hidden="true"></i></div>
-              <div class="hidden-menu__item top-block__item">2500 р<i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+              <div class="hidden-menu__item hidden-menu__item_login top-block__item">Вход/ Регистрация<i class="fa fa-user" aria-hidden="true"></i></div>
+              <div class="hidden-menu__item hidden-menu__item_favorite top-block__item">10<i class="fa fa-star" aria-hidden="true"></i></div>
+              <div class="hidden-menu__item hidden-menu__item_cart top-block__item">2500 р<i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
             </div>
             <div class="hidden-menu__menu">Меню
               <div class="hidden-menu__close">
@@ -65,7 +80,7 @@
         </div>
         <div class="header__menu menu-block">
           <div class="wrapper header__wrapper">
-            <h1 class="menu-block__logo"><a href="index.html"><img src="img/logo_white.png" alt=""/></a><i class="fa fa-search" aria-hidden="true"></i></h1>
+            <h1 class="menu-block__logo"><a href="index.html"><img src="img/logo_white.svg" alt="logo"/></a><i class="fa fa-search" aria-hidden="true"></i></h1>
             <div class="menu-block__menu-pic">
               <div class="menu-block__menu-pic_close"><i class="fa fa-times" aria-hidden="true"></i></div>
             </div>
@@ -91,7 +106,7 @@
             </div>
             <div class="menu-block__menu main-menu">
               <ul class="main-menu__items">
-                <li class="main-menu__item"><a href="#">О компании</a>
+                <li class="main-menu__item main-menu__item_about"><a href="#">О компании</a>
                   <ul class="main-menu__subitems">
                     <li class="main-menu__subitem"><a href="#">Лицензии и сертификаты</a></li>
                     <li class="main-menu__subitem"><a href="#">Бонусная программа</a></li>
@@ -101,7 +116,7 @@
                     <li class="main-menu__subitem"><a href="#">Наши партнеры</a></li>
                   </ul>
                 </li>
-                <li class="main-menu__item"><a href="#">Программы</a>
+                <li class="main-menu__item main-menu__item_programs"><a href="#">Программы</a>
                   <ul class="main-menu__subitems">
                     <li class="main-menu__subitem"><a href="#">Работа</a></li>
                     <li class="main-menu__subitem"><a href="#">Стажировка</a></li>
@@ -112,7 +127,7 @@
                     <li class="main-menu__subitem"><a href="#">Стипендии и гранты</a></li>
                   </ul>
                 </li>
-                <li class="main-menu__item"> <a href="#">Услуги</a>
+                <li class="main-menu__item main-menu__item_service"> <a href="#">Услуги</a>
                   <ul class="main-menu__subitems">
                     <li class="main-menu__subitem"><a href="#">Поступление в зарубежный ВУЗ</a></li>
                     <li class="main-menu__subitem"><a href="#">Визовое сопровождение</a></li>
@@ -120,7 +135,7 @@
                     <li class="main-menu__subitem"><a href="#">Волонтерство</a></li>
                   </ul>
                 </li>
-                <li class="main-menu__item"> <a href="#">школы</a>
+                <li class="main-menu__item main-menu__item_schools"> <a href="#">школы</a>
                   <ul class="main-menu__subitems">
                     <li class="main-menu__subitem"><a href="#">Fanshawe College</a></li>
                     <li class="main-menu__subitem"><a href="#">St. John's University</a></li>
@@ -130,7 +145,7 @@
                     <li class="main-menu__subitem"><a href="#">University of Tokyo</a></li>
                   </ul>
                 </li>
-                <li class="main-menu__item"> <a href="#">Страны</a>
+                <li class="main-menu__item main-menu__item_countries"><a href="#">Страны</a>
                   <ul class="main-menu__subitems">
                     <li class="main-menu__subitem"><a href="#">США</a></li>
                     <li class="main-menu__subitem"><a href="#">Япония</a></li>
@@ -140,7 +155,7 @@
                     <li class="main-menu__subitem"><a href="#">Англия</a></li>
                   </ul>
                 </li>
-                <li class="main-menu__item"> <a href="#">Блог</a>
+                <li class="main-menu__item main-menu__item_blog"> <a href="#">Блог</a>
                   <ul class="main-menu__subitems">
                     <li class="main-menu__subitem"><a href="#">Акции</a></li>
                     <li class="main-menu__subitem"><a href="#">Отзывы</a></li>
@@ -148,7 +163,7 @@
                     <li class="main-menu__subitem"><a href="#">Мероприятия</a></li>
                   </ul>
                 </li>
-                <li class="main-menu__item"> <a href="#">Контакты</a></li>
+                <li class="main-menu__item main-menu__item_contacts"> <a href="#">Контакты</a></li>
               </ul>
             </div>
           </div>
@@ -209,8 +224,8 @@
           <div class="content__main">
             <aside class="sidebar">
               <section class="sidebar__part">
-                <h3>Программа
-                  <div class="sidebar-arrow arrow-down"></div>
+                <h3 class="sidebar__part-button-prog">Программа
+                  <div class="sidebar-arrow arrow-prog"></div>
                 </h3>
                 <ul class="choose-program__checkboxes">
                   <li>
@@ -271,8 +286,8 @@
                 </ul>
               </section>
               <section class="sidebar__part">
-                <h3>Специальности
-                  <div class="sidebar-arrow arrow-down"></div>
+                <h3 class="sidebar__part-button-spec">Специальности
+                  <div class="sidebar-arrow arrow-spec"></div>
                 </h3>
                 <ul class="choose-specialty__checkboxes">
                   <li>
@@ -333,8 +348,8 @@
                 </ul>
               </section>
               <section class="sidebar__part">
-                <h3>Страны
-                  <div class="sidebar-arrow arrow-down"></div>
+                <h3 class="sidebar__part-button-count">Страны
+                  <div class="sidebar-arrow arrow-count"></div>
                 </h3>
                 <ul class="choose-country__checkboxes">
                   <li>
@@ -630,11 +645,10 @@
           </div>
         </div>
       </footer>
-      <script src="js/script.js"></script>
       <script src="js/header.js"></script>
       <script src="js/slider.js"></script>
-      <script src="js/hidden-menu.js"></script>
       <script src="js/select.js"></script>
+      <script src="js/filter.js"></script>
     </div>
   </body>
 </html>
