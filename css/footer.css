@@ -124,13 +124,13 @@ a {
 	font-size: 12px;
 	color: #F2F2F2;
 }*/
-/*.footer-menu__wrapper {
+.footer-menu__wrapper {
 	max-width: 100%;
-	padding-bottom: 28px;
+	/*padding-bottom: 28px;*/
 	padding: 0 0 0 0;
 
-	outline: 1px solid green;
-}*/
+/*	outline: 1px solid green;*/
+}
 @media (max-width: 576px) {
 	.footer-menu__wrapper {
 		max-width: 320px;
