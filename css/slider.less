@@ -8,11 +8,15 @@
   @media (max-width: 576px) {
     min-width: 320px;
   }
-  &__wrapper{
+  &__wrapper {
     @media (min-width: 577px) {
       height: unset;
       position: relative;
-    } 
+    }
+    @media (max-width: 576px) {
+      position: absolute;
+      top: 0;
+    }
   }
   &__items {
     height: 100%;
@@ -98,8 +102,8 @@
     text-decoration: none;
     color: #FFFFFF;
     background: #DF5E16;
-    &:hover{
-background-color: #F58A4E;
+    &:hover {
+      background-color: #F58A4E;
     }
     @media(min-width: 577px) {
       margin-top: 95px;
@@ -112,8 +116,7 @@ background-color: #F58A4E;
 
 .site-path {
   position: absolute;
-  top: 32px;
-  // left: 50px;
+  top: 32px; // left: 50px;
   z-index: 3;
   @media (max-width: 576px) {
     display: none;
@@ -130,7 +133,7 @@ background-color: #F58A4E;
       color: #FFFFFF;
       text-decoration: none;
       text-transform: lowercase;
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
     }

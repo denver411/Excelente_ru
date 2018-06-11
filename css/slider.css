@@ -16,6 +16,12 @@
     position: relative;
   }
 }
+@media (max-width: 576px) {
+  .slider__wrapper {
+    position: absolute;
+    top: 0;
+  }
+}
 .slider__items {
   height: 100%;
   margin: 0 auto;

@@ -1,18 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic');
-@font-face {
-	font-family: 'Bebas Neue', sans-serif;
-	src: url('../fonts/bebas/TTF\'s/BebasNeue Regular.ttf') format("truetype");
-}
-
-a {
-	text-decoration: none;
-}
-
-@media (max-width: 576px) {
-	.container {
-		max-width: 320px;
-	}
-}
 
 .footer {
 	/*display: flex;

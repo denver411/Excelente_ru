@@ -28,6 +28,11 @@ a {
 	display: flex;
 	align-items: flex-start;
 }
+@media (max-width: 576px) {
+	.content__main {
+		flex-direction: column;
+	}
+}
 
 .section-name {
 	font-family: 'Bebas Neue', sans-serif;
