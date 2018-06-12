@@ -1,7 +1,7 @@
 .title
 	.wrapper.title__wrapper
 		h2.section-name школы
-		form
+		form.school-select
 			select
 				option Показать по 9
 				option 9
@@ -15,6 +15,7 @@ section.content.content__schools
 					h3.sidebar__part-button-prog
 						| Программа
 						.sidebar-arrow.arrow-prog
+					a.sidebar-header-adaptive(href='#', type='button') Программа
 					ul.choose-program__checkboxes
 						li
 							label
@@ -75,6 +76,7 @@ section.content.content__schools
 					h3.sidebar__part-button-spec
 						| Специальности
 						.sidebar-arrow.arrow-spec
+					a.sidebar-header-adaptive(href='#', type='button') Специальности
 					ul.choose-specialty__checkboxes
 						li
 							label
@@ -135,6 +137,7 @@ section.content.content__schools
 					h3.sidebar__part-button-count
 						| Страны
 						.sidebar-arrow.arrow-count
+					a.sidebar-header-adaptive(href='#', type='button') Страны
 					ul.choose-country__checkboxes
 						li
 							label
@@ -380,6 +383,7 @@ section.content.content__schools
 							span.school-card__country.hover США
 							button.button__action.more.hover(type='button', value='')
 								a(href='#') подробнее
+				a.show-more(href="#") Показать еще
 	nav.schools-catalogue__pagination
 			.pagi-nav-wrapper
 				//- .arrow-back
