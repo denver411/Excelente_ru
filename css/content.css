@@ -7,6 +7,7 @@ a {
 	padding-top: 70px;
 	background-color: #ffffff;
 }
+
 @media (max-width: 576px) {
 	.title {
 		max-width: 320px;
@@ -18,7 +19,20 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	max-width: 1180px;
+
 }
+.content__main {
+	display: flex;
+	align-items: flex-start;
+
+}
+
+@media (max-width: 576px) {
+	.content__main {
+		flex-direction: column;
+	}
+}
+
 .content__main {
 	display: flex;
 	align-items: flex-start;
@@ -28,23 +42,27 @@ a {
 		flex-direction: column;
 	}
 }
+
 .section-name {
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 48px;
 	color: #DF5E16;
 	margin: 35px 0 40px;
 }
+
 @media (max-width: 576px) {
 	.section-name {
 		display: inline-block;
 		margin: 53px 20px 32px;
 	}
 }
+
 @media (max-width: 576px) {
 	.school-select {
 		display: none;
 	}
 }
+
 .selectbox {
 	z-index: 1;
 	vertical-align: middle;
@@ -53,6 +71,7 @@ a {
 	background: url(../img/content-img/content_select_arrow-down.png) no-repeat;
 	background-position: 120px center;
 }
+
 .selectbox .select {
 	width: 140px;
 	height: 29px;
@@ -64,6 +83,7 @@ a {
 	color: #000000;
 	border: 1px solid #004391;
 }
+
 .selectbox .dropdown {
 	top: 27px;
 	width: 140px;
@@ -77,28 +97,35 @@ a {
 	font-family: 'Open Sans', sans-serif;
 	color: #000000;
 }
+
 .selectbox ul {
 	margin: 0;
 	padding: 0;
 }
+
 .selectbox li {
 	padding: 4px 0 4px 10px;
 	color: #000000;
 	list-style: none;
 }
+
 .selectbox li:hover {
 	background: #DF5E16;
 	color: #FFFFFF;
 }
+
 .selectbox li:first-child {
 	display: none;
 }
+
 .selectbox li.disabled {
 	color: #AAAAAA;
 }
+
 .selectbox li.disabled:hover {
 	background: none;
 }
+
 .content__wrapper {
 	max-width: 1180px;
 	display: flex;
@@ -106,6 +133,7 @@ a {
 	align-items: flex-start;
 	margin: 0 auto;
 }
+
 @media (max-width: 576px) {
 	.content.content__schools {
 		max-width: 320px;
@@ -118,14 +146,21 @@ a {
 		background: #F7F7F7;
 	}
 }
+
 .sidebar-header-adaptive {
 	display: none;
 }
 .sidebar {
 	min-width: 204px;
+  		margin-left: 0; //????
 	background: #F7F7F7;
 	box-shadow: 8px 8px 10px rgba(0, 67, 145, 0.3);
+
 }
+@media (min-width: 1280px) {
+	.sidebar {
+margin-left: -50px;
+	}}
 @media (max-width: 576px) {
 	.sidebar {
 		max-width: 320px;
@@ -134,9 +169,11 @@ a {
 		box-shadow: none;
 	}
 }
+
 .sidebar__part {
 	position: relative;
 }
+
 @media (max-width: 576px) {
 	.sidebar {
 		max-width: 320px;
@@ -154,6 +191,7 @@ a {
 		margin: 0 auto;
 	}
 }
+
 .sidebar__part h3 {
 	margin: 0;
 	padding: 19px 39px;
@@ -162,14 +200,17 @@ a {
 	font-size: 12px;
 	color: #333333;
 }
+
 @media (max-width: 576px) {
 	.sidebar__part h3 {
 		display: none;
 	}
 }
+
 .sidebar-header-adaptive {
 	display: none;
 }
+
 @media (max-width: 576px) {
 	.sidebar-header-adaptive {
 		display: inline-block;
@@ -180,6 +221,7 @@ a {
 		color: #333333;
 	}
 }
+
 @media (max-width: 576px) {
 	.sidebar-header-adaptive:focus {
 		border-bottom: 2px solid #DF5E16;
@@ -188,6 +230,7 @@ a {
 		border-bottom: 2px dashed #DF5E16;
 	}
 }
+
 .sidebar__part .sidebar-arrow {
 	position: relative;
 	top: 0;
@@ -199,23 +242,28 @@ a {
 	background: url(../img/content-img/content_arrows_sidebar.png) no-repeat;
 	transition: 0.5s;
 }
+
 .sidebar__part .sidebar-arrow:active {
 	transform: rotate(180deg);
 	transition: 0.5s;
 }
+
 .sidebar__part .arrow-down {
 	background-position: 0 0;
 }
+
 .sidebar__part .arrow-up {
 	background-position: -12px 0;
 	background: url(../img/content-img/content_arrows_sidebar.png) no-repeat;
 	transition: 0.5s;
 }
+
 @media (max-width: 576px) {
 	.sidebar__part .sidebar-arrow {
 		display: none;
 	}
 }
+
 .choose-program__checkboxes,
 .choose-specialty__checkboxes,
 .choose-country__checkboxes {
@@ -229,6 +277,7 @@ a {
 	font-size: 10px;
 	color: #333333;
 }
+
 @media (max-width: 576px) {
 	.choose-program__checkboxes,
 	.choose-specialty__checkboxes,
@@ -240,6 +289,7 @@ a {
 		font-size: 18px;
 	}
 }
+
 @media (max-width: 576px) {
 	.choose-program__checkboxes li,
 	.choose-specialty__checkboxes li,
@@ -247,6 +297,7 @@ a {
 		padding-bottom: 8px
 	}
 }
+
 .checkbox-custom,
 .label {
 	position: relative;
@@ -256,6 +307,7 @@ a {
 	margin-top: 7px;
 	vertical-align: middle;
 }
+
 @media (max-width: 576px) {
 	.checkbox-custom,
 	.label {
@@ -264,14 +316,17 @@ a {
 		right: 35px;
 	}
 }
+
 .label {
 	padding-left: 5px;
 }
+
 @media (max-width: 576px) {
 	.label {
 		padding-left: 21px;
 	}
 }
+
 .choose-program__checkboxes span.label,
 .choose-specialty__checkboxes span.label {
 	display: inline-block;
@@ -279,18 +334,23 @@ a {
 	vertical-align: top;
 	margin-top: 4px;
 }
+
 @media (max-width: 576px) {
 	.choose-program__checkboxes span.label,
 	.choose-specialty__checkboxes span.label {
 		margin-top: 7px;
 	}
 }
+
 input [type='checkbox'] {
 	display: inline-block;
 }
+
 .custom__checkbox {
 	display: none;
+
 }
+
 .checkbox-custom {
 	position: relative;
 	bottom: 15px;
@@ -300,12 +360,14 @@ input [type='checkbox'] {
 	border: 1px solid #004391;
 	box-sizing: border-box;
 }
+
 @media (max-width: 576px) {
 	.checkbox-custom {
 		width: 20px;
 		height: 20px;
 	}
 }
+
 .custom__checkbox:checked+.checkbox-custom::before {
 	position: absolute;
 	top: 0;
@@ -317,7 +379,9 @@ input [type='checkbox'] {
 	background: #DF5E16;
 	outline: 3px solid #FFFFFF;
 	outline-offset: -3px;
+
 }
+
 .sidebar__part a.show-all {
 	position: relative;
 	top: -12px;
@@ -330,14 +394,17 @@ input [type='checkbox'] {
 	font-size: 10px;
 	color: #333333;
 }
+
 @media (max-width: 576px) {
 	.sidebar__part a.show-all {
 		display: none;
 	}
 }
+
 .sidebar__part.filters {
 	text-align: center;
 }
+
 .button__action.apply {
 	width: 114px;
 	height: 35px;
@@ -347,6 +414,7 @@ input [type='checkbox'] {
 	letter-spacing: 4px;
 	color: #FFFFFF;
 }
+
 @media (max-width: 576px) {
 	.button__action.apply {
 		width: 202px;
@@ -355,19 +423,23 @@ input [type='checkbox'] {
 		font-size: 17px;
 	}
 }
+
 .button__action.apply:hover {
 	background: #F58A4E;
 }
+
 @media (max-width: 576px) {
 	.apply a {
 		text-decoration: none;
 	}
 }
+
 @media (max-width: 576px) {
 	.sidebar__part.filters {
 		text-align: center;
 	}
 }
+
 a.reset-filter {
 	display: inline-block;
 	margin: 23px auto 35px;
@@ -379,6 +451,7 @@ a.reset-filter {
 	letter-spacing: 0.4em;
 	color: #333333;
 }
+
 @media (max-width: 576px) {
 	a.reset-filter {
   margin: 45px auto 45px;
@@ -389,6 +462,7 @@ a.reset-filter {
   letter-spacing: 6.5px;
 	}
 }
+
 main.schools-list__wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -396,6 +470,7 @@ main.schools-list__wrapper {
 	justify-content: space-between;
 	padding-left: 38px;
 }
+
 @media (max-width: 576px) {
 	main.schools-list__wrapper {
 		max-width: 320px;
@@ -404,6 +479,7 @@ main.schools-list__wrapper {
 		padding-left: 0;
 	}
 }
+
 .school-card {
 	position: relative;
 	width: 300px;
@@ -412,6 +488,7 @@ main.schools-list__wrapper {
 	background: #F7F7F7;
 	box-shadow: 8px 8px 10px rgba(0, 67, 145, 0.3);
 }
+
 @media (max-width: 576px) {
 	.school-card {
 		display: block;
@@ -419,12 +496,14 @@ main.schools-list__wrapper {
 		box-shadow: none;
 	}
 }
+
 .school-1 .school-card__image {
 	width: 300px;
 	height: 240px;
 	background: url(../img/content-img/St_Johns_St_Augustine_Hall.png) no-repeat;
 	background-size: cover;
 }
+
 @media (max-width: 576px) {
 	.school-1 .school-card__image {
 		width: 300px;
@@ -433,6 +512,7 @@ main.schools-list__wrapper {
 		background-size: cover;
 	}
 }
+
 .school-1 .school-card__image:hover {
 	position: relative;
 	width: 300px;
@@ -440,6 +520,7 @@ main.schools-list__wrapper {
 	background: url(../img/content-img/St_Johns_St_Augustine_Hall-big.png) no-repeat;
 	cursor: pointer;
 }
+
 .school-1 .school-card__image:hover::after {
 	content: '';
 	display: block;
@@ -447,12 +528,14 @@ main.schools-list__wrapper {
 	height: 100%;
 	background: rgba(0, 67, 145, 0.6);
 }
+
 .school__info {
 	position: absolute;
 	top: 249px;
 	width: 300px;
 	height: 250px;
 }
+
 .school-card h2.school-card__name {
 	position: relative;
 	top: 35px;
@@ -461,6 +544,7 @@ main.schools-list__wrapper {
 	font-size: 28px;
 	color: #004391;
 }
+
 @media (max-width: 576px) {
 	.school-card h2.school-card__name {
 		top: 35px;
@@ -471,9 +555,11 @@ main.schools-list__wrapper {
 	display: block;
 	color: #004391;
 }
+
 .school-card:hover h2.school-card__name.hover {
 	color: white;
 }
+
 .school-card span.school-card__country {
 	position: relative;
 	top: 46px;
@@ -482,53 +568,64 @@ main.schools-list__wrapper {
 	margin-left: 50px;
 	color: #333333;
 }
+
 .school-card:hover span.school-card__country.hover {
 	display: block;
 	color: white;
 }
+
 .school-card .button__action.more {
-	margin: 70px auto;
+	margin: 112px auto 0;
 	width: 201px;
 	height: 48px;
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 18px;
 	letter-spacing: 4px;
 }
+
 @media (max-width: 576px) {
 	.school-card .button__action.more {
 		margin: 115px auto;
 		letter-spacing: 3.7px;
 	}
 }
+
 .school-card:hover .button__action.more.hover {
 	display: block;
 	background-color: #FFFFFF;
 }
+
 .school-card:hover .button__action a {
 	color: #DF5E16;
 }
+
 .button__action {
 	display: block;
 	border: none;
 	background-color: #DF5E16;
 }
+
 .button__action a {
 	color: #FFFFFF;
 }
+
 .pagi-nav-wrapper {
 	display: flex;
 	justify-content: space-between;
 	width: 278px;
 	margin-left: 308px;
 }
+
 nav.schools-catalogue__pagination {
 	padding-bottom: 35px;
 }
+
 @media (max-width: 576px) {
 	nav.schools-catalogue__pagination {
 		display: none;
 	}
 }
+
 nav.schools-catalogue__pagination a {
 	display: inline-block;
 	padding: 5px 11px;
@@ -538,10 +635,12 @@ nav.schools-catalogue__pagination a {
 	font-size: 14px;
 	color: #004391;
 }
+
 nav.schools-catalogue__pagination a:not(.pagi-arrow):active {
 	background: #DF5E16;
 	color: #FFFFFF;
 }
+
 .pagi-arrow {
 	position: relative;
 	left: 13px;
@@ -551,12 +650,15 @@ nav.schools-catalogue__pagination a:not(.pagi-arrow):active {
 	margin-left: -21px;
 	background: url(../img/content-img/content_arrows-pagination.png) no-repeat;
 }
+
 a.pagi-arrow-forward {
 	background-position: -5px 10px;
 }
+
 .show-more {
 	display: none;
 }
+
 @media (max-width: 576px) {
 	.show-more {
 		display: block;

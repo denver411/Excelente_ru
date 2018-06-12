@@ -13,6 +13,9 @@ html(lang="ru")
       link(rel="stylesheet", href="css/slider.css")
       link(rel="stylesheet", href="css/content.css")
       link(rel="stylesheet", href="css/footer.css")
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
+      script(src='https://raw.githubusercontent.com/LeaVerou/prefixfree/gh-pages/prefixfree.min.js')
+
   body
     .container
       include header
@@ -20,9 +23,10 @@ html(lang="ru")
       block content
 
       include footer
+      include popup-favorite
       block pageScripts
-        script(src="js/script.js")
         script(src="js/header.js")
         script(src="js/slider.js")
-        script(src="js/hidden-menu.js")
-
+        script(src="js/select.js")
+        script(src="js/filter.js")
+        script(src="js/favorite.js")

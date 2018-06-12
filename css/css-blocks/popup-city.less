@@ -69,11 +69,17 @@
 
 ::-webkit-scrollbar {
     width: 2px;
+    @media (max-width:576px) {
+        width: 0;
+    }
 }
 
 .top-block__city {
   cursor: pointer;
     &:hover .popup-city {
-        display: block;
+        @media (min-width: 577px) {
+           display: block;  
+        }
+       
     }
 }
