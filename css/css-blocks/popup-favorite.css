@@ -105,9 +105,7 @@
     flex-flow: column nowrap;
     justify-content: space-between;
   }
-  .row {
-    width: 100%;
-  }
+
   .row::after {
     content: " ";
     display: table;
