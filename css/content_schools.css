@@ -460,7 +460,7 @@ a.reset-filter {
 main.schools-list__wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 55px;
+	/* margin-bottom: 55px; */
 	justify-content: space-between;
 	padding-left: 38px;
 }
@@ -571,7 +571,7 @@ main.schools-list__wrapper {
 }
 
 .school-card .button__action.more {
-	margin: 70px auto;
+	margin: 116px auto 0;
 	width: 201px;
 	height: 48px;
 	font-family: 'Bebas Neue', sans-serif;
@@ -613,6 +613,7 @@ main.schools-list__wrapper {
 
 nav.schools-catalogue__pagination {
 	padding-bottom: 35px;
+	margin-top: 55px;
 }
 
 @media (max-width: 576px) {
