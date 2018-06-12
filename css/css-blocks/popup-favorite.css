@@ -54,6 +54,7 @@
     height: 48px;
     text-align: center;
     margin-bottom: 48px;
+    cursor: pointer;
   }
   .chosen-content-ulist-list:first-child {
     margin-bottom: 35px;
@@ -124,7 +125,7 @@
     font-family: Bebas Neue;
     font-size: 24px;
     color: #DF5E16;
-    margin: 0;
+    margin-top: 7px;
   }
   .chosen-content__close {
     display: block;
@@ -164,6 +165,7 @@
     justify-content: center;
     height: 48px;
     text-align: center;
+    cursor: pointer;
   }
   .chosen-content-ulist-list__sign,
   .chosen-content-ulist-list__login {
