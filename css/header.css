@@ -75,6 +75,9 @@
   font-weight: bold;
   color: #DF5E16;
 }
+.top-block__phone a {
+  color: #DF5E16;
+}
 .top-block__popups {
   display: flex;
   min-width: 25.2%;
@@ -438,6 +441,9 @@
   font-family: Bebas Neue;
   font-weight: bold;
   font-size: 24px;
+  color: #F36C21;
+}
+.menu-block_from-hidden .contacts__info a {
   color: #F36C21;
 }
 @media (max-width: 576px) {

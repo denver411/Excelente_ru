@@ -3,8 +3,8 @@
   position: fixed;
   flex-flow: column nowrap;
   box-sizing: border-box;
-  width: 320px;
-  height: 568px;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   z-index: 199;
   top: 0;
