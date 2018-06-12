@@ -21,10 +21,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
     @media(min-width: 577px) {
-        max-width: 1280px;
         min-width: 1180px;
-        margin: 0 auto;
-        background-color: #004391;
     }
     @media(max-width: 576px) {
         width: 100%;
@@ -48,6 +45,10 @@ body {
 
 .container {
     background-color: #ffffff;
+    &__mobile{
+        max-height: 1100px;
+        overflow: hidden;
+    }
 }
 
 @keyframes fade-in {
