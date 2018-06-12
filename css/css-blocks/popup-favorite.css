@@ -93,19 +93,14 @@
   .chosen {
     display: none;
     position: fixed;
-    /*     width: 32.65%; */
     width: 501.3px;
-    /* height: 45.6%; */
     height: 325px;
     left: 35.33%;
     top: 37.63%;
-    /*   left: 50%;
-    margin-left: -150px; */
     z-index: 110;
     background: #FFFFFF;
     box-shadow: 5px 5px 10px rgba(0, 67, 145, 0.3);
     box-sizing: border-box;
-    /*   padding: 3.46% 2.65% 2.94% 2.38%; */
     padding: 50px 34.84px 49px 37px;
     flex-flow: column nowrap;
     justify-content: space-between;
