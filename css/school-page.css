@@ -1,0 +1,19 @@
+.images {
+  min-height: 540px;
+  height: 1px;
+  margin-top: 30px;
+  padding-left: 15px;
+  padding-bottom: 125px;
+  background-image: url(../img/slider__item_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -570px;
+}
+.images__wrapper {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+}
+.images__site-path {
+  position: static;
+}

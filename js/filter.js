@@ -28,12 +28,12 @@ sidebarPartButtonSpec.onclick = function () {
     }
 }
 sidebarPartButtonCount.onclick = function () {
-    if (chooseCountryCheckboxes.style.display == 'block') {
-        chooseCountryCheckboxes.style.display = 'none';
-        arrowCount.style.transform = 'rotate(0deg)';
-    } else {
+    if (chooseCountryCheckboxes.style.display == 'none') {
         chooseCountryCheckboxes.style.display = 'block';
         arrowCount.style.transform = 'rotate(180deg)';
+    } else {
+        chooseCountryCheckboxes.style.display = 'none';
+        arrowCount.style.transform = 'rotate(0deg)';
     }
 }
 showAll.onclick = function () {

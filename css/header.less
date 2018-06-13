@@ -68,6 +68,9 @@
     font-size: 18px;
     font-weight: bold;
     color: #DF5E16;
+    a {
+      color: #DF5E16;
+    }
   }
   &__popups {
     display: flex;
@@ -383,13 +386,14 @@
       width: 682px;
       margin-right: 3px;
     }
-  } //Стили выпадающего меню
+  } 
+  //Стили выпадающего меню
   &_from-hidden {
     position: fixed;
     top: 0;
     z-index: 100;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #ffffff;
     .wrapper {
       justify-content: flex-start;
@@ -420,6 +424,9 @@
         font-weight: bold;
         font-size: 24px;
         color: #F36C21;
+        a {
+          color: #F36C21;
+        }
         @media (max-width: 576px) {
           margin-top: 10px;
           margin-bottom: 17px;
@@ -502,8 +509,13 @@
     }
     .main-menu {
       display: block;
+      
+      @media (min-width: 577px) {
       width: unset;
+      }
       @media (max-width: 576px) {
+      width: calc(100% - 35px);
+        
         // position: fixed;
         // top: 0;
         // z-index: 100;
@@ -513,16 +525,19 @@
       }
       &__items {
         display: flex;
-        max-width: 800px;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
         list-style: none;
-        flex-direction: column;
+        flex-direction: row;
         max-height: 250px;
         @media (min-width: 577px) {
-          flex-direction: row;
+           max-width: 800px;
         }
+         @media (max-width: 576px) {
+           max-height: unset;
+        }
+        
       }
       &__item {
         position: static;
@@ -545,9 +560,10 @@
           }
         }
         @media (max-width: 576px) {
-          flex-basis: 34%;
+          width: 50%;
+          flex-basis: 50%;
           margin-bottom: 35px;
-          margin-right: 68px;
+/*           margin-right: 68px; */
         }
         &_about {
           @media (min-width: 577px) {
