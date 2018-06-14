@@ -68,7 +68,7 @@
   text-transform: uppercase;
 }
 .programs__list-item_active {
-  border-bottom: solid 1.5px #DF5E16;
+  text-decoration: underline;
   color: #DF5E16;
 }
 .programs__info {
