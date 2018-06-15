@@ -3,7 +3,7 @@ section.login
     a.login-content__close(href='#')
         i.fa.fa-times(aria-hidden='true')
     .row.form
-        form(action="#").login-content-form
+        form(action="#", metod="get").login-content-form
             p.login-content-form__mail-title Эл. почта
             input(type="email", name="mail", placeholder="user@example.ru").login-content-form__mail-input
             p.login-content-form__pass-title Пароль
@@ -16,5 +16,5 @@ section.login
         li.login-content-ulist-list
           a.login-content-ulist-list__login(href='#') Bxoд
         li.login-content-ulist-list
-          a.login-content-ulist-list__sign(href='#') Регистрация
+          a.login-content-ulist-list__sign(href='login.html') Регистрация
     

@@ -1,9 +1,8 @@
-
 .content-login {
     max-width: 576px;
     min-width: 320px;
     width: 100%;
-    margin: 0 auto;
+    margin: 93px auto;
     flex-flow: column nowrap;
     padding: 0 20px 65px 20px;
     background-color: #FFFFFF;
@@ -21,6 +20,7 @@
         background-color: inherit;
         .content-login-mobile__sign,
         .content-login-mobile__login {
+            text-decoration: none;
             display: block;
             font-family: Bebas Neue;
             height: 46px;
@@ -97,7 +97,7 @@
             color: #004391;
         }
         .content-login-form-sign__label--error {
-            display: block;
+            display: none;
             font-family: Open Sans;
             font-style: italic;
             font-weight: normal;
@@ -108,18 +108,18 @@
             color: #C82E2E;
         }
         .capcha {
-            background-image: url(../img/capcha.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 280px;
-            height: 68px;
             margin: 0 auto;
             margin-top: 30px;
+            .g-recaptcha {
+                transform: scale(0.92);
+                transform-origin: 0 0;
+            }
         }
         .content-login-form-sign__button {
             display: block;
             margin: 0 auto;
-            margin-top: 50px;
+            margin-top: 42px;
+            margin-bottom: 35px;
             width: 260px;
             height: 48px;
             outline: none;
@@ -138,12 +138,40 @@
             }
         }
         .content-login-form-sign-reg {
-            margin-top: 30px;
-            margin-bottom: 65px;
+            margin-bottom: -120px;
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
             align-content: flex-start;
+            .content-login-form-sign-reg_lable {
+                .content-login-form-sign-reg__check-cust {
+                    position: relative;
+                    display: inline-block;
+                }
+                .content-login-form-sign-reg__check {
+                    display: none;
+                }
+                .content-login-form-sign-reg__check-cust {
+                    position: relative;
+                    width: 20px;
+                    height: 20px;
+                    background: #ffffff;
+                    border: 1px solid #004391;
+                    box-sizing: border-box;
+                }
+                .content-login-form-sign-reg__check:checked+.content-login-form-sign-reg__check-cust::before {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    display: block;
+                    content: '';
+                    background: #DF5E16;
+                    outline: 1px solid #FFFFFF;
+                    outline-offset: -2px;
+                }
+            }
             .content-login-form-sign-reg__inst {
                 margin-left: 22px;
                 font-family: Open Sans;
@@ -178,8 +206,27 @@
         .content-login-form-log__button {
             .content-login-form-sign__button;
         }
-        .content-login-form-log__button[value="Забыли пароль"] {
-            margin-top: 0px;
+        .content-login-form-log__button-link {
+            text-decoration: none;
+            display: block;
+            width: 260px;
+            height: 48px;
+            margin: 0 auto;
+            text-align: center;
+            font-family: Bebas Neue;
+            line-height: 48px;
+            font-size: 18px;
+            background-color: #fff;
+            border-bottom: 2px solid #DF5E16;
+            color: #333333;
+            letter-spacing: 4px;
+            &:hover {
+                background-color: #DF5E16;
+                color: #FFFFFF;
+            }
+            &:visited {
+                color: #333333;
+            }
         }
     }
 }
@@ -192,7 +239,10 @@
         justify-content: flex-start;
         min-width: 577px;
         max-width: 1280px;
+        margin: 0 auto;
+        margin-bottom: 185px;
         padding: 11% 6.5%;
+        padding-bottom: 15px;
         .content-login-items {
             display: flex;
             position: absolute;
@@ -291,8 +341,8 @@
             .content-login-form-sign__input[name="pass"] {
                 margin-bottom: 13px;
             }
-            .content-login-form-sign__input[placeholder="user@example.ru"], .content-login-form-sign__input[placeholder="+7(___) ___ __ __"]
-             {
+            .content-login-form-sign__input[placeholder="user@example.ru"],
+            .content-login-form-sign__input[placeholder="+7(___) ___ __ __"] {
                 font-style: italic;
             }
             .content-login-form-sign__input {
@@ -303,18 +353,30 @@
                 width: 322px;
                 height: 78px;
                 margin-top: 12px;
+                .g-recaptcha {
+                    transform: scale(1.06);
+                    transform-origin: 0 0;
+                }
             }
             .content-login-form-sign__button {
                 font-size: 14px;
                 width: 226px;
                 height: 40px;
                 margin-top: 40px;
-                margin-bottom: 10px;
+                margin-bottom: 28px;
             }
             .content-login-form-sign-reg {
+                justify-content: flex-start;
+                .content-login-form-sign-reg_lable {
+                    .content-login-form-sign-reg__check-cust {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
                 .content-login-form-sign-reg__inst {
                     display: block;
-                    width: 700px;
+                    margin-left: 10px;
+                    margin-top: 4px;
                     font-family: Open Sans;
                     font-style: normal;
                     font-weight: normal;
@@ -387,9 +449,9 @@
                 font-style: italic;
             }
             .content-login-form-log__input[placeholder="user@example.ru"],
-            {
-               font-style: italic;
-           }
+                {
+                font-style: italic;
+            }
             .content-login-form-log__button {
                 display: block;
                 font-size: 14px;
@@ -397,7 +459,20 @@
                 width: 226px;
                 height: 40px;
                 &[value="Вход"] {
-                    margin-bottom: -37px;
+                    margin-bottom: 10px;
+                }
+            }
+            .content-login-form-log__button-link {
+                width: 226px;
+                height: 40px;
+                margin: 0 auto;
+                text-align: center;
+                font-family: Bebas Neue;
+                line-height: 40px;
+                font-size: 14px;
+                &:hover {
+                    background-color: #DF5E16;
+                    color: #FFFFFF; 
                 }
             }
         }

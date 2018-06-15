@@ -2,7 +2,7 @@
     .content-login
         ul.content-login-items
             li.content-login-items__item
-                a(href="#").content-login-items__item-link главная
+                a(href="index.html").content-login-items__item-link главная
             li.content-login-items__item
                 a(href="#").content-login-items__item-link вход/регистрация
         .row.title.mobile
@@ -16,7 +16,7 @@
             .form-sign-social
                 a(href="#").form-sign-social__vk
                 a(href="#").form-sign-social__fb
-            form(action="#").content-login-form-sign
+            form(action="#", metod="get").content-login-form-sign
                 label(for="surname").content-login-form-sign__label Фамилия *
                 input(type="text" name="surname").content-login-form-sign__input
                 label(for="name").content-login-form-sign__label Имя *
@@ -31,10 +31,13 @@
                 label(for="reqpass").content-login-form-sign__label Подтверждение пароля *
                 input(type="password", name="reqpass").content-login-form-sign__input
                 .capcha
-
+                    script(src="https://www.google.com/recaptcha/api.js" async defer)
+                    .g-recaptcha(data-sitekey="your_site_key")
                 input(type="submit", value="Регистрация").content-login-form-sign__button
                 .content-login-form-sign-reg
-                    input(type="checkbox", name="agree").content-login-form-sign-reg__check
+                    label().content-login-form-sign-reg_lable
+                        input(type="checkbox", name="").content-login-form-sign-reg__check
+                        span.content-login-form-sign-reg__check-cust
                     p.content-login-form-sign-reg__inst
                         | Я подтверждаю, что ознакомлен с  
                         a(href="#") Политикой в области защиты персональных данных ООО  «Экселенте» 
@@ -44,13 +47,14 @@
             .form-log-social
                 a(href="#").form-log-social__vk
                 a(href="#").form-log-social__fb
-            form(action="#").content-login-form-log
+            form(action="#", metod="get").content-login-form-log
                 label(for="mail").content-login-form-log__label Эл. почта *
                 input(type="email", name="mail", placeholder="user@example.ru").content-login-form-log__input
                 label(for="mail").content-login-form-log__label--error Поле заполненно с ошибкой
                 label(for="pass").content-login-form-log__label Пароль *
                 input(type="password", name="pass").content-login-form-log__input
                 input(type="submit", value="Вход").content-login-form-log__button
-                input(type="submit", value="Забыл пароль").content-login-form-log__button
+                a(href="password-restore-1-step.html").content-login-form-log__button-link Забыл пароль
+
 
 
