@@ -1,0 +1,20 @@
+section.login
+    h2.login-content__title Вход
+    a.login-content__close(href='#')
+        i.fa.fa-times(aria-hidden='true')
+    .row.form
+        form(action="#").login-content-form
+            p.login-content-form__mail-title Эл. почта
+            input(type="email", name="mail", placeholder="user@example.ru").login-content-form__mail-input
+            p.login-content-form__pass-title Пароль
+            input(type="password", name="password").login-content-form__pass-input
+    .row.link
+        a(href="#").login-content__social-vk
+        a(href="#").login-content__social-fb
+    .row.button
+      ul.login-content-ulist
+        li.login-content-ulist-list
+          a.login-content-ulist-list__login(href='#') Bxoд
+        li.login-content-ulist-list
+          a.login-content-ulist-list__sign(href='#') Регистрация
+    

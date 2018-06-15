@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/header.css"/>
     <link rel="stylesheet" href="css/slider.css"/>
-    <link rel="stylesheet" href="css/content_schools.css"/>
+    <link rel="stylesheet" href="css/content_login.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
     <link rel="stylesheet" href="css/password-restore.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -40,6 +40,24 @@
             <div class="top-block__fill"></div>
             <div class="top-block__phone">8 800 737-77-05</div>
             <div class="top-block__popups">
+              <section class="login">
+                <h2 class="login-content__title">Вход</h2><a class="login-content__close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="row form">
+                  <form class="login-content-form" action="#">
+                    <p class="login-content-form__mail-title">Эл. почта</p>
+                    <input class="login-content-form__mail-input" type="email" name="mail" placeholder="user@example.ru"/>
+                    <p class="login-content-form__pass-title">Пароль</p>
+                    <input class="login-content-form__pass-input" type="password" name="password"/>
+                  </form>
+                </div>
+                <div class="row link"><a class="login-content__social-vk" href="#"></a><a class="login-content__social-fb" href="#"></a></div>
+                <div class="row button">
+                  <ul class="login-content-ulist">
+                    <li class="login-content-ulist-list"><a class="login-content-ulist-list__login" href="#">Bxoд</a></li>
+                    <li class="login-content-ulist-list"><a class="login-content-ulist-list__sign" href="#">Регистрация</a></li>
+                  </ul>
+                </div>
+              </section>
               <div class="top-block__item top-block__item_login">Вход/ Регистрация<i class="fa fa-user" aria-hidden="true"></i></div>
               <div class="top-block__item top-block__item_favorite">10<i class="fa fa-star" aria-hidden="true"></i></div>
               <div class="top-block__item top-block__item_cart">2500 р<i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
@@ -124,7 +142,7 @@
                 <li class="main-menu__item main-menu__item_schools"> <a href="schools.html">школы</a>
                   <ul class="main-menu__subitems">
                     <li class="main-menu__subitem"><a href="#">Fanshawe College</a></li>
-                    <li class="main-menu__subitem"><a href="#">St. John's University</a></li>
+                    <li class="main-menu__subitem"><a href="school-page.html">St. John's University</a></li>
                     <li class="main-menu__subitem"><a href="#">University of New South</a></li>
                     <li class="main-menu__subitem"><a href="#">Wales - UNSW</a></li>
                     <li class="main-menu__subitem"><a href="#">University of Sheffield</a></li>
@@ -228,6 +246,7 @@
       <script src="js/header.js"></script>
       <script src="js/select.js"></script>
       <script src="js/favorite.js"></script>
+      <script src="js/login.js"></script>
     </div>
   </body>
 </html>
