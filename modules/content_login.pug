@@ -18,17 +18,17 @@
                 a(href="#").form-sign-social__fb
             form(action="#").content-login-form-sign
                 label(for="surname").content-login-form-sign__label Фамилия *
-                input(type="surname").content-login-form-sign__input
+                input(type="text" name="surname").content-login-form-sign__input
                 label(for="name").content-login-form-sign__label Имя *
-                input(type="name").content-login-form-sign__input
-                label(for="name").content-login-form-sign__label Телефон *
-                input(type="tel", name="phone").content-login-form-sign__input
-                label(for="name").content-login-form-sign__label Эл. почта *
-                input(type="email", name="mail").content-login-form-sign__input
-                label(for="name").content-login-form-sign__label--error Поле заполненно с ошибкой
-                label(for="name").content-login-form-sign__label Пароль *
+                input(type="text" name="name").content-login-form-sign__input
+                label(for="phone").content-login-form-sign__label Телефон *
+                input(type="tel", name="phone", placeholder="+7(___) ___ __ __").content-login-form-sign__input
+                label(for="mail").content-login-form-sign__label Эл. почта *
+                input(type="email", name="mail", placeholder="user@example.ru").content-login-form-sign__input
+                label(for="mail").content-login-form-sign__label--error Поле заполненно с ошибкой
+                label(for="pass").content-login-form-sign__label Пароль *
                 input(type="password", name="pass").content-login-form-sign__input
-                label(for="name").content-login-form-sign__label Подтверждение пароля *
+                label(for="reqpass").content-login-form-sign__label Подтверждение пароля *
                 input(type="password", name="reqpass").content-login-form-sign__input
                 .capcha
 
@@ -45,10 +45,10 @@
                 a(href="#").form-log-social__vk
                 a(href="#").form-log-social__fb
             form(action="#").content-login-form-log
-                label(for="name").content-login-form-log__label Эл. почта *
-                input(type="email", name="mail").content-login-form-log__input
-                label(for="name").content-login-form-log__label--error Поле заполненно с ошибкой
-                label(for="name").content-login-form-log__label Пароль *
+                label(for="mail").content-login-form-log__label Эл. почта *
+                input(type="email", name="mail", placeholder="user@example.ru").content-login-form-log__input
+                label(for="mail").content-login-form-log__label--error Поле заполненно с ошибкой
+                label(for="pass").content-login-form-log__label Пароль *
                 input(type="password", name="pass").content-login-form-log__input
                 input(type="submit", value="Вход").content-login-form-log__button
                 input(type="submit", value="Забыл пароль").content-login-form-log__button
