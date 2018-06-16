@@ -508,8 +508,11 @@
     font-size: 12px;
     color: #C82E2E;
   }
+  .content-login .row.form-sign .content-login-form-sign__input {
+    margin-bottom: 19px;
+  }
   .content-login .row.form-sign .content-login-form-sign__input[name="pass"] {
-    margin-bottom: 13px;
+    margin-bottom: 19px;
   }
   .content-login .row.form-sign .content-login-form-sign__input[placeholder="user@example.ru"],
   .content-login .row.form-sign .content-login-form-sign__input[placeholder="+7(___) ___ __ __"] {
@@ -523,7 +526,7 @@
   .content-login .row.form-sign .capcha {
     width: 322px;
     height: 78px;
-    margin-top: 12px;
+    margin-top: 25px;
   }
   .content-login .row.form-sign .capcha .g-recaptcha {
     transform: scale(1.06);
