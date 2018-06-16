@@ -60,6 +60,22 @@
   margin-bottom: 22px;
   font-style: italic;
 }
+.login .row .login-content-form__mail-input--error,
+.login .row .login-content-form__pass-input--error {
+  display: none;
+  font-family: Open Sans;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: -14px;
+  margin-bottom: 35px;
+  letter-spacing: -0.7px;
+  font-size: 10px;
+  color: #C82E2E;
+  position: absolute;
+}
+.login .row .login-content-form__pass-input--error {
+  top: 222px;
+}
 .login .row .login-content-form__mail-input,
 .login .row .login-content-form__pass-input {
   width: 194px;
@@ -67,6 +83,7 @@
   background: #FFFFFF;
   border: 2px solid #004391;
   padding: 0 15px;
+  position: relative;
 }
 .login .row .login-content__social-vk,
 .login .row .login-content__social-fb {
