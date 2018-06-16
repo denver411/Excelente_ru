@@ -1,11 +1,23 @@
 //popup меню регистрации
 let topBlockItemLogin = document.querySelector('.top-block__item_login'),
     login = document.querySelector('.login'),
-    loginContentClose = document.querySelector('.login-content__close');
+    loginContentClose = document.querySelector('.login-content__close'),
+    userPage = document.querySelector('.userpage'),
+    userPageClose = document.querySelector('.userpage__close'),
+    userPageUlistListItemExit = document.querySelector('.userpage-ulist__list-item--exit');
 
 topBlockItemLogin.onclick = function () {
-    if (login.style.display == "block") login.style.display = "none"
-    else login.style.display = "block"
+    if (topBlockItemLogin.textContent == "Вход/ Регистрация") {
+        if (login.style.display == "block") login.style.display = "none"
+        else login.style.display = "block"
+    } else {
+        if (userPage.style.display == "block") userPage.style.display = "none"
+        else userPage.style.display = "block"
+    }
+}
+userPageClose.onclick = function () {
+    if (userPage.style.display == "none") userPage.style.display = "block"
+    else userPage.style.display = "none"
 }
 
 loginContentClose.onclick = function () {
