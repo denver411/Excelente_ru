@@ -3,8 +3,9 @@
     min-width: 320px;
     width: 100%;
     margin: 93px auto;
+    margin-bottom: 0;
     flex-flow: column nowrap;
-    padding: 0 20px 65px 20px;
+    padding: 0 20px 158px 20px;
     background-color: #FFFFFF;
     .content-login-items {
         display: none;
@@ -156,7 +157,7 @@
                     width: 20px;
                     height: 20px;
                     background: #ffffff;
-                    border: 1px solid #004391;
+                    border: 2px solid #004391;
                     box-sizing: border-box;
                 }
                 .content-login-form-sign-reg__check:checked+.content-login-form-sign-reg__check-cust::before {
@@ -168,20 +169,24 @@
                     display: block;
                     content: '';
                     background: #DF5E16;
-                    outline: 1px solid #FFFFFF;
+                    outline: 2px solid #FFFFFF;
                     outline-offset: -2px;
                 }
             }
             .content-login-form-sign-reg__inst {
-                margin-left: 22px;
+                margin-left: 15px;
                 font-family: Open Sans;
                 font-style: normal;
                 font-weight: normal;
-                line-height: 23px;
+                line-height: 19.5px;
                 font-size: 12px;
                 color: #474A57;
+                
                 a {
                     font-weight: bold;
+                    &:visited {
+                        color: #474A57;
+                    }
                 }
             }
         }
@@ -366,6 +371,7 @@
                 margin-bottom: 28px;
             }
             .content-login-form-sign-reg {
+                width: 250px;
                 justify-content: flex-start;
                 .content-login-form-sign-reg_lable {
                     .content-login-form-sign-reg__check-cust {
@@ -383,6 +389,13 @@
                     line-height: 15px;
                     font-size: 10px;
                     color: #828282;
+                    a {
+                        color: #828282;
+                        &:visited {
+                            color: #828282;
+                            font-weight: normal;
+                        }
+                    }
                 }
             }
         }
