@@ -101,6 +101,7 @@
 }
 .content-login .row.form-sign .content-login-form-sign__label--error {
   display: none;
+  position: absolute;
   font-family: Open Sans;
   font-style: italic;
   font-weight: normal;
@@ -224,6 +225,7 @@
 }
 .content-login .row.form-log .content-login-form-sign__label--error {
   display: none;
+  position: absolute;
   font-family: Open Sans;
   font-style: italic;
   font-weight: normal;
@@ -335,6 +337,7 @@
   font-size: 12px;
   color: #C82E2E;
   display: none;
+  position: absolute;
 }
 .content-login .row.form-log .content-login-form-log__input {
   display: block;
@@ -494,7 +497,8 @@
     font-size: 14px;
   }
   .content-login .row.form-sign .content-login-form-sign__label--error {
-    display: block;
+    display: none;
+    position: absolute;
     font-family: Open Sans;
     font-style: italic;
     font-weight: normal;
@@ -512,6 +516,7 @@
     font-style: italic;
   }
   .content-login .row.form-sign .content-login-form-sign__input {
+    position: relative;
     height: 40px;
     font-style: italic;
   }

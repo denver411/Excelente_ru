@@ -88,3 +88,49 @@ login.onclick = function () {
 }
 
 //Регистрация
+
+sign = document.querySelector('.content-login-form-sign__button');
+sign.onclick = function () {
+    let signData = {
+        phone: document.querySelector('.content-login-form-sign__input[name="phone"]').value,
+        mail: document.querySelector('.content-login-form-sign__input[name="mail"]').value,
+        pass: document.querySelector('.content-login-form-sign__input[name="pass"]').value,
+        reqpass: document.querySelector('.content-login-form-sign__input[name="reqpass"]').value
+    }
+    if (!(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/).test(signData.phone)) {
+        document.querySelector('.content-login-form-sign__input[name="phone"]').style.background = "#c82e2e24";
+        document.querySelector('.content-login-form-sign__label--error[for="phone"]').style.display = "block";
+        return false;
+    } else {
+        document.querySelector('.content-login-form-sign__input[name="phone"]').style.background = "#5ac82e24";
+        document.querySelector('.content-login-form-sign__label--error[for="phone"]').style.display = "none";
+    }
+    if (!(/^[a-zA-Z0-9][a-zA-Z0-9-_\.]*@/).test(signData.mail)) {
+        document.querySelector('.content-login-form-sign__input[name="mail"]').style.background = "#c82e2e24";
+        document.querySelector('.content-login-form-sign__label--error[for="mail"]').style.display = "block";
+        return false;
+    } else {
+        document.querySelector('.content-login-form-sign__input[name="mail"]').style.background = "#5ac82e24";
+        document.querySelector('.content-login-form-sign__label--error[for="mail"]').style.display = "none";
+    }
+
+    if (!(/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])[0-9a-zA-Z!@#$%^&*]{6,}/g).test(signData.pass)) {
+        document.querySelector('.content-login-form-sign__input[name="pass"]').style.background = "#c82e2e24";
+        document.querySelector('.content-login-form-sign__label--error[for="pass"]').style.display = "block";
+        return false;
+    } else {
+        document.querySelector('.content-login-form-sign__input[name="pass"]').style.background = "#5ac82e24";
+        document.querySelector('.content-login-form-sign__label--error[for="pass"]').style.display = "none";
+    }
+    if (signData.pass !== signData.reqpass) {
+        document.querySelector('.content-login-form-sign__input[name="pass"]').style.background = "#c82e2e24";
+        document.querySelector('.content-login-form-sign__input[name="reqpass"]').style.background = "#c82e2e24";
+        document.querySelector('.content-login-form-sign__label--error[for="reqpass"]').style.display = "block";
+        return false;
+    }
+    else {
+        document.querySelector('.content-login-form-sign__input[name="pass"]').style.background = "#5ac82e24";
+        document.querySelector('.content-login-form-sign__input[name="reqpass"]').style.background = "#5ac82e24";
+        document.querySelector('.content-login-form-sign__label--error[for="reqpass"]').style.display = "none";
+    }
+}
