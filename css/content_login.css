@@ -433,6 +433,9 @@
     font-size: 14px;
     color: #000000;
   }
+  .content-login .content-login-items .content-login-items__item .content-login-items__item-link:hover {
+    text-decoration: underline;
+  }
   .content-login .row.title.mobile {
     display: none;
   }
