@@ -62,3 +62,29 @@ popupLogin.onclick = function () {
         return false;
     }
 }
+
+//loginPage
+
+//Вход
+login = document.querySelector('.content-login-form-log__button');
+login.onclick = function () {
+    let loginData = {
+        mail: document.querySelector('.content-login-form-log__input[name="mail"]').value,
+        pass: document.querySelector('.content-login-form-log__input[name="pass"]').value
+    }
+    if (!(/^[a-zA-Z0-9][a-zA-Z0-9-_\.]*@/).test(loginData.mail)) {
+        document.querySelector('.content-login-form-log__input[name="mail"]').style.background = "#c82e2e24";
+        document.querySelector('.content-login-form-log__label--error[for="mail"]').style.display = "block";
+        return false;
+    } else {
+        document.querySelector('.content-login-form-log__input[name="mail"]').style.background = "#5ac82e24";
+        document.querySelector('.content-login-form-log__label--error[for="mail"]').style.display = "none";
+    }
+    if (!(/(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])[0-9a-zA-Z!@#$%^&*]{6,}/g).test(loginData.pass)) {
+        document.querySelector('.content-login-form-log__input[name="pass"]').style.background = "#c82e2e24";
+        document.querySelector('.content-login-form-log__label--error[for="pass"]').style.display = "block";
+        return false;
+    }
+}
+
+//Регистрация

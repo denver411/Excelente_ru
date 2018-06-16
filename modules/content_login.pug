@@ -50,10 +50,11 @@
                 a(href="#").form-log-social__fb
             form(action="#", metod="get").content-login-form-log
                 label(for="mail").content-login-form-log__label Эл. почта *
-                input(type="email", name="mail", placeholder="user@example.com", required, autocomplete="off").content-login-form-log__input
+                input(type="text", name="mail", placeholder="user@example.com", required, autocomplete="off").content-login-form-log__input
                 label(for="mail").content-login-form-log__label--error Поле заполненно с ошибкой
                 label(for="pass", required, autocomplete="off").content-login-form-log__label Пароль *
                 input(type="password", name="pass").content-login-form-log__input
+                label(for="pass").content-login-form-log__label--error Поле заполненно с ошибкой
                 input(type="submit", value="Вход").content-login-form-log__button
                 a(href="password-restore-1-step.html").content-login-form-log__button-link Забыл пароль
 
