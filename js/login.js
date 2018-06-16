@@ -42,7 +42,7 @@ contentLoginMobileLogin.onclick = function () {
 
 /* Валидация форм */
 //popup
-popupLogin = document.querySelector('.login-content-ulist-list__login');
+let popupLogin = document.querySelector('.login-content-ulist-list__login');
 popupLogin.onclick = function () {
     let loginData = {
         mail: document.querySelector('.login-content-form__mail-input').value,
@@ -66,8 +66,8 @@ popupLogin.onclick = function () {
 //loginPage
 
 //Вход
-login = document.querySelector('.content-login-form-log__button');
-login.onclick = function () {
+let loginDecstop = document.querySelector('.content-login-form-log__button');
+loginDecstop.onclick = function () {
     let loginData = {
         mail: document.querySelector('.content-login-form-log__input[name="mail"]').value,
         pass: document.querySelector('.content-login-form-log__input[name="pass"]').value
@@ -89,7 +89,7 @@ login.onclick = function () {
 
 //Регистрация
 
-sign = document.querySelector('.content-login-form-sign__button');
+let sign = document.querySelector('.content-login-form-sign__button');
 sign.onclick = function () {
     let signData = {
         phone: document.querySelector('.content-login-form-sign__input[name="phone"]').value,
