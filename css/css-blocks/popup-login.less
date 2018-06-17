@@ -5,7 +5,7 @@
     justify-content: start;
     z-index: 999;
     top: 50px;
-    right: 27%;
+    right: 14.6%;
     width: 231px;
     height: 395px;
     background-color: #fff;
@@ -21,8 +21,8 @@
     }
     .login-content__close {
         position: absolute;
-        top: 10px;
-        right: 21px;
+        top: 18px;
+        right: 17px;
         i {
             color: #004391;
             font-weight: lighter;
@@ -45,9 +45,8 @@
             color: #004391;
         }
         .login-content-form__pass-title {
-            &::after {
-                content: "забыл пароль?";
-                cursor: pointer;
+            a {
+                text-decoration: none;
                 font-family: Open Sans;
                 font-style: normal;
                 font-weight: normal;
@@ -61,6 +60,22 @@
             margin-bottom: 22px;
             font-style: italic;
         }
+        .login-content-form__mail-input--error,
+        .login-content-form__pass-input--error {
+            display: none;
+            font-family: Open Sans;
+            font-style: italic;
+            font-weight: normal;
+            margin-top: -14px;
+            margin-bottom: 35px;
+            letter-spacing: -0.7px;
+            font-size: 10px;
+            color: #C82E2E;
+            position: absolute;
+        }
+        .login-content-form__pass-input--error {
+            top: 222px;
+        }
         .login-content-form__mail-input,
         .login-content-form__pass-input {
             width: 194px;
@@ -68,6 +83,7 @@
             background: #FFFFFF;
             border: 2px solid #004391;
             padding: 0 15px;
+            position: relative;
         }
         .login-content__social-vk,
         .login-content__social-fb {
@@ -93,7 +109,6 @@
                 background-size: contain;
             }
         }
-
         .login-content-ulist {
             width: 100%;
             margin: 0 auto;
@@ -114,6 +129,11 @@
                 margin-top: 15px;
                 margin-bottom: 3px;
             }
+            .login-content-ulist-list__login {
+                background: inherit;
+                border: none;
+                outline: none;
+            }
             .login-content-ulist-list__sign,
             .login-content-ulist-list__login {
                 text-align: center;
@@ -133,7 +153,8 @@
                 letter-spacing: 4px;
                 color: #FFFFFF;
             }
-            .login-content-ulist-list:hover a {
+            .login-content-ulist-list:hover a,
+            .login-content-ulist-list:hover input {
                 font-family: Bebas Neue;
                 font-size: 14px;
                 letter-spacing: 4px;
@@ -154,3 +175,62 @@
     }
 }
 
+.userpage {
+    position: fixed;
+    top: 465px;
+    right: 14.6%;
+    display: none;
+    width: 231px;
+    height: 209px;
+    background: #F2F2F2;
+    padding: 17px 18px;
+    z-index: 999;
+    .userpage__title {
+        font-family: Bebas Neue;
+        font-size: 18px;
+        color: #DF5E16;
+        margin-top: -3px;
+        margin-bottom: 29px;
+    }
+    .userpage__close {
+        position: absolute;
+        top: 15px;
+        right: 27px;
+        i {
+            color: #004391;
+            font-weight: lighter;
+        }
+    }
+    .userpage-ulist {
+        .userpage-ulist__list {
+            list-style-type: none;
+            display: block;
+            margin-bottom: 18px;
+            .userpage-ulist__list-item {
+                position: relative;
+                text-decoration: none;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                /* line-height: 35px; */
+                font-size: 12px;
+                color: #000000;
+                &:hover {
+                    color: #004391;
+                    font-weight: bold;
+                }
+            }
+            &:last-child {
+                margin-bottom: 18px;
+            }
+            &:last-child a:hover {
+                &::after {
+                    content: url(/img/svg-content/exit.svg);
+                    position: absolute;
+                    top: 0.5px;
+                    right: -30px;
+                }
+            }
+        }
+    }
+}
