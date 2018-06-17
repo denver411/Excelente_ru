@@ -14,7 +14,7 @@
 }
 @media (min-width: 577px) {
   .slider__wrapper {
-    height: auto; //для IE
+    height: auto;
     height: unset;
     position: relative;
   }
@@ -36,6 +36,7 @@
   height: 100%;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   z-index: 0;
   opacity: 0;
   transition: opacity 1s;
@@ -107,6 +108,11 @@
     width: 60vw;
     font-size: 60px;
     line-height: 1.1;
+  }
+}
+@media (min-width: 577px) {
+  .slide__title_blue {
+    color: #004391;
   }
 }
 .slide__description {
