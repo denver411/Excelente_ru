@@ -16,10 +16,8 @@
   min-height: 540px;
   height: 1px;
   margin-top: 30px;
-  background-image: url(../img/slider__item_2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: -570px;
   &::before {
     position: absolute;
     top: 0;
@@ -29,9 +27,12 @@
     height: 100%;
     background: rgba(0, 67, 145, 0.4);
   }
+  @media (max-width: 576px) {
+    background-image: url(../img/slider_content/StJohnsUniversity_mobile.png);
+  }
   @media (min-width: 577px) {
     margin-top: 0px;
-    background-position-x: 0;
+    background-image: url(../img/slider_content/StJohnsUniversity.png);
   }
   &__wrapper {
     position: relative;

@@ -1,6 +1,8 @@
-.slider__item_1 {
-  background-image: url(../img/slider__item_main.jpg);
-  background-position-x: -370px;
+@media (max-width: 576px) {
+  .slider__item_1 {
+    background-image: url(../img/slider_content/main-page_mobile.png);
+    background-position-x: center;
+  }
 }
 @media (max-width: 576px) {
   .slide__title {
