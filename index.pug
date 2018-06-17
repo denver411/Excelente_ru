@@ -5,9 +5,12 @@ block pageTitle
 
 append pageLinks
   link(rel="stylesheet", href="css/main-page.css")
+  link(rel="stylesheet", href="blocks/customer-reviews/customer-reviews.css")
   
 block content
   include modules/slider_main
+  include blocks/customer-reviews/customer-reviews
 
 block pageScripts
-        script(src="js/slider.js")
+  script(src="js/slider.js")
+  script(src="blocks/customer-reviews/customer-reviews.js")
