@@ -1,12 +1,35 @@
+.slider__item {
+  background-position-x: center;
+}
 @media (max-width: 576px) {
   .slider__item_1 {
     background-image: url(../img/slider_content/main-page_mobile.png);
-    background-position-x: center;
+  }
+}
+@media (min-width: 577px) {
+  .slider__item_3 {
+    background-image: url(../img/slider_content/Mexico.png);
+  }
+}
+@media (max-width: 576px) {
+  .slider__item_3 {
+    background-image: url(../img/slider_content/Mexico_mobile.png);
+  }
+}
+@media (min-width: 577px) {
+  .slider__item_4 {
+    background-image: url(../img/slider_content/VisaService.png);
+  }
+}
+@media (max-width: 576px) {
+  .slider__item_4 {
+    font-size: 14px;
+    background-image: url(../img/slider_content/VisaService_mobile.png);
   }
 }
 @media (max-width: 576px) {
   .slide__title {
-    font-size: 48px;
+    font-size: 3em;
     line-height: 1.1;
   }
 }
