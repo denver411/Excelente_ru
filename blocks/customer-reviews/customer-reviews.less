@@ -1,0 +1,43 @@
+.customer-reviews {
+  &__wrapper {
+    width: auto;
+    margin: 0 5%;
+    padding-bottom: 14%;
+    // @media (min-width: 577px) {
+    //   padding-top: 60px;
+    //   padding-bottom: 30px;
+    //   max-width: 1020px;
+    //   margin: 0 auto;
+    // }
+  }
+  &__title {
+    padding-top: 16%;
+    font-family: Bebas Neue;
+    font-size: 48px;
+    color: #DF5E16;
+    text-transform: uppercase;
+    @media (min-width: 577px) {}
+  }
+  &__review{
+    position: relative;
+  }
+  &__flag{
+// position: absolute;
+width: 56px;
+height: 41px;
+background-image: url(img/flagsSprite.png);
+// background-position:0 -3840px;  
+}
+  &__text {
+    margin-top: 10%;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+    @media (min-width: 577px) {
+      margin-top: 0;
+      margin-bottom: 21px;
+      line-height: 20px;
+    }
+  }
+}

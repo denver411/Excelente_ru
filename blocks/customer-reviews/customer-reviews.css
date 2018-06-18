@@ -1,0 +1,34 @@
+.customer-reviews__wrapper {
+  width: auto;
+  margin: 0 5%;
+  padding-bottom: 14%;
+}
+.customer-reviews__title {
+  padding-top: 16%;
+  font-family: Bebas Neue;
+  font-size: 48px;
+  color: #DF5E16;
+  text-transform: uppercase;
+}
+.customer-reviews__review {
+  position: relative;
+}
+.customer-reviews__flag {
+  width: 56px;
+  height: 41px;
+  background-image: url(img/flagsSprite.png);
+}
+.customer-reviews__text {
+  margin-top: 10%;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+}
+@media (min-width: 577px) {
+  .customer-reviews__text {
+    margin-top: 0;
+    margin-bottom: 21px;
+    line-height: 20px;
+  }
+}
