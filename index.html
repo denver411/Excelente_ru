@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
+    <title>Компания «Экселенте»</title>
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/header.css"/>
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/footer.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script href="js/prefixfree.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/main-page.css"/>
   </head>
   <body>
     <div class="container">
@@ -42,7 +43,7 @@
               <section class="login">
                 <h2 class="login-content__title">Вход</h2><a class="login-content__close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
                 <div class="row form">
-                  <form class="login-content-form" action="#" metod="get">
+                  <form class="login-content-form" action="#" method="get">
                     <p class="login-content-form__mail-title">Эл. почта</p>
                     <input class="login-content-form__mail-input" type="text" name="mail" placeholder="user@example.com" required="required" autocomplete="off"/>
                     <label class="login-content-form__mail-input--error" for="mail">Поле заполненно с ошибкой</label>
@@ -185,7 +186,44 @@
           </div>
         </div>
       </header>
-      <div class="slider">ВРЕМЕННЫЙ БЛОК, на страницу школы переход по ссылке в меню</div>
+      <section class="slider slider__main">
+        <div class="slider__items">
+          <div class="slider__item slider__item_1 slide">
+            <div class="wrapper slide__wrapper">
+              <h2 class="slide__title slide__title_blue">Поступи <br/>в зарубежный вуз</h2><a class="slide__button" href="#">подробнее</a>
+            </div>
+          </div>
+          <div class="slider__item slider__item_2 slide">
+            <div class="wrapper slide__wrapper">
+              <h2 class="slide__title">St. John's University</h2>
+              <p class="slide__description">набор на новый учебный год</p><a class="slide__button" href="school-page.html">подробнее</a>
+            </div>
+          </div>
+          <div class="slider__item slider__item_3 slide">
+            <div class="wrapper slide__wrapper">
+              <h2 class="slide__title">Мексика</h2>
+              <p class="slide__description">страна с упрощенным визовым режимом</p><a class="slide__button" href="#">подробнее</a>
+            </div>
+          </div>
+          <div class="slider__item slider__item_4 slide">
+            <div class="wrapper slide__wrapper">
+              <h2 class="slide__title">Получи дополнительные <br/>бонусные баллы</h2>
+              <p class="slide__description">Оплати услугу «Визовое сопровождение» онлайн</p><a class="slide__button" href="#">подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper slider__wrapper">
+          <div class="slider__navigation slider-navigation">
+            <div class="slider-navigation__count slider-navigation__count_this">01</div>
+            <div class="slider-navigation__count slider-navigation__count_all">04</div>
+            <div class="slider-navigation__fill"></div>
+            <div class="slider-navigation__arrows">
+              <div class="slider-navigation__arrow slider-navigation__arrow_left"></div>
+              <div class="slider-navigation__arrow slider-navigation__arrow_right"></div>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer class="footer">
         <div class="footer__top">
           <div class="footer-logo-button__wrapper"><a href="index.html">
@@ -255,10 +293,7 @@
           </div>
         </section>
       </div>
-      <script src="js/header.js"></script>
-      <script src="js/select.js"></script>
-      <script src="js/favorite.js"></script>
-      <script src="js/login.js"></script>
+      <script src="js/slider.js"></script>
     </div>
   </body>
 </html>

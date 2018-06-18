@@ -722,9 +722,17 @@
 .main-menu__item a:hover {
   color: #DF5E16;
 }
+.main-menu__item:hover {
+  cursor: pointer;
+}
 @media (min-width: 577px) {
   .main-menu__item:hover > ul {
     display: block;
+  }
+}
+@media (min-width: 577px) {
+  .main-menu__item:hover > a {
+    color: #DF5E16;
   }
 }
 @media (min-width: 577px) {

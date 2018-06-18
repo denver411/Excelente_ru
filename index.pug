@@ -1,4 +1,13 @@
 extends modules/layout-main
 
+block pageTitle
+  title Компания «Экселенте»
+
+append pageLinks
+  link(rel="stylesheet", href="css/main-page.css")
+  
 block content
-  include modules/temp-block
+  include modules/slider_main
+
+block pageScripts
+        script(src="js/slider.js")
