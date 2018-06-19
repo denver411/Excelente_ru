@@ -17,7 +17,7 @@
 }
 .content-weworking .content-weworking-item {
   position: relative;
-  padding: 36px 15px 40px 15px;
+  padding: 45px 15px 30px 15px;
   background: #FFFFFF;
 }
 .content-weworking .content-weworking-item .content-weworking-item-text {
@@ -41,8 +41,9 @@
   font-family: Bebas Neue;
   font-size: 20px;
   color: #004391;
-  margin-bottom: 43px;
-  margin-left: 80px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  margin-top: 2px;
 }
 .content-weworking .content-weworking-item .content-weworking-item-text .content-weworking-item-text-ulist .content-weworking-item-text-ulist__list::before {
   position: absolute;
@@ -58,9 +59,10 @@
   height: 16px;
   outline: none;
   border: none;
-  top: -8px;
-  right: 0;
+  top: -32px;
+  right: 6px;
   background: url(../img/svg-content/open.svg) top left no-repeat;
+  background-size: contain;
 }
 .content-weworking .content-weworking-item .content-weworking-item-text .content-weworking-item-text-ulist__list-desc {
   display: none;
@@ -70,10 +72,12 @@
   line-height: 20px;
   font-size: 14px;
   color: #004391;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .content-weworking .content-weworking-item .content-weworking-item-text .content-weworking-item-text-ulist__list-desc:last-child {
   margin-bottom: 0;
+  margin-top: 0;
 }
 .content-weworking .content-weworking-item-1 .content-weworking-item-1-text .content-weworking-item-1-text-ulist .content-weworking-item-1-text-ulist__list::before {
   background-image: url(../img/slider_content/conversation.png);
