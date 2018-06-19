@@ -1,9 +1,10 @@
 .customer-reviews {
+  margin-top: 3170px;
+  background-color: #ffffff;
   &__wrapper {
     width: auto;
     margin: 0 5%;
-    padding-bottom: 14%;
-    // @media (min-width: 577px) {
+    padding-bottom: 5%; // @media (min-width: 577px) {
     //   padding-top: 60px;
     //   padding-bottom: 30px;
     //   max-width: 1020px;
@@ -11,6 +12,7 @@
     // }
   }
   &__title {
+    margin-bottom: 17px;
     padding-top: 16%;
     font-family: Bebas Neue;
     font-size: 48px;
@@ -18,18 +20,28 @@
     text-transform: uppercase;
     @media (min-width: 577px) {}
   }
-  &__review{
+  &__review {
     position: relative;
   }
-  &__flag{
-// position: absolute;
-width: 56px;
-height: 41px;
-background-image: url(img/flagsSprite.png);
-// background-position:0 -3840px;  
-}
+  &__flag {
+    position: absolute;
+    top: -79px;
+    width: 56px;
+    height: 41px;
+    background-image: url(img/Flag_of_Italy.png);
+    background-size: contain;
+  }
+  &__name {
+    margin-top: 33px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  &__place {
+    margin-top: 6px;
+    font-size: 18px;
+  }
   &__text {
-    margin-top: 10%;
+    margin-top: 11%;
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.5;
@@ -38,6 +50,26 @@ background-image: url(img/flagsSprite.png);
       margin-top: 0;
       margin-bottom: 21px;
       line-height: 20px;
+    }
+  }
+  &__navigation{
+    margin: 50px 0;
+  }
+}
+
+.navigation {
+  display: flex;
+  &__arrow{
+    height: 34px;
+    width: 34px;
+    border: 2px solid #DF5E16;
+    color: #000;
+    background-image: url(../../img/slider-navigation__arrow_orange.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    &_right{
+      margin-left: 18px;
+      transform: rotate(180deg);
     }
   }
 }
