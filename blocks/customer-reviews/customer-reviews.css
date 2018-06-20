@@ -20,13 +20,17 @@
 }
 .customer-reviews__images {
   display: flex;
-  width: 290px;
-  margin-left: 0;
+  width: 100%;
+  margin-left: -100%;
   list-style: none;
 }
 .customer-reviews__image {
   position: relative;
+  min-width: 100%;
   font-size: 0;
+}
+.customer-reviews__image img {
+  width: 100%;
 }
 .customer-reviews__flag {
   position: absolute;
@@ -37,7 +41,16 @@
   background-size: contain;
 }
 .customer-reviews__flag_italy {
-  background-image: url(img/Flag_of_Italy.png);
+  background-image: url(img/flag_of_Italy.png);
+}
+.customer-reviews__flag_cyprus {
+  background-image: url(img/flag_of_Cyprus.svg);
+}
+.customer-reviews__review-item {
+  display: none;
+}
+.customer-reviews__review-item_active {
+  display: block;
 }
 .customer-reviews__name {
   margin-top: 38px;
