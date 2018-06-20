@@ -1,3 +1,6 @@
+.content-weworking-photozone {
+  display: none;
+}
 .content-weworking {
   position: relative;
   margin: 0 auto;
@@ -104,4 +107,56 @@
   background-image: url(../img/slider_content/kurator.png);
   width: 59.39px;
   height: 55.61px;
+}
+@media (min-width: 576px) {
+  .content-wework {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 40px auto;
+    width: 100%;
+    padding: 0 50px;
+  }
+  .content-wework .content-weworking,
+  .content-wework .content-weworking-photozone {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+  }
+  .content-wework .content-weworking-photozone {
+    display: block;
+    height: 907px;
+  }
+  .content-wework .content-weworking-photozone .content-weworking-photozone-photo {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/slider_content/weworking1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .content-wework .content-weworking .content-weworking__title {
+    font-size: 48px;
+    text-align: left;
+    margin-top: 40px;
+  }
+  .content-wework .content-weworking .content-weworking-item {
+    padding: 30px 15px;
+    /* При ховере меняет цвет блока на синий и имеет тень */
+  }
+  .content-wework .content-weworking .content-weworking-item .content-weworking-item-text-ulist {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content-wework .content-weworking .content-weworking-item .content-weworking-item-text-ulist .content-weworking-item-text-ulist__list {
+    font-size: 24px;
+  }
+  .content-wework .content-weworking .content-weworking-item .content-weworking-item-text-ulist .content-weworking-item-text-ulist__list--open {
+    position: relative;
+    top: auto;
+    right: 0;
+  }
 }
