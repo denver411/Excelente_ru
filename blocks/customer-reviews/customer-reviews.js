@@ -19,7 +19,6 @@ imageClickNext.onclick = function () {
   if (parseInt(imagesBlock.style.marginLeft)){
     imagePosition = Math.abs(parseInt(imagesBlock.style.marginLeft)) / 100;
   }
-  console.log(imagePosition);
   let activetextBlocks = document.querySelector('.customer-reviews__review-item_active');
   activetextBlocks.classList.remove('customer-reviews__review-item_active');
   imagePosition++;
@@ -28,9 +27,18 @@ imageClickNext.onclick = function () {
   }
   textBlocks[imagePosition].classList.add('customer-reviews__review-item_active');
   imagesBlock.style.marginLeft = '-' + (imagePosition * 100) + '%';
-  console.log(imagePosition);
-  console.log(imagesBlock.style.marginLeft);
-  // slide[sliderIndex].style.zIndex = '0';
-  // slide[sliderIndex].style.opacity = '0';
-  // sliderIndex++;
+}
+imageClickPrev.onclick = function () {
+  let imagePosition = 0;
+  if (parseInt(imagesBlock.style.marginLeft)){
+    imagePosition = Math.abs(parseInt(imagesBlock.style.marginLeft)) / 100;
+  }
+  let activetextBlocks = document.querySelector('.customer-reviews__review-item_active');
+  activetextBlocks.classList.remove('customer-reviews__review-item_active');
+  imagePosition--;
+  if (imagePosition < 0) {
+    imagePosition = textBlocks.length - 1;
+  }
+  textBlocks[imagePosition].classList.add('customer-reviews__review-item_active');
+  imagesBlock.style.marginLeft = '-' + (imagePosition * 100) + '%';
 }

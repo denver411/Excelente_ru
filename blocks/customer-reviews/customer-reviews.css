@@ -21,7 +21,6 @@
 .customer-reviews__images {
   display: flex;
   width: 100%;
-  margin-left: -100%;
   list-style: none;
 }
 .customer-reviews__image {
