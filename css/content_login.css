@@ -51,19 +51,19 @@
 .content-login .row.social .content-login-social__vk {
   background-size: contain;
   margin-right: 20px;
-  background-image: url(../../img/svg-content/vk_blue.svg);
+  background-image: url(../img/svg-content/vk_blue.svg);
 }
 .content-login .row.social .content-login-social__vk:hover {
-  background-image: url(../../img/svg-content/vk_hover.svg);
+  background-image: url(../img/svg-content/vk_hover.svg);
   background-size: contain;
 }
 .content-login .row.social .content-login-social__fb {
   background-size: cover;
   background-position: center;
-  background-image: url(../../img/svg-content/fb_blue.svg);
+  background-image: url(../img/svg-content/fb_blue.svg);
 }
 .content-login .row.social .content-login-social__fb:hover {
-  background-image: url(../../img/svg-content/fb_hover.svg);
+  background-image: url(../img/svg-content/fb_hover.svg);
   background-size: cover;
   background-position: center;
 }
@@ -477,19 +477,19 @@
   .content-login .row.form-sign .form-sign-social .form-sign-social__vk {
     background-size: contain;
     margin-right: 12px;
-    background-image: url(../../img/svg-content/vk_blue.svg);
+    background-image: url(../img/svg-content/vk_blue.svg);
   }
   .content-login .row.form-sign .form-sign-social .form-sign-social__vk:hover {
-    background-image: url(../../img/svg-content/vk_hover.svg);
+    background-image: url(../img/svg-content/vk_hover.svg);
     background-size: contain;
   }
   .content-login .row.form-sign .form-sign-social .form-sign-social__fb {
     background-size: cover;
     background-position: center;
-    background-image: url(../../img/svg-content/fb_blue.svg);
+    background-image: url(../img/svg-content/fb_blue.svg);
   }
   .content-login .row.form-sign .form-sign-social .form-sign-social__fb:hover {
-    background-image: url(../../img/svg-content/fb_hover.svg);
+    background-image: url(../img/svg-content/fb_hover.svg);
     background-size: cover;
     background-position: center;
   }
@@ -589,19 +589,19 @@
   .content-login .row.form-log .form-log-social .form-log-social__vk {
     background-size: contain;
     margin-right: 12px;
-    background-image: url(../../img/svg-content/vk_blue.svg);
+    background-image: url(../img/svg-content/vk_blue.svg);
   }
   .content-login .row.form-log .form-log-social .form-log-social__vk:hover {
-    background-image: url(../../img/svg-content/vk_hover.svg);
+    background-image: url(../img/svg-content/vk_hover.svg);
     background-size: contain;
   }
   .content-login .row.form-log .form-log-social .form-log-social__fb {
     background-size: cover;
     background-position: center;
-    background-image: url(../../img/svg-content/fb_blue.svg);
+    background-image: url(../img/svg-content/fb_blue.svg);
   }
   .content-login .row.form-log .form-log-social .form-log-social__fb:hover {
-    background-image: url(../../img/svg-content/fb_hover.svg);
+    background-image: url(../img/svg-content/fb_hover.svg);
     background-size: cover;
     background-position: center;
   }

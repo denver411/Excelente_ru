@@ -41,8 +41,9 @@ body {
 }
 @media (min-width: 577px) {
   .wrapper {
-    width: 1180px;
+    width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
     height: 100%;
   }
 }
