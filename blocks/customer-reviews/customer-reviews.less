@@ -1,48 +1,59 @@
 .customer-reviews {
-  margin-top: 3170px;
+  // margin-top: 3170px;
   background-color: #ffffff;
   &__wrapper {
-    width: auto;
-    margin: 0 5%;
-    padding-bottom: 5%; // @media (min-width: 577px) {
-    //   padding-top: 60px;
-    //   padding-bottom: 30px;
-    //   max-width: 1020px;
-    //   margin: 0 auto;
-    // }
+    @media (max-width: 576px) {
+      width: auto;
+      margin: 0 5%;
+      padding-bottom: 5%;
+    }
+    @media (min-width: 577px) {
+      //   padding-top: 60px;
+      //   padding-bottom: 30px;
+      //   max-width: 1020px;
+      //   margin: 0 auto;
+    }
   }
   &__title {
-    margin-bottom: 17px;
-    padding-top: 16%;
-    font-family: Bebas Neue;
-    font-size: 48px;
-    color: #DF5E16;
-    text-transform: uppercase;
+    @media (max-width: 576px) {
+      margin-bottom: 17px;
+      padding-top: 16%;
+      font-family: Bebas Neue;
+      font-size: 48px;
+      color: #DF5E16;
+      text-transform: uppercase;
+    }
     @media (min-width: 577px) {}
   }
   &__image-block {
     overflow: hidden;
   }
   &__images {
-    display: flex;
-    width: 100%;
-    list-style: none; // transition: margin 1s;
+    @media (max-width: 576px) {
+      display: flex;
+      width: 100%;
+      list-style: none;
+    }
   }
   &__image {
-    position: relative;
-    min-width: 100%;
-    font-size: 0;
     img {
       width: 100%;
     }
+    @media (max-width: 576px) {
+      position: relative;
+      min-width: 100%;
+      font-size: 0;
+    }
   }
   &__flag {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 56px;
-    height: 41px;
-    background-size: contain;
+    @media (max-width: 576px) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 56px;
+      height: 41px;
+      background-size: contain;
+    }
     &_italy {
       background-image: url(img/flag_of_Italy.png);
     }
@@ -57,20 +68,26 @@
     }
   }
   &__name {
-    margin-top: 38px;
-    font-weight: bold;
-    font-size: 24px;
+    @media (max-width: 576px) {
+      margin-top: 38px;
+      font-weight: bold;
+      font-size: 24px;
+    }
   }
   &__place {
-    margin-top: 6px;
-    font-size: 18px;
+    @media (max-width: 576px) {
+      margin-top: 6px;
+      font-size: 18px;
+    }
   }
   &__text {
-    margin-top: 11%;
-    margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #000000;
+    @media (max-width: 576px) {
+      margin-top: 11%;
+      margin-bottom: 30px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #000000;
+    }
     @media (min-width: 577px) {
       margin-top: 0;
       margin-bottom: 21px;
@@ -78,23 +95,31 @@
     }
   }
   &__navigation {
-    margin: 50px 0;
+    @media (max-width: 576px) {
+      margin: 50px 0;
+    }
   }
 }
 
 .navigation {
-  display: flex;
+  @media (max-width: 576px) {
+    display: flex;
+  }
   &__arrow {
-    height: 34px;
-    width: 34px;
-    border: 2px solid #DF5E16;
-    color: #000;
-    background-image: url(../../img/slider-navigation__arrow_orange.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
+    @media (max-width: 576px) {
+      height: 34px;
+      width: 34px;
+      border: 2px solid #DF5E16;
+      color: #000;
+      background-image: url(../../img/slider-navigation__arrow_orange.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
     &_right {
-      margin-left: 18px;
-      transform: rotate(180deg);
+      @media (max-width: 576px) {
+        margin-left: 18px;
+        transform: rotate(180deg);
+      }
     }
   }
 }
