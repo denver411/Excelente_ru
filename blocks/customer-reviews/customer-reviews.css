@@ -15,19 +15,32 @@
   color: #DF5E16;
   text-transform: uppercase;
 }
-.customer-reviews__review {
+.customer-reviews__image-block {
+  overflow: hidden;
+}
+.customer-reviews__images {
+  display: flex;
+  width: 290px;
+  margin-left: 0;
+  list-style: none;
+}
+.customer-reviews__image {
   position: relative;
+  font-size: 0;
 }
 .customer-reviews__flag {
   position: absolute;
-  top: -79px;
+  bottom: 0;
+  left: 0;
   width: 56px;
   height: 41px;
-  background-image: url(img/Flag_of_Italy.png);
   background-size: contain;
 }
+.customer-reviews__flag_italy {
+  background-image: url(img/Flag_of_Italy.png);
+}
 .customer-reviews__name {
-  margin-top: 33px;
+  margin-top: 38px;
   font-weight: bold;
   font-size: 24px;
 }

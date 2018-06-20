@@ -20,19 +20,32 @@
     text-transform: uppercase;
     @media (min-width: 577px) {}
   }
-  &__review {
+  &__image-block {
+    overflow: hidden;
+  }
+  &__images {
+    display: flex;
+    width: 290px;
+    margin-left: 0;
+    list-style: none;
+  }
+  &__image {
     position: relative;
+    font-size: 0;
   }
   &__flag {
     position: absolute;
-    top: -79px;
+    bottom: 0;
+    left: 0;
     width: 56px;
     height: 41px;
-    background-image: url(img/Flag_of_Italy.png);
     background-size: contain;
+    &_italy {
+      background-image: url(img/Flag_of_Italy.png);
+    }
   }
   &__name {
-    margin-top: 33px;
+    margin-top: 38px;
     font-weight: bold;
     font-size: 24px;
   }
@@ -52,14 +65,14 @@
       line-height: 20px;
     }
   }
-  &__navigation{
+  &__navigation {
     margin: 50px 0;
   }
 }
 
 .navigation {
   display: flex;
-  &__arrow{
+  &__arrow {
     height: 34px;
     width: 34px;
     border: 2px solid #DF5E16;
@@ -67,7 +80,7 @@
     background-image: url(../../img/slider-navigation__arrow_orange.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    &_right{
+    &_right {
       margin-left: 18px;
       transform: rotate(180deg);
     }
