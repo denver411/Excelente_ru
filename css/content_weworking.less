@@ -10,6 +10,7 @@
     min-width: 320px;
     width: 100%;
     .content-weworking__title {
+        position: relative;
         text-align: center;
         text-transform: uppercase;
         font-family: Bebas Neue;
@@ -32,6 +33,15 @@
                 display: block;
                 position: relative;
                 width: 100%;
+                .content-weworking-item-text-ulist-img {
+                    position: absolute;
+                    width: auto;
+                    height: auto;
+                    top: -20px;
+                    display: block;
+                    float: left;
+                    background-position: center;
+                }
                 .content-weworking-item-text-ulist__list {
                     display: flex;
                     flex-flow: row nowrap;
@@ -45,13 +55,6 @@
                     margin-bottom: 0px;
                     margin-left: 100px;
                     margin-top: 2px;
-                    &::before {
-                        position: absolute;
-                        content: "";
-                        background-size: cover;
-                        display: block;
-                        left: 0;
-                    }
                 }
                 .content-weworking-item-text-ulist__list--open {
                     cursor: pointer;
@@ -79,71 +82,6 @@
                 &:last-child {
                     margin-bottom: 0;
                     margin-top: 0;
-                }
-            }
-        }
-    }
-    .content-weworking-item-1 {
-        .content-weworking-item-1-text {
-            .content-weworking-item-1-text-ulist {
-                .content-weworking-item-1-text-ulist__list {
-                    &::before {
-                        background-image: url(../img/slider_content/conversation.png);
-                        width: 70px;
-                        height: 69px;
-                    }
-                }
-            }
-        }
-    }
-    .content-weworking-item-2 {
-        .content-weworking-item-2-text {
-            .content-weworking-item-2-text-ulist {
-                .content-weworking-item-2-text-ulist__list {
-                    &::before {
-                        background-image: url(../img/slider_content/wallet.png);
-                        width: 58.8px;
-                        height: 58.8px;
-                    }
-                }
-            }
-        }
-    }
-    .content-weworking-item-3 {
-        .content-weworking-item-3-text {
-            .content-weworking-item-3-text-ulist {
-                .content-weworking-item-3-text-ulist__list {
-                    &::before {
-                        background-image: url(../img/slider_content/search.png);
-                        width: 41.65px;
-                        height: 49.39px;
-                    }
-                }
-            }
-        }
-    }
-    .content-weworking-item-4 {
-        .content-weworking-item-4-text {
-            .content-weworking-item-4-text-ulist {
-                .content-weworking-item-4-text-ulist__list {
-                    &::before {
-                        background-image: url(../img/slider_content/docs.png);
-                        width: 49.56px;
-                        height: 53.34px;
-                    }
-                }
-            }
-        }
-    }
-    .content-weworking-item-5 {
-        .content-weworking-item-5-text {
-            .content-weworking-item-5-text-ulist {
-                .content-weworking-item-5-text-ulist__list {
-                    &::before {
-                        background-image: url(../img/slider_content/kurator.png);
-                        width: 59.39px;
-                        height: 55.61px;
-                    }
                 }
             }
         }
@@ -184,21 +122,33 @@
             }
             .content-weworking-item {
                 padding: 30px 15px;
-                /* При ховере меняет цвет блока на синий и имеет тень */
+                padding-left: 40px;
+                padding-right: 49px;
                 .content-weworking-item-text-ulist {
                     position: relative;
                     display: flex;
                     flex-flow: row nowrap;
                     justify-content: space-between;
                     align-items: center;
+                    margin-top: 20px;
                     .content-weworking-item-text-ulist__list {
                         font-size: 24px;
                     }
                     .content-weworking-item-text-ulist__list--open {
                         position: relative;
                         top: auto;
-                        right: 0;
+                        right: -20px;
                     }
+                }
+                .content-weworking-item-text-ulist__list-desc {
+                    display: none;
+                    margin-left: 100px;
+                    line-height: 20px;
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: #FFFFFF;
+                    margin-top: 50px;
+                    line-height: 20px;
                 }
             }
         }
