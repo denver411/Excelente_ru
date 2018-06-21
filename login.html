@@ -43,7 +43,7 @@
               <section class="login">
                 <h2 class="login-content__title">Вход</h2><a class="login-content__close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
                 <div class="row form">
-                  <form class="login-content-form" action="#" metod="get">
+                  <form class="login-content-form" action="#" method="get">
                     <p class="login-content-form__mail-title">Эл. почта</p>
                     <input class="login-content-form__mail-input" type="text" name="mail" placeholder="user@example.com" required="required" autocomplete="off"/>
                     <label class="login-content-form__mail-input--error" for="mail">Поле заполненно с ошибкой</label>
@@ -197,7 +197,7 @@
           <div class="row form-sign">
             <h2 class="form-sign__title">Регистрация</h2>
             <div class="form-sign-social"><a class="form-sign-social__vk" href="#"></a><a class="form-sign-social__fb" href="#"></a></div>
-            <form class="content-login-form-sign" action="#" metod="get">
+            <form class="content-login-form-sign" action="#" method="get">
               <label class="content-login-form-sign__label" for="surname">Фамилия *</label>
               <input class="content-login-form-sign__input" type="text" name="surname" required="required" autocomplete="off" placeholder="Иванов"/>
               <label class="content-login-form-sign__label" for="name">Имя *</label>
@@ -211,7 +211,7 @@
               <label class="content-login-form-sign__label" for="pass">Пароль *</label>
               <input class="content-login-form-sign__input" type="password" name="pass" required="required" autocomplete="off"/>
               <label class="content-login-form-sign__label--error" for="pass">Поле заполненно с ошибкой</label>
-              <label class="content-login-form-sign__label" for="reqpass" required="required">Подтверждение пароля *</label>
+              <label class="content-login-form-sign__label" for="reqpass">Подтверждение пароля *</label>
               <input class="content-login-form-sign__input" type="password" name="reqpass" required="required" autocomplete="off"/>
               <label class="content-login-form-sign__label--error" for="reqpass">Введенные пароли не совпадают</label>
               <div class="capcha">
@@ -230,12 +230,12 @@
           <div class="row form-log">
             <h2 class="form-log__title">Вход</h2>
             <div class="form-log-social"><a class="form-log-social__vk" href="#"></a><a class="form-log-social__fb" href="#"></a></div>
-            <form class="content-login-form-log" action="#" metod="get">
+            <form class="content-login-form-log" action="#" method="get">
               <label class="content-login-form-log__label" for="mail">Эл. почта *</label>
               <input class="content-login-form-log__input" type="text" name="mail" placeholder="user@example.com" required="required" autocomplete="off"/>
               <label class="content-login-form-log__label--error" for="mail">Поле заполненно с ошибкой</label>
-              <label class="content-login-form-log__label" for="pass" required="required" autocomplete="off">Пароль *</label>
-              <input class="content-login-form-log__input" type="password" name="pass"/>
+              <label class="content-login-form-log__label" for="pass">Пароль *</label>
+              <input class="content-login-form-log__input" type="password" name="pass" required="required" autocomplete="off"/>
               <label class="content-login-form-log__label--error" for="pass">Поле заполненно с ошибкой</label>
               <input class="content-login-form-log__button" type="submit" value="Вход"/><a class="content-login-form-log__button-link" href="password-restore-1-step.html">Забыл пароль</a>
             </form>
