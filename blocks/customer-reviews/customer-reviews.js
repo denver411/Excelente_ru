@@ -9,6 +9,7 @@ let imagePosition = 0;
 
 imageClickNext.onclick = function () {
   textBlocks[imagePosition].classList.remove('customer-reviews__review-item_active');
+  images[imagePosition].classList.remove('customer-reviews__image_active');
   for (let i = 0; i < images.length; i++) {
     images[i].style.order = images.length;
   }
@@ -24,11 +25,13 @@ imageClickNext.onclick = function () {
       j = 0;
     }
   }
-  //   textBlocks[images.length + imagePosition].classList.add('customer-reviews__review-item_active');
   textBlocks[imagePosition].classList.add('customer-reviews__review-item_active');
+  images[imagePosition].classList.add('customer-reviews__image_active');
 }
+
 imageClickPrev.onclick = function () {
   textBlocks[imagePosition].classList.remove('customer-reviews__review-item_active');
+  images[imagePosition].classList.remove('customer-reviews__image_active');
   for (let i = 0; i < images.length; i++) {
     images[i].style.order = images.length;
   }
@@ -46,4 +49,5 @@ imageClickPrev.onclick = function () {
   }
   //   textBlocks[images.length + imagePosition].classList.add('customer-reviews__review-item_active');
   textBlocks[imagePosition].classList.add('customer-reviews__review-item_active');
+  images[imagePosition].classList.add('customer-reviews__image_active');
 }
