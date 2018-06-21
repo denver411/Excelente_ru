@@ -1,6 +1,5 @@
 'use strict'
 
-// let windowWidth = document.documentElement.clientWidth;
 let imageClickNext = document.querySelector('.navigation__arrow_right');
 let imageClickPrev = document.querySelector('.navigation__arrow_left');
 let images = document.querySelectorAll('.customer-reviews__image');
@@ -47,7 +46,6 @@ imageClickPrev.onclick = function () {
       j = 0;
     }
   }
-  //   textBlocks[images.length + imagePosition].classList.add('customer-reviews__review-item_active');
   textBlocks[imagePosition].classList.add('customer-reviews__review-item_active');
   images[imagePosition].classList.add('customer-reviews__image_active');
 }

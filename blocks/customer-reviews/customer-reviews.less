@@ -1,5 +1,4 @@
 .customer-reviews {
-  margin-top: 3170px;
   background-color: #ffffff;
   &__wrapper {
     @media (max-width: 576px) {
@@ -48,12 +47,28 @@
     }
     @media (min-width: 577px) {
       width: 990px;
+      height: 650px;
     }
   }
   &__image {
     position: relative;
     img {
       width: 100%;
+    }
+    picture {
+      display: block;
+      font-size: 0;
+      &::after {
+        @media (min-width: 577px) {
+          position: absolute;
+          content: '';
+          display: block;
+          top: 0;
+          height: ~"calc(100% - 50px)";
+          width: 100%;
+          background-color: rgba(0, 67, 145, 0.5);
+        }
+      }
     }
     @media (max-width: 576px) {
       min-width: 100%;
@@ -64,24 +79,43 @@
       width: ~"calc(33.33% - 30px)";
       flex-shrink: 0;
     }
-    &::after {
-      @media (min-width: 577px) {
-        position: absolute;
-        content: '';
-        display: block;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 67, 145, 0.5);
-      }
-    }
     &_active {
-      &::after {
-        @media (min-width: 577px) {
-          content: '';
-          display: none;
+      picture {
+        &::after {
+          @media (min-width: 577px) {
+            content: '';
+            display: none;
+          }
         }
       }
+      &>div {
+        @media (min-width: 577px) {
+          color: #004391;
+          background-color: #ffffff;
+          background-image: url(img/customer-reviews__image-name_active.svg);
+          border: 2px solid #004391;
+        }
+      }
+    }
+  }
+  &__image-name {
+    @media (min-width: 577px) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      min-width: 145px;
+      height: 50px;
+      padding: 0 30px 0 25%;
+      font-family: Bebas Neue;
+      line-height: 50px;
+      font-size: 24px;
+      text-align: right;
+      text-transform: uppercase;
+      background-color: #004391;
+      background-image: url(img/customer-reviews__image-name.svg);
+      background-repeat: no-repeat;
+      background-position: 24px center;
+      color: #ffffff;
     }
   }
   &__flag {
@@ -110,6 +144,7 @@
       order: 1;
       width: 22%;
       margin-right: 30px;
+      padding-bottom: 50px;
     }
   }
   &__review-item {
@@ -142,7 +177,6 @@
   }
   &__text {
     font-size: 14px;
-    
     @media (max-width: 576px) {
       margin-top: 11%;
       margin-bottom: 30px;
