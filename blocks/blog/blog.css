@@ -16,9 +16,6 @@
     font-size: 36px;
   }
 }
-.blog {
-  margin-top: 2354px;
-}
 @media (max-width: 576px) {
   .blog {
     background-color: #f7f7f7;
@@ -108,8 +105,11 @@
   }
 }
 .blog__news-list {
-  display: flex;
+  display: none;
   list-style: none;
+}
+.blog__news-list_active {
+  display: flex;
 }
 .blog__item {
   max-width: 290px;
