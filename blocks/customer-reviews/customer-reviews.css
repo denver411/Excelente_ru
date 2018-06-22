@@ -5,7 +5,6 @@
   .customer-reviews__wrapper {
     width: auto;
     margin: 0 5%;
-    padding-bottom: 5%;
   }
 }
 @media (min-width: 577px) {
@@ -33,7 +32,7 @@
   .customer-reviews__title {
     width: 100%;
     order: 0;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 }
 .customer-reviews__image-block {
@@ -193,12 +192,12 @@
 }
 @media (max-width: 576px) {
   .customer-reviews__place {
-    margin-top: 6px;
+    margin-top: 8px;
   }
 }
 @media (min-width: 577px) {
   .customer-reviews__place {
-    margin-top: 12px;
+    margin-top: 9px;
   }
 }
 .customer-reviews__text {
@@ -215,12 +214,12 @@
   .customer-reviews__text {
     margin-top: 30px;
     margin-bottom: 21px;
-    line-height: 1.8;
+    line-height: 1.75;
   }
 }
 @media (max-width: 576px) {
   .customer-reviews__navigation {
-    margin: 50px 0;
+    margin: 47px 0;
   }
 }
 .navigation {
