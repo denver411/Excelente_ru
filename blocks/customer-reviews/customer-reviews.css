@@ -1,5 +1,6 @@
 .customer-reviews {
   background-color: #ffffff;
+  margin-top: 3000px;
 }
 @media (max-width: 576px) {
   .customer-reviews__wrapper {
@@ -33,7 +34,7 @@
   .customer-reviews__title {
     width: 100%;
     order: 0;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 }
 .customer-reviews__image-block {
@@ -198,7 +199,7 @@
 }
 @media (min-width: 577px) {
   .customer-reviews__place {
-    margin-top: 12px;
+    margin-top: 9px;
   }
 }
 .customer-reviews__text {

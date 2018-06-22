@@ -23,7 +23,8 @@
 }
 @media (min-width: 577px) {
   .blog {
-    padding: 100px 0;
+    padding-top: 50px;
+    padding-bottom: 62px;
   }
 }
 @media (max-width: 576px) {
