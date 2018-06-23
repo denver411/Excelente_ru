@@ -222,15 +222,15 @@
     margin: 47px 0;
   }
 }
-.navigation {
-  display: flex;
-}
 @media (min-width: 577px) {
-  .navigation {
+  .customer-reviews__navigation {
     order: 4;
     margin-top: -48px;
     z-index: 1;
   }
+}
+.navigation {
+  display: flex;
 }
 .navigation__arrow {
   border: 2px solid #DF5E16;
