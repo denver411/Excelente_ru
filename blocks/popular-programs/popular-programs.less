@@ -30,9 +30,11 @@
     }
   }
   &__item {
-    &:not(:first-child) {
-      margin-left: 60px;
-    }
+    // &:not(:first-child) {
+    //   @media (min-width: 577px) {
+    //     margin-left: 60px;
+    //   }
+    // }
   }
   &__navigation {
     .navigation {
@@ -43,10 +45,19 @@
           }
         }
         &_right {
-          @media (max-width: 576px) {}
+          &:hover {
+            @media (min-width: 577px) {
+              background-image: url(img/navigation__arrow_popular-programs_white.svg);
+              transform: rotate(0deg);
+              background-position-x: 24px;
+            }
+          } // @media (max-width: 576px) {}
           @media (min-width: 577px) {
             display: block;
             width: 90px;
+            background-image: url(img/navigation__arrow_popular-programs_orange.svg);
+            transform: rotate(0deg);
+            background-position-x: 14px;
           }
         }
       }
@@ -85,8 +96,7 @@
       width: 100%;
       background-color: rgb(247, 247, 247);
     }
-  } 
-  // code below for card hover possibility
+  } // code below for card hover possibility
   // &:hover {
   //   cursor: pointer;
   //   &::before {
@@ -191,6 +201,9 @@
     @media (max-width: 576px) {
       display: block;
     }
+    @media(min-width: 577px) {
+      margin: 0 60px;
+    }
     &::before {
       content: '';
       position: absolute;
@@ -270,4 +283,3 @@
     }
   }
 }
-

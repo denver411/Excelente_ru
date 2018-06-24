@@ -36,18 +36,25 @@
     width: 1020px;
   }
 }
-.popular-programs__item:not(:first-child) {
-  margin-left: 60px;
-}
 @media (min-width: 577px) {
   .popular-programs__navigation .navigation__arrow_left {
     display: none;
   }
 }
 @media (min-width: 577px) {
+  .popular-programs__navigation .navigation__arrow_right:hover {
+    background-image: url(img/navigation__arrow_popular-programs_white.svg);
+    transform: rotate(0deg);
+    background-position-x: 24px;
+  }
+}
+@media (min-width: 577px) {
   .popular-programs__navigation .navigation__arrow_right {
     display: block;
     width: 90px;
+    background-image: url(img/navigation__arrow_popular-programs_orange.svg);
+    transform: rotate(0deg);
+    background-position-x: 14px;
   }
 }
 @media (max-width: 576px) {
@@ -168,6 +175,11 @@
 @media (max-width: 576px) {
   .item-card_active {
     display: block;
+  }
+}
+@media (min-width: 577px) {
+  .item-card_active {
+    margin: 0 60px;
   }
 }
 .item-card_active::before {
