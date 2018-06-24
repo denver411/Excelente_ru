@@ -1,12 +1,11 @@
 'use strict'
 
-let programClickPrev = document.querySelector('.navigation__arrow_left');
-let programClickNext = document.querySelector('.navigation__arrow_right');
+let programClickPrev = document.querySelector('.popular-programs__navigation .navigation__arrow_left');
+let programClickNext = document.querySelector('.popular-programs__navigation .navigation__arrow_right');
 let programs = document.querySelectorAll('.item-card');
 let programPosition = 1;
 
 programClickNext.onclick = function () {
-  console.log(programPosition);
   programs[programPosition].classList.remove('item-card_active');
   for (let i = 0; i < programs.length; i++) {
     programs[i].style.order = programs.length;
@@ -16,7 +15,6 @@ programClickNext.onclick = function () {
   if (programPosition >= programs.length) {
     programPosition = 0;
   }
-  console.log(programPosition);
   let j = programPosition;
   for (let i = 0; i < 3; i++) {
     programs[j].style.order = i;
