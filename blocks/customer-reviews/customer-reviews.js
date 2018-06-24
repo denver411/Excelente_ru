@@ -1,7 +1,7 @@
 'use strict'
 
-let imageClickNext = document.querySelector('.navigation__arrow_right');
-let imageClickPrev = document.querySelector('.navigation__arrow_left');
+let imageClickNext = document.querySelector('.customer-reviews__navigation .navigation__arrow_right');
+let imageClickPrev = document.querySelector('.customer-reviews__navigation .navigation__arrow_left');
 let images = document.querySelectorAll('.customer-reviews__image');
 let textBlocks = document.querySelectorAll('.customer-reviews__review-item');
 let imagePosition = 0;
