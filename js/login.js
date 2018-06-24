@@ -50,12 +50,21 @@ let contentLoginMobileSign = document.querySelector('.content-login-mobile__sign
 contentLoginMobileSign.onclick = function () {
     formSign.style.display = "flex"
     formLog.style.display = "none"
+    contentLoginMobileSign.style.color = "#DF5E16"
+    contentLoginMobileSign.style.borderBottom = "2px dotted #DF5E16"
+    contentLoginMobileLogin.style.color = "#004391"
+    contentLoginMobileLogin.style.borderBottom = "none"
 }
 contentLoginMobileLogin.onclick = function () {
     formSign.style.display = "none"
     formLog.style.display = "flex"
-}
+    contentLoginMobileLogin.style.color = "#DF5E16"
+    contentLoginMobileLogin.style.borderBottom = "2px dotted #DF5E16"
+    contentLoginMobileSign.style.color = "#004391"
+    contentLoginMobileSign.style.borderBottom = "none"
 
+}
+contentLoginMobileLogin.click();
 /* Валидация форм */
 //loginPage
 
