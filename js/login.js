@@ -64,7 +64,10 @@ contentLoginMobileLogin.onclick = function () {
     contentLoginMobileSign.style.borderBottom = "none"
 
 }
-contentLoginMobileLogin.click();
+if(!(window.matchMedia("(min-width: 577px)").matches)) {
+    contentLoginMobileLogin.click();
+}
+
 /* Валидация форм */
 //loginPage
 
