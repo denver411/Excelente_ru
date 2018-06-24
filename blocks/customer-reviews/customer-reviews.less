@@ -8,7 +8,7 @@
     @media (min-width: 577px) {
       display: flex;
       flex-wrap: wrap;
-      padding-top: 100px;
+      padding-top: 72px;
       padding-bottom: 100px;
       margin: 0 auto;
     }
@@ -191,17 +191,16 @@
     @media (max-width: 576px) {
       margin: 47px 0;
     }
+    @media (min-width: 577px) {
+      order: 4;
+      margin-top: -48px;
+      z-index: 1;
+    }
   }
 }
 
 .navigation {
   display: flex;
-  @media (max-width: 576px) {}
-  @media (min-width: 577px) {
-    order: 4;
-    margin-top: -48px;
-    z-index: 1;
-  }
   &__arrow {
     border: 2px solid #DF5E16;
     background-image: url(../../img/slider-navigation__arrow_orange.svg);
