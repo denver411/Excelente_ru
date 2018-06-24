@@ -1,6 +1,12 @@
 @media (max-width: 576px) {
   .popular-programs {
+    padding-top: 55px;
     background-color: #f7f7f7;
+  }
+}
+@media (min-width: 577px) {
+  .popular-programs {
+    margin-top: 203px;
   }
 }
 @media (max-width: 576px) {
@@ -18,7 +24,6 @@
 @media (max-width: 576px) {
   .popular-programs__title {
     margin-bottom: 17px;
-    padding-top: 16%;
   }
 }
 .popular-programs__items {
