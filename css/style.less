@@ -16,7 +16,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -35,8 +43,9 @@ body {
 
 .wrapper {
   @media(min-width: 577px) {
-    width: 1180px;
+    width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
     height: 100%;
   }
   @media(max-width: 576px) {

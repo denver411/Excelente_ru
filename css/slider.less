@@ -32,6 +32,7 @@
     height: 100%;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     z-index: 0;
     opacity: 0;
     transition: opacity 1s;
@@ -46,18 +47,24 @@
       content: '';
     }
     &_1 {
-      background-image: url(../img/slider__item_1.png);
+      background-image: url(../img/slider_content/FanshaweCollege.png);
       z-index: 1;
       opacity: 1;
       @media (max-width: 576px) {
-        background-position-x: -150px;
+        background-image: url(../img/slider_content/FanshaweCollege_mobile.png);
       }
     }
     &_2 {
-      background-image: url(../img/slider__item_2.png);
+      background-image: url(../img/slider_content/StJohnsUniversity.png);
+      @media (max-width: 576px) {
+        background-image: url(../img/slider_content/StJohnsUniversity_mobile.png);
+      }
     }
     &_3 {
-      background-image: url(../img/slider__item_3.png);
+      background-image: url(../img/slider_content/ChristsHospitalSchool.png);
+      @media (max-width: 576px) {
+        background-image: url(../img/slider_content/ChristsHospitalSchool.png);
+      }
     }
   }
   &__navigation {
@@ -96,6 +103,12 @@
       width: 60vw;
       font-size: 60px;
       line-height: 1.1;
+    }
+    &_blue {
+      @media(min-width: 577px) {
+        color: #004391;
+        line-height: 80px;
+      }
     }
   }
   &__description {
@@ -227,12 +240,7 @@
       background-repeat: no-repeat;
     }
     &_right {
-      @media(min-width: 577px) {
-        transform: rotate(180deg);
-      }
-      @media (max-width: 576px) {
-        transform: rotate(180deg);
-      }
+      transform: rotate(180deg);
     }
     &:hover {
       @media(min-width: 577px) {
