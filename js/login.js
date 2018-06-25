@@ -5,7 +5,7 @@ let topBlockItemLogin = document.querySelector('.top-block__item_login'),
     userPage = document.querySelector('.userpage'),
     userPageClose = document.querySelector('.userpage__close'),
     userPageUlistListItemExit = document.querySelector('.userpage-ulist__list-item--exit');
-hiddenMenuItemLogin = document.querySelector('.hidden-menu__item_login');
+    hiddenMenuItemLogin = document.querySelector('.hidden-menu__item_login');
 
 //Для декстоп шапки
 topBlockItemLogin.onclick = function () {
@@ -26,16 +26,30 @@ loginContentClose.onclick = function () {
     if (login.style.display == "none") login.style.display = "block"
     else login.style.display = "none"
 }
-//Для скрытого 
-hiddenMenuItemLogin.onclick = function () {
-    if (hiddenMenuItemLogin.textContent == "Вход/ Регистрация") {
-        if (login.style.display == "block") login.style.display = "none"
-        else login.style.display = "block"
-    } else {
-        if (userPage.style.display == "block") userPage.style.display = "none"
-        else userPage.style.display = "block"
+//Для скрытого
+
+if (!(window.matchMedia("(min-width: 577px)").matches)) {
+    // Если мобильная версия
+    hiddenMenuItemLogin.onclick = function () {
+        location.href = 'login.html';
+    }   
+} else {
+    // Если декстоп
+    hiddenMenuItemLogin.onclick = function () {
+        if (hiddenMenuItemLogin.textContent == "Вход/ Регистрация") {
+            if (login.style.display == "block") login.style.display = "none"
+            else login.style.display = "block"
+        } else {
+            if (userPage.style.display == "block") userPage.style.display = "none"
+            else userPage.style.display = "block"
+        }
     }
 }
+
+
+
+
+
 //мобильная версия
 let contentLoginMobileSign = document.querySelector('.content-login-mobile__sign'),
     contentLoginMobileLogin = document.querySelector('.content-login-mobile__login'),
@@ -50,7 +64,6 @@ contentLoginMobileSign.onclick = function () {
     contentLoginMobileLogin.style.borderBottom = "2px dotted #DF5E16"
     contentLoginMobileSign.style.color = "#004391"
     contentLoginMobileSign.style.borderBottom = "none"
-    
     mobileTitle.style.flexDirection = "row"
 }
 contentLoginMobileLogin.onclick = function () {
