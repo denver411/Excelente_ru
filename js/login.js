@@ -1,18 +1,13 @@
 //popup меню регистрации/личного кабинета
-
 let topBlockItemLogin = document.querySelector('.top-block__item_login'),
     login = document.querySelector('.login'),
     loginContentClose = document.querySelector('.login-content__close'),
     userPage = document.querySelector('.userpage'),
     userPageClose = document.querySelector('.userpage__close'),
     userPageUlistListItemExit = document.querySelector('.userpage-ulist__list-item--exit');
-    hiddenMenuItemLogin = document.querySelector('.hidden-menu__item_login');
+hiddenMenuItemLogin = document.querySelector('.hidden-menu__item_login');
 
-
-
-
-
-    //Для декстоп шапки
+//Для декстоп шапки
 topBlockItemLogin.onclick = function () {
     if (topBlockItemLogin.textContent == "Вход/ Регистрация") {
         if (login.style.display == "block") login.style.display = "none"
@@ -45,26 +40,31 @@ hiddenMenuItemLogin.onclick = function () {
 let contentLoginMobileSign = document.querySelector('.content-login-mobile__sign'),
     contentLoginMobileLogin = document.querySelector('.content-login-mobile__login'),
     formSign = document.querySelector('.form-sign'),
-    formLog = document.querySelector('.form-log');
+    formLog = document.querySelector('.form-log'),
+    mobileTitle = document.querySelector('.row.title.mobile')
 
 contentLoginMobileSign.onclick = function () {
     formSign.style.display = "flex"
     formLog.style.display = "none"
-    contentLoginMobileSign.style.color = "#DF5E16"
-    contentLoginMobileSign.style.borderBottom = "2px dotted #DF5E16"
-    contentLoginMobileLogin.style.color = "#004391"
-    contentLoginMobileLogin.style.borderBottom = "none"
-}
-contentLoginMobileLogin.onclick = function () {
-    formSign.style.display = "none"
-    formLog.style.display = "flex"
     contentLoginMobileLogin.style.color = "#DF5E16"
     contentLoginMobileLogin.style.borderBottom = "2px dotted #DF5E16"
     contentLoginMobileSign.style.color = "#004391"
     contentLoginMobileSign.style.borderBottom = "none"
+    
+    mobileTitle.style.flexDirection = "row"
+}
+contentLoginMobileLogin.onclick = function () {
+    formSign.style.display = "none"
+    formLog.style.display = "flex"
+    contentLoginMobileSign.style.color = "#DF5E16"
+    contentLoginMobileSign.style.borderBottom = "2px dotted #DF5E16"
+    contentLoginMobileLogin.style.color = "#004391"
+    contentLoginMobileLogin.style.borderBottom = "none"
+    mobileTitle.style.flexDirection = "row-reverse"
+
 
 }
-if(!(window.matchMedia("(min-width: 577px)").matches)) {
+if (!(window.matchMedia("(min-width: 577px)").matches)) {
     contentLoginMobileLogin.click();
 }
 
@@ -144,8 +144,7 @@ sign.onclick = function () {
         document.querySelector('.content-login-form-sign__input[name="reqpass"]').style.background = "#c82e2e24";
         document.querySelector('.content-login-form-sign__label--error[for="reqpass"]').style.display = "block";
         return false;
-    }
-    else {
+    } else {
         document.querySelector('.content-login-form-sign__input[name="pass"]').style.background = "#5ac82e24";
         document.querySelector('.content-login-form-sign__input[name="reqpass"]').style.background = "#5ac82e24";
         document.querySelector('.content-login-form-sign__label--error[for="reqpass"]').style.display = "none";

@@ -22,7 +22,7 @@
                 label(for="name").content-login-form-sign__label Имя *
                 input(type="text", name="name", required = "required", autocomplete="off", placeholder="Иван").content-login-form-sign__input
                 label(for="phone").content-login-form-sign__label Телефон *
-                input(type="tel", name="phone", placeholder="+7 (123) ___-__-__", required = "required", autocomplete="off").content-login-form-sign__input
+                input(id = "phone",type="tel", name="phone", placeholder="+7 (123) ___-__-__", required = "required", autocomplete="off").content-login-form-sign__input
                 label(for="phone").content-login-form-sign__label--error Поле заполнено с ошибкой
                 label(for="mail").content-login-form-sign__label Эл. почта *
                 input(type="text", name="mail", placeholder="user@example.com", required = "required", autocomplete="off").content-login-form-sign__input
@@ -59,6 +59,27 @@
                 label(for="pass").content-login-form-log__label--error Поле заполнено с ошибкой
                 input(type="submit", value="Вход").content-login-form-log__button
                 a(href="password-restore-1-step.html").content-login-form-log__button-link Забыл пароль
+script(type='text/javascript', src='js/jquery.mask.min.js')
+script(type='text/javascript').
+  $(document).ready(function(){
+  $('#phone').mask('+7 (000) 000-00-00');
+  });
 
+
+
+
+
+
+
+
+    //- script(src="jquery.js")
+    //- script(src='jquery.maskedinput.min.js')
+    //- script.
+    //-   //Код jQuery, установливающий маску для ввода телефона элементу input
+    //-   //1. После загрузки страницы,  когда все элементы будут доступны выполнить...
+    //-   $(function(){
+    //-   //2. Получить элемент, к которому необходимо добавить маску
+    //-   $("#phone").mask("8(999) 999-9999");
+    //-   });
 
 
