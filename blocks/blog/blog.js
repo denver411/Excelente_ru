@@ -1,6 +1,9 @@
 'use strict'
 let blogMenu = document.querySelectorAll('.blog__menu-item');
 let blogNews = document.querySelectorAll('.blog__news-list');
+if (navigator.userAgent.search(/MSIE/) > 0 || navigator.userAgent.search(/NET CLR /) > 0) {
+  blogMenu.forEach = Array.prototype.forEach;
+}
 
 blogMenu.forEach(function (item, index) {
   item.onclick = function () {
