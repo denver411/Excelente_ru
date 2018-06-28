@@ -185,6 +185,7 @@
   .content-wework .content-weworking .content-weworking-item .content-weworking-item-text-ulist__list-desc {
     display: none;
     margin-left: 100px;
+    max-width: 440px;
     font-size: 14px;
     font-weight: normal;
     color: #FFFFFF;
