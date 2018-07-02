@@ -15,7 +15,7 @@
   .slider__item_1 {
     background-image: url(../img/slider_content/main-page.png);
   }
-  .slider__item_1::before {
+  .slider__item::before {
     display: none;
   }
 }
