@@ -697,3 +697,12 @@ a.pagi-arrow-forward {
 .hidden {
 	display: none;
 }
+
+@media (min-width: 577px) {
+	.site-path a {
+		color: #ffffff;
+	}
+	.site-path__item:not(:first-child)::before {
+		color: #ffffff;
+	}
+}
