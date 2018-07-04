@@ -144,36 +144,6 @@
   }
 }
 
-.site-path {
-  position: absolute;
-  top: 32px; // left: 50px;
-  z-index: 3;
-  @media (max-width: 576px) {
-    display: none;
-  }
-  &__items {
-    display: flex;
-  }
-  &__item {
-    list-style: none;
-    color: #FFFFFF;
-    a {
-      font-family: Open Sans;
-      font-size: 14px;
-      color: #FFFFFF;
-      text-decoration: none;
-      text-transform: lowercase;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-    &:not(:first-child)::before {
-      margin: 0 14px;
-      content: "\2000 \203a \2000";
-    }
-  }
-}
-
 .slider-navigation {
   @media(min-width: 577px) {
     width: 67px;
