@@ -12,10 +12,10 @@ section.content.content__schools
 		.content__main
 			aside.sidebar
 				section.sidebar__part
-					h3.sidebar__part-button-prog
+					h3.sidebar__part-button.sidebar__part-button-prog
 						| Программа
 						.sidebar-arrow.arrow-prog
-					ul.choose-program__checkboxes
+					ul.choose-program__checkboxes.hidden
 						li
 							label
 								input.custom__checkbox(type='checkbox', name='')
@@ -71,11 +71,12 @@ section.content.content__schools
 								input.custom__checkbox(type='checkbox', name='')
 								span.checkbox-custom
 								span.label Foundation
+					a.show-all(href='#').hidden показать все			
 				section.sidebar__part
-					h3.sidebar__part-button-spec
+					h3.sidebar__part-button.sidebar__part-button-spec
 						| Специальности
 						.sidebar-arrow.arrow-spec
-					ul.choose-specialty__checkboxes
+					ul.choose-specialty__checkboxes.hidden
 						li
 							label
 								input.custom__checkbox(type='checkbox', name='')
@@ -131,8 +132,9 @@ section.content.content__schools
 								input.custom__checkbox(type='checkbox', name='')
 								span.checkbox-custom
 								span.label Режиссура и кинематография
+					a.show-all(href='#').hidden  показать все
 				section.sidebar__part
-					h3.sidebar__part-button-count
+					h3.sidebar__part-button.sidebar__part-button-count
 						| Страны
 						.sidebar-arrow.arrow-count(style="transform: rotate(180deg);")
 					ul.choose-country__checkboxes
