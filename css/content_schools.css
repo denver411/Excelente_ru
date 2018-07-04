@@ -560,7 +560,7 @@ main.schools-list__wrapper {
 	color: #004391;
 }
 
-.school-card:hover h3.school-card__name{
+.school-card:hover h3.school-card__name {
 	color: white;
 }
 
@@ -677,5 +677,14 @@ a.pagi-arrow-forward {
 		border-bottom: 2px solid #DF5E16;
 		color: #000000;
 		letter-spacing: 4px;
+	}
+}
+
+@media (min-width: 577px) {
+	.site-path a {
+		color: #ffffff;
+	}
+	.site-path__item:not(:first-child)::before {
+		color: #ffffff;
 	}
 }
