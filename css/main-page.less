@@ -4,17 +4,20 @@
     @media (min-width: 577px) {
       padding: 0;
     }
+	 &::before {
+	  @media (min-width: 577px) {
+          display: none;
+        }
+	}
     &_1 {
       @media (max-width: 576px) {
         background-image: url(../img/slider_content/main-page_mobile.png);
       }
       @media (min-width: 577px) {
         background-image: url(../img/slider_content/main-page.png);
-        background-size: contain;
-        background-position-x: 317px;
-        &::before {
-          display: none;
-        }
+        // background-size: contain;
+        // background-position-x: 317px;
+       
       }
     }
     &_3 {
