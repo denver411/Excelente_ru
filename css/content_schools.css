@@ -175,6 +175,9 @@
 	.sidebar__part {
 		max-width: 320px;
 		margin: 0 auto;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: flex-start;
 	}
 }
 
@@ -273,7 +276,7 @@
 	.choose-specialty__checkboxes,
 	.choose-country__checkboxes {
 		position: relative;
-		display: none;
+		display: block;
 		left: 2px;
 		padding-bottom: 23px;
 		font-size: 18px;
@@ -397,12 +400,21 @@ input [type='checkbox'] {
 	font-size: 10px;
 	color: #333333;
 }
+
 .sidebar__part a.show-all.hidden {
 	display: none;
 }
+
 @media (max-width: 576px) {
 	.sidebar__part a.show-all {
-		display: none;
+		display: block;
+		margin: 0;
+		margin-bottom: 20px;
+		padding: 0;
+		position: relative;
+		left: -30px;
+		font-style: italic;
+		font-size: 14px;
 	}
 }
 
@@ -562,7 +574,7 @@ main.schools-list__wrapper {
 	color: #004391;
 }
 
-.school-card:hover h3.school-card__name{
+.school-card:hover h3.school-card__name {
 	color: white;
 }
 
@@ -681,6 +693,7 @@ a.pagi-arrow-forward {
 		letter-spacing: 4px;
 	}
 }
+
 .hidden {
 	display: none;
 }

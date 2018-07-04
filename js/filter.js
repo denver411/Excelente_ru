@@ -23,7 +23,7 @@ function openAllListItems(event) {
     }
     event.currentTarget.innerHTML = listItems[8].classList.contains('hidden') ?
         'показать все' :
-        'скрыть все';
+        'скрыть';
 }
 
 function openList(event) {
