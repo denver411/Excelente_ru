@@ -654,8 +654,7 @@ nav.schools-catalogue__pagination {
 	}
 }
 
-nav.schools-catalogue__pagination a {
-	display: inline-block;
+nav.schools-catalogue__pagination a:not(.pagi-arrow) {
 	padding: 5px 11px;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
@@ -670,13 +669,14 @@ nav.schools-catalogue__pagination a:not(.pagi-arrow):active {
 }
 
 .pagi-arrow {
-	position: relative;
-	left: 13px;
 	display: block;
-	width: 15px;
-	height: 20px;
-	margin-left: -21px;
+	width: 12px;
 	background: url(../img/content-img/content_arrows-pagination.png) no-repeat;
+}
+
+
+a.pagi-arrow-back {
+	background-position: 5px 10px;
 }
 
 a.pagi-arrow-forward {
