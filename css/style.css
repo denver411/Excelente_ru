@@ -92,10 +92,14 @@ body {
 }
 .site-path__item {
   list-style: none;
+  font-family: 'Open Sans';
+  font-size: 14px;
   color: #FFFFFF;
+  text-decoration: none;
+  text-transform: lowercase;
 }
 .site-path__item a {
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-size: 14px;
   color: #FFFFFF;
   text-decoration: none;
