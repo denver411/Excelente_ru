@@ -438,13 +438,11 @@
   }
 }
 .menu-block_from-hidden .contacts__info {
+  display: block;
   margin-bottom: 30px;
   font-family: Bebas Neue;
   font-weight: bold;
   font-size: 24px;
-  color: #F36C21;
-}
-.menu-block_from-hidden .contacts__info a {
   color: #F36C21;
 }
 @media (max-width: 576px) {
