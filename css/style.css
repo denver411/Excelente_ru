@@ -40,6 +40,12 @@ body {
   }
 }
 @media (min-width: 577px) {
+  input[type='submit'],
+  button {
+    cursor: pointer;
+  }
+}
+@media (min-width: 577px) {
   .wrapper {
     width: 1200px;
     margin: 0 auto;
