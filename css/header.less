@@ -17,7 +17,7 @@
   min-height: 50px;
   padding-top: 3px;
   height: 1px;
-  font-size: 10px;
+  font-size: 14px;
   color: #004391;
   background-color: #ffffff;
   @media (max-width: 576px) {
@@ -83,7 +83,7 @@
       margin-right: 17px;
       font-size: 1.3em;
       @media (min-width: 577px) {
-        margin-left: 5px;
+        margin-left: 9px;
       }
     }
     &:hover {
@@ -130,7 +130,7 @@
         cursor: pointer;
       }
       @media (min-width: 577px) {
-        font-size: 9px;
+        font-size: 18px;
       }
     }
     input {
@@ -210,6 +210,7 @@
           outline: none;
           border: none;
           border-bottom: Solid 2px#004391;
+          border-radius: 0;
           &::placeholder {
             font-size: 14px;
             color: #DF5E16;
@@ -232,7 +233,7 @@
     &_favorite {
       i {
         margin-left: 10px;
-        font-size: 1em;
+        font-size: 18px;
       }
       @media (max-width: 576px) {
         flex-basis: 28%;
@@ -419,14 +420,15 @@
         }
       }
       &__info {
+        display: block;
         margin-bottom: 30px;
         font-family: Bebas Neue;
         font-weight: bold;
         font-size: 24px;
         color: #F36C21;
-        a {
-          color: #F36C21;
-        }
+        // a {
+        //   color: #F36C21;
+        // }
         @media (max-width: 576px) {
           margin-top: 10px;
           margin-bottom: 17px;
@@ -513,12 +515,7 @@
         width: unset;
       }
       @media (max-width: 576px) {
-        width: calc(100% - 35px); // position: fixed;
-        // top: 0;
-        // z-index: 100;
-        // width: 100vw;
-        // height: 100vh;
-        // background-color: #ffffff;
+        width: calc(100% - 35px);
       }
       &__items {
         display: flex;
@@ -715,9 +712,9 @@
     a {
       @media (min-width: 577px) {
         font-family: 'Open Sans';
-        font-size: 12px;
+        font-size: 14px;
         font-weight: normal;
-        line-height: initial;
+        line-height: 24px;
         color: #000000;
         text-transform: unset;
         white-space: nowrap;

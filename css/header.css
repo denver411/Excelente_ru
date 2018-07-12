@@ -16,7 +16,7 @@
   min-height: 50px;
   padding-top: 3px;
   height: 1px;
-  font-size: 10px;
+  font-size: 14px;
   color: #004391;
   background-color: #ffffff;
 }
@@ -92,7 +92,7 @@
 }
 @media (min-width: 577px) {
   .top-block__item i {
-    margin-left: 5px;
+    margin-left: 9px;
   }
 }
 .top-block__item:hover {
@@ -140,7 +140,7 @@
 }
 @media (min-width: 577px) {
   .hidden-menu__popups i {
-    font-size: 9px;
+    font-size: 18px;
   }
 }
 @media (min-width: 577px) {
@@ -224,6 +224,7 @@
     outline: none;
     border: none;
     border-bottom: Solid 2px#004391;
+    border-radius: 0;
   }
   .hidden-menu__item_input input::placeholder {
     font-size: 14px;
@@ -245,7 +246,7 @@
 }
 .hidden-menu__item_favorite i {
   margin-left: 10px;
-  font-size: 1em;
+  font-size: 18px;
 }
 @media (max-width: 576px) {
   .hidden-menu__item_favorite {
@@ -438,13 +439,11 @@
   }
 }
 .menu-block_from-hidden .contacts__info {
+  display: block;
   margin-bottom: 30px;
   font-family: Bebas Neue;
   font-weight: bold;
   font-size: 24px;
-  color: #F36C21;
-}
-.menu-block_from-hidden .contacts__info a {
   color: #F36C21;
 }
 @media (max-width: 576px) {
@@ -747,9 +746,9 @@
 @media (min-width: 577px) {
   .main-menu__subitems a {
     font-family: 'Open Sans';
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
-    line-height: initial;
+    line-height: 24px;
     color: #000000;
     text-transform: unset;
     white-space: nowrap;
