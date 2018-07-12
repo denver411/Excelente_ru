@@ -1,7 +1,7 @@
 .title {
 	max-width: 1280px;
 	margin: 0 auto;
-	padding-top: 70px;
+	padding-top: 52px;
 	background-color: #ffffff;
 }
 
@@ -27,6 +27,7 @@
 @media (max-width: 576px) {
 	.content__main {
 		flex-direction: column;
+  margin-top: 25px;
 	}
 }
 
@@ -40,7 +41,7 @@
 @media (max-width: 576px) {
 	.section-name {
 		display: inline-block;
-		margin: 53px 20px 32px;
+		margin: 0 20px 0;
 	}
 }
 
@@ -181,12 +182,20 @@
 		align-items: flex-start;
 	}
 }
-
-.sidebar__part-button-prog,
+.sidebar__part-button-prog {
+	margin: 40px 0 0 0;
+	padding: 0 15px 0 37px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #333333;
+	letter-spacing: 0.5px;
+	cursor: pointer;
+}
 .sidebar__part-button-spec,
 .sidebar__part-button-count {
-	margin: 0;
-	padding: 39px 0 0 38px;
+	margin: 13px 0 0 0;
+	padding: 0 15px 0 37px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 	font-size: 14px;
@@ -195,10 +204,10 @@
 	cursor: pointer;
 }
 
-.sidebar__part-button-spec,
+/*.sidebar__part-button-spec,
 .sidebar__part-button-count {
-	padding: 13px 0 0 38px;
-}
+	padding: 13px 0 0 37px;
+}*/
 
 
 @media (max-width: 576px) {
@@ -206,10 +215,11 @@
 	.sidebar__part-button-spec,
 	.sidebar__part-button-count {
 		display: inline-block;
-		margin: 0 0 21px -38px;
+		margin: 0 0 21px -39px;
 		padding: 0 0 0 0;
 		font-size: 22px;
 		color: #333333;
+		letter-spacing: 1px;
 	}
 }
 
@@ -266,10 +276,10 @@
 .choose-country__checkboxes {
 	position: relative;
 	display: block;
-	left: 9px;
+/*	left: 9px;*/
 	list-style: none;
-	padding: 0 0 3px 0;
-	margin: -4px 1px 0px 0;
+	padding: 0 13px 0 13px;
+	margin-top: 15px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 	color: #333333;
@@ -285,8 +295,9 @@
 	.choose-country__checkboxes {
 		position: relative;
 		display: block;
-		left: 2px;
-		padding-bottom: 23px;
+		left: 0;
+		margin: 15px 0 0 -37px;
+		padding: 0 0 23px 0;
 		font-size: 18px;
 	}
 	.choose-country__checkboxes {
@@ -298,31 +309,44 @@
 	.choose-program__checkboxes li,
 	.choose-specialty__checkboxes li,
 	.choose-country__checkboxes li {
-		padding-bottom: 8px
+		padding-bottom: 11px
+	}
+}
+.choose-program__checkboxes label, 
+.choose-specialty__checkboxes label,
+.choose-country__checkboxes label {
+	margin-left: 26px;
+}
+@media (max-width: 576px) {
+	.choose-program__checkboxes label, 
+	.choose-specialty__checkboxes label,
+	.choose-country__checkboxes label {
+		margin-left: 3px;
 	}
 }
 
 .checkbox-custom,
 .label {
 	position: relative;
-	top: 19px;
-	right: -32px;
+	/*top: 19px;*/
+	/*right: -32px;*/
 	display: inline-block;
 	margin-top: 3px;
 	vertical-align: middle;
+	cursor: pointer;
 }
 
 @media (max-width: 576px) {
 	.checkbox-custom,
 	.label {
-		position: relative;
-		top: 15px;
-		right: 35px;
+		/*position: relative;*/
+	/*	top: 15px;*/
+		/*right: 35px;*/
 	}
 }
 
 .label {
-	padding-left: 7px;
+	padding-left: 8px;
 }
 
 @media (max-width: 576px) {
@@ -338,11 +362,19 @@
 	vertical-align: top;
 	margin-top: 4px;
 }
-
 @media (max-width: 576px) {
 	.choose-program__checkboxes span.label,
 	.choose-specialty__checkboxes span.label {
-		margin-top: 7px;
+		display: inline-block;
+		max-width: 213px;
+		vertical-align: top;
+		margin-top: 4px;
+	}
+}
+@media (max-width: 576px) {
+	.choose-program__checkboxes span.label,
+	.choose-specialty__checkboxes span.label {
+		margin-top: 3px;
 	}
 }
 
@@ -356,16 +388,18 @@ input [type='checkbox'] {
 
 .checkbox-custom {
 	position: relative;
-	bottom: 15px;
+/*	bottom: 15px;*/
 	width: 10px;
 	height: 10px;
 	background: #ffffff;
 	border: 1px solid #004391;
 	box-sizing: border-box;
+	cursor: pointer;
 }
 
 @media (max-width: 576px) {
 	.checkbox-custom {
+		top: 1px;
 		width: 20px;
 		height: 20px;
 	}
@@ -401,7 +435,7 @@ input [type='checkbox'] {
 
 .sidebar__part a.show-all {
 	display: inline-block;
-	margin: 32px 0 0 40px;
+	margin: 16px 0 0 40px;
 	padding-bottom: 4px;
 	border-bottom: 2px solid #DF5E16;
 	font-family: 'Open Sans', sans-serif;
@@ -481,7 +515,7 @@ a.reset-filter {
 
 @media (max-width: 576px) {
 	a.reset-filter {
-		margin: 45px auto 45px;
+		margin: 42px auto 40px;
 		font-size: 17px;
 		font-weight: bold;
 		padding-bottom: 6px;
@@ -558,15 +592,21 @@ main.schools-list__wrapper {
 
 .school__info {
 	position: absolute;
-	top: 249px;
-	width: 300px;
-	height: 250px;
+	display: flex;
+	flex-direction: column;
+ justify-content: space-around;
+	top: 240px;
+	/*width: 300px;*/
+	width: 100%;
+	height: 260px;
 }
 
 .school-card h3.school-card__name {
-	position: relative;
-	top: 35px;
-	margin-left: 50px;
+	/*position: relative;*/
+	/*top: 11px;*/
+	/*margin-left: 50px;*/
+	margin: 44px auto 0;
+	padding: 0 50px 0 50px;
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 28px;
 	color: #004391;
@@ -589,11 +629,14 @@ main.schools-list__wrapper {
 }
 
 .school-card span.school-card__country {
-	position: relative;
-	top: 46px;
+	/*position: relative;*/
+	/*top: 46px;*/
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	margin-left: 50px;
+	flex-grow: 1;
+	/*margin-left: 50px;*/
+	margin-top: 7px;
+	padding: 0 50px 0 50px;
 	color: #333333;
 }
 
@@ -603,9 +646,12 @@ main.schools-list__wrapper {
 }
 
 .school-card .button__action.more {
-	margin: 116px auto 0;
-	width: 201px;
-	height: 48px;
+	width: 100%;
+ max-width: 201px;
+	margin: 0 auto 37px;
+	padding: 13px 54px;
+	/*width: 201px;*/
+	/*height: 48px;*/
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 18px;
 	letter-spacing: 4px;
@@ -613,7 +659,7 @@ main.schools-list__wrapper {
 
 @media (max-width: 576px) {
 	.school-card .button__action.more {
-		margin: 114px auto;
+		margin: 0 auto 37px;
 		letter-spacing: 3.7px;
 	}
 }
@@ -623,7 +669,7 @@ main.schools-list__wrapper {
 	background-color: #FFFFFF;
 }
 
-.school-card:hover .button__action a {
+.school-card:hover .button__action {
 	color: #DF5E16;
 }
 
@@ -633,7 +679,7 @@ main.schools-list__wrapper {
 	background-color: #DF5E16;
 }
 
-.button__action a {
+.button__action {
 	color: #FFFFFF;
 }
 
