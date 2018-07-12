@@ -204,12 +204,6 @@
 	cursor: pointer;
 }
 
-/*.sidebar__part-button-spec,
-.sidebar__part-button-count {
-	padding: 13px 0 0 37px;
-}*/
-
-
 @media (max-width: 576px) {
 	.sidebar__part-button-prog,
 	.sidebar__part-button-spec,
@@ -248,23 +242,6 @@
 	transition: 0.5s;
 }
 
-/* Анимация стрелки в JS,недумаю что данные строки нужны */
-
-/* .sidebar__part .sidebar-arrow:active {
-	transform: rotate(180deg);
-	transition: 0.5s;
-}
-
-.sidebar__part .arrow-down {
-	background-position: 0 0;
-}
-
-.sidebar__part .arrow-up {
-	background-position: -12px 0;
-	background: url(../img/content-img/content_arrows_sidebar.png) no-repeat;
-	transition: 0.5s;
-} */
-
 @media (max-width: 576px) {
 	.sidebar__part .sidebar-arrow {
 		display: none;
@@ -276,7 +253,6 @@
 .choose-country__checkboxes {
 	position: relative;
 	display: block;
-/*	left: 9px;*/
 	list-style: none;
 	padding: 0 13px 0 13px;
 	margin-top: 15px;
@@ -328,21 +304,10 @@
 .checkbox-custom,
 .label {
 	position: relative;
-	/*top: 19px;*/
-	/*right: -32px;*/
 	display: inline-block;
 	margin-top: 3px;
 	vertical-align: middle;
 	cursor: pointer;
-}
-
-@media (max-width: 576px) {
-	.checkbox-custom,
-	.label {
-		/*position: relative;*/
-	/*	top: 15px;*/
-		/*right: 35px;*/
-	}
 }
 
 .label {
@@ -388,7 +353,6 @@ input [type='checkbox'] {
 
 .checkbox-custom {
 	position: relative;
-/*	bottom: 15px;*/
 	width: 10px;
 	height: 10px;
 	background: #ffffff;
@@ -526,7 +490,6 @@ a.reset-filter {
 main.schools-list__wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	/* margin-bottom: 55px; */
 	justify-content: space-between;
 	padding-left: 38px;
 }
@@ -565,15 +528,6 @@ main.schools-list__wrapper {
 	background-size: cover;
 }
 
-/* @media (max-width: 576px) {
-	.school-1 .school-card__image {
-		width: 300px;
-		height: 240px;
-		background: url(../img/content-img/St_Johns_St_Augustine_Hall.png) no-repeat;
-		background-size: cover;
-	}
-} */
-
 .school-1 .school-card__image:hover {
 	position: relative;
 	width: 300px;
@@ -596,15 +550,11 @@ main.schools-list__wrapper {
 	flex-direction: column;
  justify-content: space-around;
 	top: 240px;
-	/*width: 300px;*/
 	width: 100%;
 	height: 260px;
 }
 
 .school-card h3.school-card__name {
-	/*position: relative;*/
-	/*top: 11px;*/
-	/*margin-left: 50px;*/
 	margin: 44px auto 0;
 	padding: 0 50px 0 50px;
 	font-family: 'Bebas Neue', sans-serif;
@@ -629,19 +579,15 @@ main.schools-list__wrapper {
 }
 
 .school-card span.school-card__country {
-	/*position: relative;*/
-	/*top: 46px;*/
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	flex-grow: 1;
-	/*margin-left: 50px;*/
 	margin-top: 7px;
 	padding: 0 50px 0 50px;
 	color: #333333;
 }
 
 .school-card:hover span.school-card__country {
-	/* display: block; */
 	color: white;
 }
 
@@ -650,8 +596,6 @@ main.schools-list__wrapper {
  max-width: 201px;
 	margin: 0 auto 37px;
 	padding: 13px 54px;
-	/*width: 201px;*/
-	/*height: 48px;*/
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 18px;
 	letter-spacing: 4px;
@@ -685,13 +629,11 @@ main.schools-list__wrapper {
 
 .pagi-nav-wrapper {
 	display: flex;
-	justify-content: space-between;
-	width: 278px;
 }
 
 nav.schools-catalogue__pagination {
-	padding-bottom: 35px;
-	margin-top: 55px;
+	margin-top: 53px;
+	margin-bottom: 34px;
 }
 
 @media (max-width: 576px) {
@@ -701,7 +643,10 @@ nav.schools-catalogue__pagination {
 }
 
 nav.schools-catalogue__pagination a:not(.pagi-arrow) {
-	padding: 5px 11px;
+	width: 30px;
+	height: 30px;
+	margin: 0 8px 0 7px;
+	padding: 5px 0;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
@@ -715,18 +660,19 @@ nav.schools-catalogue__pagination a:not(.pagi-arrow):active {
 }
 
 .pagi-arrow {
-	display: block;
-	width: 12px;
-	background: url(../img/content-img/content_arrows-pagination.png) no-repeat;
+	width: 30px;
 }
 
-
 a.pagi-arrow-back {
-	background-position: 5px 10px;
+	background: url(../img/content-img/schools_content_select_arrow-left-disabled.svg) no-repeat;
+	background-position: 7px 11px;
+	margin-right: -6px;
 }
 
 a.pagi-arrow-forward {
-	background-position: -5px 10px;
+	background: url(../img/content-img/schools_content_select_arrow-right-default.svg) no-repeat;
+	background-position: 12px 11px;
+	margin-left: -7px;
 }
 
 .show-more {
