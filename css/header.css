@@ -104,6 +104,9 @@
   flex: 1;
   padding-right: 7px;
 }
+.top-block__outer {
+  display: flex;
+}
 @media (min-width: 577px) {
   .hidden-menu {
     display: none;
