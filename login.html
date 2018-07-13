@@ -199,21 +199,17 @@
             <div class="form-sign-social"><a class="form-sign-social__vk" href="#"></a><a class="form-sign-social__fb" href="#"></a></div>
             <form class="content-login-form-sign" action="#" method="get">
               <label class="content-login-form-sign__label" for="surname">Фамилия *</label>
-              <input class="content-login-form-sign__input" type="text" name="surname" required="required" autocomplete="off" placeholder="Иванов"/>
+              <input class="content-login-form-sign__input" type="text" name="surname" autocomplete="off" placeholder="Иванов" data-name="form-sign-input-surname"/>
               <label class="content-login-form-sign__label" for="name">Имя *</label>
-              <input class="content-login-form-sign__input" type="text" name="name" required="required" autocomplete="off" placeholder="Иван"/>
+              <input class="content-login-form-sign__input" type="text" name="name" autocomplete="off" placeholder="Иван" data-name="form-sign-input-name"/>
               <label class="content-login-form-sign__label" for="phone">Телефон *</label>
-              <input class="content-login-form-sign__input" id="phone" type="tel" name="phone" placeholder="+7 (123) ___-__-__" required="required" autocomplete="off"/>
-              <label class="content-login-form-sign__label--error" for="phone">Поле заполнено с ошибкой</label>
+              <input class="content-login-form-sign__input" id="phone" type="tel" name="phone" placeholder="+7 (123) ___-__-__" autocomplete="off" data-name="form-sign-input-phone"/>
               <label class="content-login-form-sign__label" for="mail">Эл. почта *</label>
-              <input class="content-login-form-sign__input" type="text" name="mail" placeholder="user@example.com" required="required" autocomplete="off"/>
-              <label class="content-login-form-sign__label--error" for="mail">Поле заполнено с ошибкой</label>
+              <input class="content-login-form-sign__input" type="text" name="mail" placeholder="user@example.com" autocomplete="off" data-name="form-sign-input-mail"/>
               <label class="content-login-form-sign__label" for="pass">Пароль *</label>
-              <input class="content-login-form-sign__input" type="password" name="pass" required="required" autocomplete="off"/>
-              <label class="content-login-form-sign__label--error" for="pass">Поле заполнено с ошибкой</label>
+              <input class="content-login-form-sign__input" type="password" name="pass" autocomplete="off" data-name="form-sign-input-pass"/>
               <label class="content-login-form-sign__label" for="reqpass">Подтверждение пароля *</label>
-              <input class="content-login-form-sign__input" type="password" name="reqpass" required="required" autocomplete="off"/>
-              <label class="content-login-form-sign__label--error" for="reqpass">Введенные пароли не совпадают</label>
+              <input class="content-login-form-sign__input" type="password" name="reqpass" autocomplete="off" data-name="form-sign-input-reqpass"/>
               <div class="capcha">
                 <script src="https://www.google.com/recaptcha/api.js" async="async" defer="defer"></script>
                 <div class="g-recaptcha" data-sitekey="your_site_key"></div>
@@ -221,7 +217,7 @@
               <input class="content-login-form-sign__button" type="submit" value="Регистрация"/>
               <div class="content-login-form-sign-reg">
                 <label class="content-login-form-sign-reg_lable">
-                  <input class="content-login-form-sign-reg__check" type="checkbox" name="checkbox" required="required"/><span class="content-login-form-sign-reg__check-cust"></span>
+                  <input class="content-login-form-sign-reg__check" type="checkbox" name="checkbox"/><span class="content-login-form-sign-reg__check-cust"></span>
                 </label>
                 <p class="content-login-form-sign-reg__inst">Я подтверждаю, что ознакомлен с  <a href="#">Политикой в области защиты персональных данных ООО  «Экселенте» </a> и даю свое согласие на работу с моими персональными данными.</p>
               </div>
@@ -230,14 +226,12 @@
           <div class="row form-log">
             <h2 class="form-log__title">Вход</h2>
             <div class="form-log-social"><a class="form-log-social__vk" href="#"></a><a class="form-log-social__fb" href="#"></a></div>
-            <form class="content-login-form-log" action="#" method="get">
+            <form class="content-login-form-log" action="#" method="get" data-name="form-login">
               <label class="content-login-form-log__label" for="mail">Эл. почта *</label>
-              <input class="content-login-form-log__input" type="text" name="mail" placeholder="user@example.com" required="required" autocomplete="off"/>
-              <label class="content-login-form-log__label--error" for="mail">Поле заполнено с ошибкой</label>
+              <input class="content-login-form-log__input field" type="text" name="mail" placeholder="user@example.com" autocomplete="off" data-name="form-login-input-mail"/>
               <label class="content-login-form-log__label" for="pass">Пароль *</label>
-              <input class="content-login-form-log__input" type="password" name="pass" required="required" autocomplete="off"/>
-              <label class="content-login-form-log__label--error" for="pass">Поле заполнено с ошибкой</label>
-              <input class="content-login-form-log__button" type="submit" value="Вход"/><a class="content-login-form-log__button-link" href="password-restore-1-step.html">Забыл пароль</a>
+              <input class="content-login-form-log__input field" type="password" name="pass" autocomplete="off" data-name="form-login-input-pass"/>
+              <input class="content-login-form-log__button" type="submit" value="Вход" data-name="form-login-input-submit"/><a class="content-login-form-log__button-link" href="password-restore-1-step.html">Забыл пароль</a>
             </form>
           </div>
         </div>
