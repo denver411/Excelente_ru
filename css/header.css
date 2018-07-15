@@ -46,6 +46,7 @@
   }
 }
 .top-block__city:hover {
+  cursor: pointer;
   color: #F36C21;
 }
 @media (max-width: 576px) {
@@ -102,6 +103,9 @@
 .top-block__item_favorite {
   flex: 1;
   padding-right: 7px;
+}
+.top-block__outer {
+  display: flex;
 }
 @media (min-width: 577px) {
   .hidden-menu {
@@ -174,7 +178,7 @@
     flex-wrap: wrap;
     top: 170px;
     min-width: unset;
-    z-index: 110;
+    z-index: 109;
   }
 }
 @media (max-width: 576px) {
