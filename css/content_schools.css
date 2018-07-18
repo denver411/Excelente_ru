@@ -704,7 +704,7 @@ a.pagi-arrow-forward {
 	.site-path a {
 		color: #ffffff;
 	}
-	.site-path__item:not(:first-child)::before {
+	.site-path__item {
 		color: #ffffff;
 	}
 }
