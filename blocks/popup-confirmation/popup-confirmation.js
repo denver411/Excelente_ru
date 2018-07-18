@@ -1,16 +1,20 @@
-let confirmationPopup = document.querySelector(".confirmation"),
-  confirmationButton = document.querySelector(".confirmation__button"),
-  confirmationClose = document.querySelector(".confirmation__close");
+document.addEventListener('DOMContentLoaded', function () {
 
-function ConfirmationVisible() {
-  confirmationPopup.classList.add("confirmation_visible");
-}
+  let confirmationPopup = document.querySelector(".confirmation"),
+    confirmationButton = document.querySelector(".confirmation__button"),
+    confirmationClose = document.querySelector(".confirmation__close");
 
-function ConfirmationClose() {
-  confirmationPopup.classList.remove("confirmation_visible");
-}
+  function ConfirmationVisible() {
+    confirmationPopup.classList.add("confirmation_visible");
+  }
 
-confirmationButton.addEventListener("click", ConfirmationVisible);
+  function ConfirmationClose() {
+    confirmationPopup.classList.remove("confirmation_visible");
+  }
 
-confirmationClose.addEventListener("click", ConfirmationClose);
-confirmationPopup.addEventListener("click", ConfirmationClose);
+  confirmationButton.addEventListener("click", ConfirmationVisible);
+
+  confirmationClose.addEventListener("click", ConfirmationClose);
+  confirmationPopup.addEventListener("click", ConfirmationClose);
+
+});
