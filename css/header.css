@@ -41,12 +41,16 @@
   }
 }
 @media (max-width: 576px) {
-  .top-block__city span {
+  .top-block__city > span {
     border-bottom: dashed 1.5px;
   }
 }
+@media (min-width: 577px) {
+  .top-block__city > span:first-of-type:hover {
+    cursor: pointer;
+  }
+}
 .top-block__city:hover {
-  cursor: pointer;
   color: #F36C21;
 }
 @media (max-width: 576px) {

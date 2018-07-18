@@ -35,13 +35,18 @@
         color: #DF5E16;
       }
     }
-    span {
+    > span {
       @media (max-width: 576px) {
         border-bottom: dashed 1.5px;
       }
+      &:first-of-type:hover {
+        @media (min-width: 577px) {
+          cursor: pointer;
+        }
+      }
     }
     &:hover {
-      cursor: pointer;
+      // cursor: pointer;
       color: #F36C21;
     }
     @media (max-width: 576px) {
@@ -96,7 +101,7 @@
       padding-right: 7px;
     }
   }
-  &__outer{
+  &__outer {
     display: flex;
   }
 }
@@ -429,8 +434,7 @@
         font-family: Bebas Neue;
         font-weight: bold;
         font-size: 24px;
-        color: #F36C21;
-        // a {
+        color: #F36C21; // a {
         //   color: #F36C21;
         // }
         @media (max-width: 576px) {
