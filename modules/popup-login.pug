@@ -6,9 +6,11 @@ section.login.hidden
         form(action="#", method="get").login-content-form
             p.login-content-form__mail-title Эл. почта
             input(type="text", name="mail", placeholder="user@example.com", autocomplete="off").login-content-form__mail-input
+            output.form--error
             p.login-content-form__pass-title Пароль
                 a(href="password-restore-1-step.html") забыли пароль?
             input(type="password", name="password", autocomplete="off").login-content-form__pass-input
+            output.form--error
             .row.link
                 a(href="#").login-content__social-vk
                 a(href="#").login-content__social-fb
