@@ -1,4 +1,4 @@
-@import 'css-blocks/popup-city.css';
+@import '../blocks/popup-city/popup-city.css';
 @import 'css-blocks/popup-favorite.css';
 @import 'css-blocks/popup-login.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic');
@@ -13,18 +13,6 @@
   font-weight: bold;
 }
 
-//delete
-.pp {
-  position: absolute;
-  opacity: 0.5;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
-//delete
 * {
   margin: 0;
   padding: 0;
@@ -50,6 +38,13 @@ body {
     width: 100%;
     min-width: unset;
     padding: 0;
+  }
+}
+
+input[type='submit'],
+button {
+  @media(min-width: 577px) {
+    cursor: pointer;
   }
 }
 
@@ -96,8 +91,13 @@ body {
   &__item {
     list-style: none;
     color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: lowercase;
     a {
-      font-family: Open Sans;
+      font-family: 'Open Sans';
       font-size: 14px;
       color: #FFFFFF;
       text-decoration: none;
