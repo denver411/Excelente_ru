@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function(){
         checkPhone(signPhone)
         checkMailRegEx(signMail)
         checkPasswordMatch(signPass)
-        checkReqpass()
+        checkReqpass(signPass, signReqpass)
         reqCheckBox(signCheckBox)
     })
 
